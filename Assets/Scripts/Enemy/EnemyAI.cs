@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
-[RequireComponent(typeof(EnemyMovement), typeof(Rigidbody))]
+[RequireComponent(typeof(EnemyAttack), typeof(EnemyMovement), typeof(Rigidbody))]
 [RequireComponent(typeof(NavMeshAgent))]
 public class EnemyAI : MonoBehaviour
 {
@@ -10,7 +10,8 @@ public class EnemyAI : MonoBehaviour
     {
         Roaming,
         Chase,
-        Attack
+        Attack,
+        Damage
     }
 
     [Header("Necessary Enemy Components")]
@@ -18,8 +19,13 @@ public class EnemyAI : MonoBehaviour
 
     // Necessary components for enemy logic
     private EnemyMovement enemyMovement;
+    private EnemyAttack enemyAttack;
     private EnemyState enemyState;
     private NavMeshAgent enemyAgent;
+
+    // Enemy changing settings
+    private bool canAttack = true;
+    private int pointsOfDamage = 0;
 
 
     private void Awake()
@@ -27,6 +33,7 @@ public class EnemyAI : MonoBehaviour
         // Initialize the state of the enemy to roaming
         enemyState = EnemyState.Roaming;
         enemyMovement = GetComponent<EnemyMovement>();
+        enemyAttack = GetComponent<EnemyAttack>();
         enemyAgent = GetComponent<NavMeshAgent>();
     }
 
@@ -55,8 +62,13 @@ public class EnemyAI : MonoBehaviour
                 }
                 break;
             case EnemyState.Attack:
-                Debug.Log("Attack HIM");
                 if(DistanceToPlayer() > enemyAgent.stoppingDistance + 2) enemyState = EnemyState.Chase;
+                if (DistanceToPlayer() < 2.5 && canAttack) StartCoroutine(AttackRoutine());
+                break;
+            case EnemyState.Damage:
+                GetComponent<Health>().DamageHealth(pointsOfDamage);
+                pointsOfDamage = 0;
+                enemyState = EnemyState.Chase;
                 break;
         }
     }
@@ -123,6 +135,20 @@ public class EnemyAI : MonoBehaviour
         if (DistanceToPlayer() > 20)
             return true;
         return false;
+    }
+
+    private IEnumerator AttackRoutine()
+    {
+        canAttack = false;
+        enemyAttack.DamagePlayer(targetPlayer.GetComponent<Health>(), GetComponent<EnemyStats>().GetStatValue("Strength"));
+        yield return new WaitForSeconds(4f);
+        canAttack = true;
+    }
+
+    public void TakeDamage(int damagePoints)
+    {
+        pointsOfDamage = damagePoints;
+        enemyState = EnemyState.Damage;
     }
 }
 

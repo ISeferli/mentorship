@@ -17,7 +17,7 @@ public class LeftHandSword : MonoBehaviour, WeaponInterface
         // Damage enemy
         foreach(Collider enemy in hitEnemy)
         {
-            Debug.Log("We hit " + enemy.name);
+            enemy.GetComponent<EnemyAI>().TakeDamage(character.attributes["Strength"].CalculateStatValue());
         }
     }
 

@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    [Header("Necessary Enemy Components")]
-    [SerializeField] private GameObject targetPlayer;
+    public void DamagePlayer(Health targetHealth, int pointsOfDamage)
+    {
+        targetHealth.DamageHealth(pointsOfDamage);
+    }
 }

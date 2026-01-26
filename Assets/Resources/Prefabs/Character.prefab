@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 760844043732975200}
   - component: {fileID: 2918231303510709436}
   - component: {fileID: 5237332696534517469}
-  - component: {fileID: 1643565073153400936}
+  - component: {fileID: 7225808317865480854}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -403,7 +403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85a251b14b00e84ca51d93f456055cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterStats
---- !u!114 &1643565073153400936
+--- !u!114 &7225808317865480854
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -415,8 +415,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c1746de92df3d1448890778cc73392f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
-  characterStats: {fileID: 5237332696534517469}
-  charAnimator: {fileID: 3219254918754361706}
 --- !u!1 &7164498999254599487
 GameObject:
   m_ObjectHideFlags: 0
