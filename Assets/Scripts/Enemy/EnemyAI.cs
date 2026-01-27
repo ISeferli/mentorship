@@ -11,7 +11,8 @@ public class EnemyAI : MonoBehaviour
         Roaming,
         Chase,
         Attack,
-        Damage
+        Damage,
+        Death
     }
 
     [Header("Necessary Enemy Components")]
@@ -68,7 +69,11 @@ public class EnemyAI : MonoBehaviour
             case EnemyState.Damage:
                 GetComponent<Health>().DamageHealth(pointsOfDamage);
                 pointsOfDamage = 0;
-                enemyState = EnemyState.Chase;
+                if(GetComponent<Health>().DetectDeath()) enemyState = EnemyState.Death;
+                else enemyState = EnemyState.Chase;
+                break;
+            case EnemyState.Death:
+                Destroy(gameObject);
                 break;
         }
     }

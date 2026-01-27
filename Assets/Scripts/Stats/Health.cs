@@ -30,4 +30,16 @@ public class Health : MonoBehaviour
         Debug.Log("Current Health: " + currentHealth);
         animator.SetTrigger("TakeDamage");
     }
+
+    /// <summary>
+    /// Detect if the character's life has reached 0
+    /// </summary>
+    /// <returns><b>boolean</b> which is true if the character
+    /// has 0 life, false if life is still positive</returns>
+    public bool DetectDeath()
+    {
+        if(currentHealth <= 0)
+            return true;
+        return false;
+    }
 }
