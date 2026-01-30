@@ -4,7 +4,7 @@ public class CharacterStats : PlayableStats
     {
         BaseStat strength = new BaseStat(15, "Strength");
         AddStat(strength);
-        BaseStat dexterity = new BaseStat(10, "Dexterity");
+        BaseStat dexterity = new BaseStat(7, "Dexterity");
         AddStat(dexterity);
         BaseStat constitution = new BaseStat(20, "Constitution");
         AddStat(constitution);

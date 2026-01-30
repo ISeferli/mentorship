@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody), typeof(Animator))]
@@ -8,13 +9,26 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private Animator charAnimator;
 
     [Header("Character Movement Settings")]
-    [SerializeField] private float charMovementSpeed;
     [SerializeField] private float charRotationSpeed;
+    [SerializeField] private float charDashSpeed;
+    [SerializeField] private float dashTime;
+    [SerializeField] private float dashCooldown;
+
+    // Movement Speed Settings
+    private float charMovementSpeed;
+    private bool isDashing = false;
 
     private Vector3 userInput;
 
+    void Awake()
+    {
+        charMovementSpeed = GetComponent<CharacterStats>().attributes["Dexterity"].CalculateStatValue();
+    }
+
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.LeftShift)) 
+            Dash();
         GatherInput();
         Look();
     }
@@ -59,6 +73,24 @@ public class CharacterMovement : MonoBehaviour
     private void Move()
     {
         charRigidBody.MovePosition(transform.position + (transform.forward * userInput.magnitude) * charMovementSpeed * Time.deltaTime);
+    }
+
+    private void Dash()
+    {
+        if(!isDashing)
+        {
+            isDashing = true;
+            charMovementSpeed *= charDashSpeed;
+            StartCoroutine(EndDashRoutine());           
+        }
+    }
+
+    private IEnumerator EndDashRoutine()
+    {
+        yield return new WaitForSeconds(dashTime);
+        charMovementSpeed /= charDashSpeed;
+        yield return new WaitForSeconds(dashCooldown);
+        isDashing = false;
     }
 }
 
