@@ -5,8 +5,8 @@ public class CharacterAttack : MonoBehaviour
 {
     [Header("Necessary Attack Components")]
     [SerializeField] private Animator charAnimator;
-    [SerializeField] private RightHandSword rightSword;
-    [SerializeField] private LeftHandSword leftSword;
+    [SerializeField] private SwordWeapon rightSword;
+    [SerializeField] private SwordWeapon leftSword;
 
     private bool leftAttack = false;
     private bool rightAttack = false;
@@ -16,14 +16,14 @@ public class CharacterAttack : MonoBehaviour
         if(Input.GetMouseButtonDown(0) && !leftAttack)
         {
             charAnimator.SetTrigger("LeftAttack");
-            leftSword.PerformAttack(null, GetComponent<CharacterStats>());
+            leftSword.IsAttacking = true;
             leftAttack = true;
         }
 
         if(Input.GetMouseButtonDown(1) && !rightAttack)
         {
             charAnimator.SetTrigger("RightAttack");
-            rightSword.PerformAttack(null, GetComponent<CharacterStats>());
+            rightSword.IsAttacking = true;
             rightAttack = true;
         }
     }
@@ -31,10 +31,12 @@ public class CharacterAttack : MonoBehaviour
     public void EndLeftAttack()
     {
         leftAttack = false;
+        leftSword.IsAttacking = false;
     }
 
     public void EndRightAttack()
     {
         rightAttack = false;
+        rightSword.IsAttacking = false;
     }
 }
