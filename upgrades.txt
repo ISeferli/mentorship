@@ -1,0 +1,7 @@
+scriptable objects
+
+players -> modify in the script (have a max and current stats)
+Regeneration -> Separate version
+
+Function for general use, for elemental system for both enemy and character to use
+General system and put specific stats of the character that can be got in the scriptable

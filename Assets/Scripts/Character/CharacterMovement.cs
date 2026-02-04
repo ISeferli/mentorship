@@ -1,12 +1,14 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody), typeof(Animator))]
-public class CharacterMovement : MonoBehaviour
+public class CharacterMovement : LevelSingleton<CharacterMovement>
 {
     [Header("Necessary Movement Components")]
     [SerializeField] private Rigidbody charRigidBody;
     [SerializeField] private Animator charAnimator;
+    [SerializeField] private Transform startPoint;
 
     [Header("Character Movement Settings")]
     [SerializeField] private float charRotationSpeed;
@@ -20,8 +22,12 @@ public class CharacterMovement : MonoBehaviour
 
     private Vector3 userInput;
 
-    void Awake()
+    protected override void Awake()
     {
+        base.Awake();
+        userInput = Vector3.zero;
+        // startPoint = FindAnyObjectByType<LevelEntrance>().transform;
+        // GetCharacterInPosition(startPoint);
         charMovementSpeed = GetComponent<CharacterStats>().attributes["Dexterity"].CalculateStatValue();
     }
 
@@ -72,6 +78,7 @@ public class CharacterMovement : MonoBehaviour
     /// </summary>
     private void Move()
     {
+        if (userInput == Vector3.zero) return;
         charRigidBody.MovePosition(transform.position + (transform.forward * userInput.magnitude) * charMovementSpeed * Time.deltaTime);
     }
 
@@ -91,6 +98,12 @@ public class CharacterMovement : MonoBehaviour
         charMovementSpeed /= charDashSpeed;
         yield return new WaitForSeconds(dashCooldown);
         isDashing = false;
+    }
+
+    public void GetCharacterInPosition(Transform sPoint)
+    {
+        charRigidBody.position = sPoint.position;
+        charRigidBody.rotation = sPoint.rotation;
     }
 }
 
