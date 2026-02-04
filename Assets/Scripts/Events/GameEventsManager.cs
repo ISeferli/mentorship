@@ -5,6 +5,7 @@ public class GameEventsManager : MonoBehaviour
     public static GameEventsManager instance { get; private set; }
     public LevelEvents levelEvents;
     public GraphicEvents graphicEvents;
+    public GameEvents gameEvents;
 
     private void Awake()
     {
@@ -17,5 +18,6 @@ public class GameEventsManager : MonoBehaviour
         // Initialize all events
         levelEvents = new LevelEvents();
         graphicEvents = new GraphicEvents();
+        gameEvents = new GameEvents();
     }
 }

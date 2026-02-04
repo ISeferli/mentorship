@@ -3,14 +3,14 @@ using UnityEngine.AI;
 
 public class EnemyMovement : MonoBehaviour
 {
-    [Header("Necessary Enemy Components")]
-    [SerializeField] private NavMeshAgent enemyAgent;
-
     [Header("Enemy Movement Settings")]
     [SerializeField] private float moveSpeed = 4f;
+    
+    private NavMeshAgent enemyAgent;
 
     private void Start()
     {
+        enemyAgent = GetComponent<NavMeshAgent>();
         enemyAgent.speed = moveSpeed;
     }
 

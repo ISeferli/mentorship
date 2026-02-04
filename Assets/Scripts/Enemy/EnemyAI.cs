@@ -15,14 +15,12 @@ public class EnemyAI : MonoBehaviour
         Death
     }
 
-    [Header("Necessary Enemy Components")]
-    [SerializeField] private GameObject targetPlayer;
-
     // Necessary components for enemy logic
     private EnemyMovement enemyMovement;
     private EnemyAttack enemyAttack;
     private EnemyState enemyState;
     private NavMeshAgent enemyAgent;
+    private GameObject targetPlayer;
 
     // Enemy changing settings
     private bool canAttack = true;
@@ -33,6 +31,7 @@ public class EnemyAI : MonoBehaviour
     {
         // Initialize the state of the enemy to roaming
         enemyState = EnemyState.Roaming;
+        targetPlayer = CharacterMovement.Instance.gameObject;
         enemyMovement = GetComponent<EnemyMovement>();
         enemyAttack = GetComponent<EnemyAttack>();
         enemyAgent = GetComponent<NavMeshAgent>();
