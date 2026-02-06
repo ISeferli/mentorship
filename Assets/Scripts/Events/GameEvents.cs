@@ -2,13 +2,17 @@ using System;
 
 public class GameEvents
 {
-    public event Action<int> OnShowEnemyDamage;
+    public event Action OnEnemyDeath;
 
-    public void ShowEnemyDamage(int damageTaken)
+    public void EnemyDeathEvent()
     {
-        if (OnShowEnemyDamage != null)
-        {
-            OnShowEnemyDamage(damageTaken);            
-        }
+        OnEnemyDeath?.Invoke();
+    }
+
+    public event Action OnEnemyWaveComplete;
+
+    public void EnemyWaveCompletedEvent()
+    {
+        OnEnemyWaveComplete?.Invoke();
     }
 }

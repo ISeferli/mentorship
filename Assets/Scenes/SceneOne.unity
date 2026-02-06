@@ -450,7 +450,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   enemySpawner: {fileID: 939961378}
-  enemyWaves: 1
+  enemyWaves: 2
   enemyNumber: 3
 --- !u!1 &628446950
 GameObject:
@@ -1193,6 +1193,10 @@ PrefabInstance:
     - target: {fileID: 4180203847223829744, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7071920140859548086, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7093871047334897480, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
       propertyPath: m_Name

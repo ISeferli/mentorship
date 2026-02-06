@@ -11,9 +11,31 @@ public class EnemySpawner : MonoBehaviour
     private int currentEnemyWave = 0;
     private int currentEnemies;
 
+    void OnEnable()
+    {
+        GameEventsManager.instance.gameEvents.OnEnemyDeath += DeleteEnemy;
+    }
+
+    void OnDisable()
+    {
+        GameEventsManager.instance.gameEvents.OnEnemyDeath -= DeleteEnemy;
+    }
+
+    void Start()
+    {
+        SpawnEnemiesForLevel();
+    }
+
+    public void SpawnEnemiesForLevel()
+    {
+        if(GetCurrentEnemies()==0 && GetCurrentWave()<GameManager.Instance.enemyWaves)
+            SpawnWave(GameManager.Instance.enemyNumber);
+        if(GetCurrentWave()>=GameManager.Instance.enemyWaves)
+            GameEventsManager.instance.gameEvents.EnemyWaveCompletedEvent();
+    }
+
     public void SpawnWave(int enemyNumber)
     {
-        Debug.Log("Spawn Wave");
         for (int i = 0; i < enemyNumber; i++)
             SpawnOneEnemy();
         currentEnemyWave++;
@@ -39,5 +61,11 @@ public class EnemySpawner : MonoBehaviour
     public int GetCurrentEnemies()
     {
         return currentEnemies;
+    }
+
+    private void DeleteEnemy()
+    {
+        currentEnemies--;
+        if (currentEnemies == 0) SpawnEnemiesForLevel();
     }
 }
