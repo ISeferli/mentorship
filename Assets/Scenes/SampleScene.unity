@@ -416,6 +416,17 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &614299505 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3137548927841503547, guid: f8b8cdefd887d4944ba60d671f627e02, type: 3}
+  m_PrefabInstance: {fileID: 1846983009556464594}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c31c623f95a5dcb4c9dac372d9758dfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SwordWeapon
 --- !u!1 &617104895
 GameObject:
   m_ObjectHideFlags: 0
@@ -935,6 +946,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 775874272}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2040805663 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4115818363985510140, guid: f8b8cdefd887d4944ba60d671f627e02, type: 3}
+  m_PrefabInstance: {fileID: 1846983009556464594}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c31c623f95a5dcb4c9dac372d9758dfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SwordWeapon
 --- !u!1001 &1846983009556464594
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -943,6 +965,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 760844043732975200, guid: f8b8cdefd887d4944ba60d671f627e02, type: 3}
+      propertyPath: stats
+      value: 
+      objectReference: {fileID: 11400000, guid: 046dc0a907e50d442b8dcdddcb4e750b, type: 2}
+    - target: {fileID: 760844043732975200, guid: f8b8cdefd887d4944ba60d671f627e02, type: 3}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2918231303510709436, guid: f8b8cdefd887d4944ba60d671f627e02, type: 3}
+      propertyPath: leftSwordBase
+      value: 
+      objectReference: {fileID: 2040805663}
+    - target: {fileID: 2918231303510709436, guid: f8b8cdefd887d4944ba60d671f627e02, type: 3}
+      propertyPath: rightSwordBase
+      value: 
+      objectReference: {fileID: 614299505}
+    - target: {fileID: 3137548927841503547, guid: f8b8cdefd887d4944ba60d671f627e02, type: 3}
+      propertyPath: stats
+      value: 
+      objectReference: {fileID: 11400000, guid: 046dc0a907e50d442b8dcdddcb4e750b, type: 2}
+    - target: {fileID: 4115818363985510140, guid: f8b8cdefd887d4944ba60d671f627e02, type: 3}
+      propertyPath: stats
+      value: 
+      objectReference: {fileID: 11400000, guid: 046dc0a907e50d442b8dcdddcb4e750b, type: 2}
     - target: {fileID: 6029277159792281365, guid: f8b8cdefd887d4944ba60d671f627e02, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -987,7 +1033,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7225808317865480854, guid: f8b8cdefd887d4944ba60d671f627e02, type: 3}
+      propertyPath: stats
+      value: 
+      objectReference: {fileID: 11400000, guid: 046dc0a907e50d442b8dcdddcb4e750b, type: 2}
+    m_RemovedComponents:
+    - {fileID: 5237332696534517469, guid: f8b8cdefd887d4944ba60d671f627e02, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
