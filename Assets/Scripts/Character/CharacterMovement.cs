@@ -6,6 +6,7 @@ using UnityEngine;
 public class CharacterMovement : LevelSingleton<CharacterMovement>
 {
     [Header("Necessary Movement Components")]
+    [SerializeField] private PlayableStats stats;
     [SerializeField] private Rigidbody charRigidBody;
     [SerializeField] private Animator charAnimator;
     [SerializeField] private Transform startPoint;
@@ -26,9 +27,12 @@ public class CharacterMovement : LevelSingleton<CharacterMovement>
     {
         base.Awake();
         userInput = Vector3.zero;
-        // startPoint = FindAnyObjectByType<LevelEntrance>().transform;
-        // GetCharacterInPosition(startPoint);
-        charMovementSpeed = GetComponent<CharacterStats>().attributes["Dexterity"].CalculateStatValue();
+        if (FindAnyObjectByType<LevelEntrance>())
+        {
+            startPoint = FindAnyObjectByType<LevelEntrance>().transform;
+            GetCharacterInPosition(startPoint);
+        }
+        charMovementSpeed = stats.GetStatValue("Speed");
     }
 
     void Update()

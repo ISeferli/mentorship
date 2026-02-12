@@ -1,10 +1,11 @@
 using UnityEngine;
 
-[RequireComponent(typeof(PlayableStats))]
 public class Health : MonoBehaviour
 {
+    [Header("Character Stats")]
+    [SerializeField] private PlayableStats stats;
+
     // Health Essential Components
-    private PlayableStats stats;
     private Animator animator;
 
     // Stats during gameplay
@@ -13,9 +14,8 @@ public class Health : MonoBehaviour
 
     void Start()
     {
-        stats = GetComponent<PlayableStats>();
         animator = GetComponent<Animator>();
-        maxHealth = stats.GetStatValue("Constitution") * 5;
+        maxHealth = stats.GetStatValue("Health");
         currentHealth = maxHealth;
     }
 

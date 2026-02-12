@@ -1,13 +1,14 @@
+[System.Serializable]
 public class BaseStat {
     public enum BaseStatType{
-        Constitution,
-        Dexterity,
-        Strength,
+        Health,
+        Speed,
+        Attack,
     }
 
-    public BaseStatType statType { get; set; }
-    public int baseValue { get; set; }
-    public string statName { get; set; }
+    public BaseStatType statType;
+    public int baseValue;
+    public string statName;
 
     public BaseStat(int baseValue, string statName){
         foreach (BaseStatType value in System.Enum.GetValues(typeof(BaseStatType))){
@@ -16,7 +17,6 @@ public class BaseStat {
                 break;
             }
         }
-        this.statType = statType;
         this.baseValue = baseValue;
         this.statName = statName;
     }

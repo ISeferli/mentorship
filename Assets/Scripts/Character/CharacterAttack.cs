@@ -1,6 +1,5 @@
 using UnityEngine;
 
-[RequireComponent(typeof(CharacterStats))]
 public class CharacterAttack : MonoBehaviour
 {
     [Header("Necessary Attack Components")]
@@ -10,6 +9,12 @@ public class CharacterAttack : MonoBehaviour
 
     private bool leftAttack = false;
     private bool rightAttack = false;
+
+    void Start()
+    {
+        rightSword.SetAttackAbility(new FireAttackDecorator(rightSword.baseAttack));
+        leftSword.SetAttackAbility(new WaterAttackDecorator(leftSword.baseAttack));
+    }
 
     void Update()
     {

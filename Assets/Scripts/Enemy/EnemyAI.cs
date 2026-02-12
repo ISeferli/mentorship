@@ -145,7 +145,7 @@ public class EnemyAI : MonoBehaviour
     private IEnumerator AttackRoutine()
     {
         canAttack = false;
-        enemyAttack.DamagePlayer(targetPlayer.GetComponent<Health>(), GetComponent<EnemyStats>().GetStatValue("Strength"));
+        // enemyAttack.DamagePlayer(targetPlayer.GetComponent<Health>(), GetComponent<EnemyStats>().GetStatValue("Strength"));
         yield return new WaitForSeconds(4f);
         canAttack = true;
     }
