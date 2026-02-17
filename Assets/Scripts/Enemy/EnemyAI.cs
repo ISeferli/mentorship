@@ -6,6 +6,7 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class EnemyAI : MonoBehaviour
 {
+    [SerializeField] private PlayableStats stats;
     private enum EnemyState
     {
         Roaming,
@@ -145,7 +146,7 @@ public class EnemyAI : MonoBehaviour
     private IEnumerator AttackRoutine()
     {
         canAttack = false;
-        // enemyAttack.DamagePlayer(targetPlayer.GetComponent<Health>(), GetComponent<EnemyStats>().GetStatValue("Strength"));
+        enemyAttack.DamagePlayer(targetPlayer.GetComponent<Health>(), stats.GetStatValue("Attack"));
         yield return new WaitForSeconds(4f);
         canAttack = true;
     }

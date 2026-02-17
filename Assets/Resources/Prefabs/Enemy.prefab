@@ -18,7 +18,6 @@ GameObject:
   - component: {fileID: 4126333135854109159}
   - component: {fileID: 4689941591710788074}
   - component: {fileID: 6617761799053356271}
-  - component: {fileID: 5329632761114629935}
   - component: {fileID: 6209064824756766577}
   m_Layer: 6
   m_Name: Enemy
@@ -204,7 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e43ece5e81eb1c479ccf27a1b0f80a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
-  targetPlayer: {fileID: 0}
+  stats: {fileID: 11400000, guid: 75862ee5f0930e3498dbbf40dbf3bdac, type: 2}
 --- !u!114 &4689941591710788074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,7 +216,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0473afe508e6a643b70865491b2264c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
-  enemyAgent: {fileID: 6598206648455801827}
   moveSpeed: 4
 --- !u!114 &6617761799053356271
 MonoBehaviour:
@@ -231,18 +229,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f902dcfda3588646ac3bb10b01d6ce9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAttack
---- !u!114 &5329632761114629935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5516671942443497728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ed1b363ca857d74f80017162f67e5fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyStats
 --- !u!114 &6209064824756766577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,3 +241,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c1746de92df3d1448890778cc73392f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
+  stats: {fileID: 11400000, guid: 75862ee5f0930e3498dbbf40dbf3bdac, type: 2}

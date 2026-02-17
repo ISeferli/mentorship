@@ -5,6 +5,9 @@ public abstract class AttackDecorator : IAttack
     // Get the instance of a specific interface of the attacks
     protected IAttack specificAttack;
 
+    // Have unique attack data for the ability
+    public AttackData attackData { get; set; }
+
     /// <summary>
     /// Constructor that creates the instance of the AttackDecorator that wraps the attack abilities together.
     /// </summary>
@@ -12,6 +15,7 @@ public abstract class AttackDecorator : IAttack
     public AttackDecorator(IAttack specificAttack)
     {
         this.specificAttack = specificAttack;
+        this.attackData = specificAttack.attackData;
     }
 
     /// <summary>

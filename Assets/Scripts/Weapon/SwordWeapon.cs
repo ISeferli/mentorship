@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 
+[RequireComponent(typeof(Renderer))]
 public class SwordWeapon : MonoBehaviour
 {
     [Header("Attack Settings")]
@@ -14,7 +15,7 @@ public class SwordWeapon : MonoBehaviour
 
     void Start()
     {
-        baseAttack = new BaseAttack();
+        baseAttack = new BaseAttack(stats.GetStatValue("Attack"));
     }
 
     void OnTriggerEnter(Collider collider)
@@ -28,5 +29,6 @@ public class SwordWeapon : MonoBehaviour
     public void SetAttackAbility(AttackDecorator extraAttack)
     {
         baseAttack = extraAttack;
+        GetComponent<Renderer>().material.color = extraAttack.attackData.color;
     }
 }

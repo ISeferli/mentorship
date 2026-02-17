@@ -124,6 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c31c623f95a5dcb4c9dac372d9758dfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SwordWeapon
+  stats: {fileID: 11400000, guid: 046dc0a907e50d442b8dcdddcb4e750b, type: 2}
   enemyLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -143,7 +144,6 @@ GameObject:
   - component: {fileID: 3219254918754361706}
   - component: {fileID: 760844043732975200}
   - component: {fileID: 2918231303510709436}
-  - component: {fileID: 5237332696534517469}
   - component: {fileID: 7225808317865480854}
   m_Layer: 0
   m_Name: Character
@@ -307,8 +307,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07a40cd8b2b730b41b1e7cc5a2d1f2f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterMovement
+  stats: {fileID: 11400000, guid: 046dc0a907e50d442b8dcdddcb4e750b, type: 2}
   charRigidBody: {fileID: 4187274646714324388}
   charAnimator: {fileID: 3219254918754361706}
+  startPoint: {fileID: 0}
   charRotationSpeed: 360
   charDashSpeed: 4
   dashTime: 0.2
@@ -328,18 +330,6 @@ MonoBehaviour:
   charAnimator: {fileID: 3219254918754361706}
   rightSword: {fileID: 3137548927841503547}
   leftSword: {fileID: 4115818363985510140}
---- !u!114 &5237332696534517469
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6924026691537884592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b85a251b14b00e84ca51d93f456055cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CharacterStats
 --- !u!114 &7225808317865480854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -352,6 +342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c1746de92df3d1448890778cc73392f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
+  stats: {fileID: 11400000, guid: 046dc0a907e50d442b8dcdddcb4e750b, type: 2}
 --- !u!1 &7164498999254599487
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,6 +467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c31c623f95a5dcb4c9dac372d9758dfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SwordWeapon
+  stats: {fileID: 11400000, guid: 046dc0a907e50d442b8dcdddcb4e750b, type: 2}
   enemyLayer:
     serializedVersion: 2
     m_Bits: 64
