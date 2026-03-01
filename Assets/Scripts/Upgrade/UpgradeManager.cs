@@ -24,11 +24,14 @@ public class UpgradeManager : MonoBehaviour
 
     public void AssignDifferentUpgrades()
     {
-        Debug.Log("at least here");
         currentlyPickedUpgrades = new List<Upgrade>();
         // If list has fewer items, pick all of them
         int amountToPick = Mathf.Min(2, attackUpgrades.Count);
         currentlyPickedUpgrades = attackUpgrades.OrderBy(x => Random.value).Take(amountToPick).ToList();
+
+        // If it's the first set of upgrades, delete from the list the ability upgrades to not appear again for now
+        if (GameManager.Instance.GetCurrentLevel()==0)
+            attackUpgrades.RemoveAll(upgrade => upgrade.upgradeType.ToString().Equals("Ability"));
         GameEventsManager.instance.graphicEvents.ShowUpgradesOnWaveTerm(currentlyPickedUpgrades);
     }
 }

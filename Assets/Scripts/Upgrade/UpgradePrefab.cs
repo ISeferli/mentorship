@@ -10,8 +10,14 @@ public class UpgradePrefab : MonoBehaviour
     [SerializeField] private TMP_Text description;
 
     // Currently assigned objects
+    private GameObject player;
     private UpgradePanel assignedPanel;
     private Upgrade assignedUpgrade;
+
+    void Start()
+    {
+        player = CharacterMovement.Instance.gameObject;
+    }
 
     public void SetupUpgrade(Upgrade upgrade, UpgradePanel panel)
     {
@@ -25,7 +31,12 @@ public class UpgradePrefab : MonoBehaviour
 
     private void OnClick()
     {
-        assignedUpgrade.ApplyUpgrade();
+        switch (assignedUpgrade.upgradeType)
+        {
+            case UpgradeType.Ability:
+                player.GetComponent<CharacterAttack>().upgradeSword.SetAttackAbility((AttackDecorator)UpgradeFactory.CreateAttackUpgrade(assignedUpgrade.upgradeName, player.GetComponent<CharacterAttack>().upgradeSword.baseAttack));
+                break;
+        }
         assignedPanel.ClosePanel();
     }
 }

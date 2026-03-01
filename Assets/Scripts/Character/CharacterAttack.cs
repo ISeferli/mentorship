@@ -9,11 +9,11 @@ public class CharacterAttack : MonoBehaviour
 
     private bool leftAttack = false;
     private bool rightAttack = false;
+    public SwordWeapon upgradeSword;
 
     void Start()
     {
-        // rightSword.SetAttackAbility(new FireAttackDecorator(rightSword.baseAttack));
-        // leftSword.SetAttackAbility(new WaterAttackDecorator(leftSword.baseAttack));
+        upgradeSword = leftSword;
     }
 
     void Update()

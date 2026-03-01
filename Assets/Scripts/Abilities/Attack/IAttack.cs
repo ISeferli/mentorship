@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public interface IAttack
+public interface IAttack : IAbility
 {
     public AttackData attackData { get; set; }
     public void PerformAttack(int pointsDamage, GameObject personToHit);

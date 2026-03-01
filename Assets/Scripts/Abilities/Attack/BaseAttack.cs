@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BaseAttack : IAttack
+public class BaseAttack : IAttack, IAbility
 {
     public AttackData attackData { get; set; }
 
@@ -20,5 +20,10 @@ public class BaseAttack : IAttack
         Debug.Log("Hand Attack: " + attackData.damage);
         // Detect enemies in range of attack
         personToHit.GetComponent<EnemyAI>().TakeDamage(attackData.damage);
+    }
+
+    public void GetAbilityUpgrade(string type, IAbility statUpgrade)
+    {
+        Debug.Log("Upgraded ability");
     }
 }

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public static class UpgradeFactory
 {
-    public static IAttack CreateAttackUpgrade(string type, IAttack statUpgrade)
+    public static IAbility CreateAttackUpgrade(string type, IAttack statUpgrade)
     {
         switch(type)
         {

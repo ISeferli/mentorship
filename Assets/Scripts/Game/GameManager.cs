@@ -10,8 +10,16 @@ public class GameManager : LevelSingleton<GameManager>
     [Header("Upgrade Settings")]
     [SerializeField] public int upgradesNo;
 
+    // Gameplay logic
+    private int currentLevel = 0;
+
     protected override void Awake()
     {
         base.Awake();
+    }
+
+    public int GetCurrentLevel()
+    {
+        return currentLevel;
     }
 }
