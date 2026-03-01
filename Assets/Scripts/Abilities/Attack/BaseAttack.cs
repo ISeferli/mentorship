@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BaseAttack : IAttack, IAbility
+public class BaseAttack : IAttack
 {
     public AttackData attackData { get; set; }
 

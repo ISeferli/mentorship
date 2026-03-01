@@ -568,7 +568,7 @@ MonoBehaviour:
   enemySpawner: {fileID: 939961378}
   enemyWaves: 1
   enemyNumber: 1
-  upgradesNo: 2
+  upgradesNo: 3
 --- !u!114 &578840508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -584,6 +584,7 @@ MonoBehaviour:
   attackUpgrades:
   - {fileID: 11400000, guid: e53583cff1f4b864eb180edcfb70e015, type: 2}
   - {fileID: 11400000, guid: b821a7df2a6043043b79c0d23f56bfa3, type: 2}
+  - {fileID: 11400000, guid: c0efe3c0c5874fd46810a04271d0ea29, type: 2}
 --- !u!1 &591896392
 GameObject:
   m_ObjectHideFlags: 0

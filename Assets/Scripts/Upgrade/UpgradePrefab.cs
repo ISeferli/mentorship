@@ -23,7 +23,7 @@ public class UpgradePrefab : MonoBehaviour
     {
         assignedUpgrade = upgrade;
         assignedPanel = panel;
-        title.text = upgrade.upgradeName;
+        title.text = upgrade.upgradeTitle;
         description.text = upgrade.upgradeDescription;
         icon.texture = upgrade.icon;
         GetComponent<Button>().onClick.AddListener(OnClick);
@@ -35,6 +35,9 @@ public class UpgradePrefab : MonoBehaviour
         {
             case UpgradeType.Ability:
                 player.GetComponent<CharacterAttack>().upgradeSword.SetAttackAbility((AttackDecorator)UpgradeFactory.CreateAttackUpgrade(assignedUpgrade.upgradeName, player.GetComponent<CharacterAttack>().upgradeSword.baseAttack));
+                break;
+            case UpgradeType.Health:
+                player.GetComponent<Character>().CurrentHealth = UpgradeFactory.CreateHealthUpgrade(assignedUpgrade.upgradeName, assignedUpgrade.amount, player.GetComponent<Character>().CurrentHealth);
                 break;
         }
         assignedPanel.ClosePanel();

@@ -27,10 +27,20 @@ public class GraphicEvents
     /// <summary>
     /// Event that is called from the EnemyAttack when the character takes damage
     /// </summary>
-    public event Action<int> OnHealthChange;
+    public event Action<int> OnCurrentHealthChange;
 
-    public void ChangeHealthUI(int damageTaken)
+    public void ChangeCurrentHealthUI(int damageTaken)
     {
-        OnHealthChange?.Invoke(damageTaken);
+        OnCurrentHealthChange?.Invoke(damageTaken);
+    }
+
+    /// <summary>
+    /// Event that is called when an upgrade on max health happens
+    /// </summary>
+    public event Action<int> OnMaxHealthChange;
+
+    public void ChangeMaxHealthUI(int damageTaken)
+    {
+        OnMaxHealthChange?.Invoke(damageTaken);
     }
 }

@@ -142,6 +142,7 @@ GameObject:
   - component: {fileID: 1008975550812920670}
   - component: {fileID: 4187274646714324388}
   - component: {fileID: 3219254918754361706}
+  - component: {fileID: 6552221010644080239}
   - component: {fileID: 760844043732975200}
   - component: {fileID: 2918231303510709436}
   - component: {fileID: 7225808317865480854}
@@ -295,6 +296,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6552221010644080239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6924026691537884592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb7e9722552ee7b44ac1c4a4adbafdb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Character
 --- !u!114 &760844043732975200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -330,6 +343,7 @@ MonoBehaviour:
   charAnimator: {fileID: 3219254918754361706}
   rightSword: {fileID: 3137548927841503547}
   leftSword: {fileID: 4115818363985510140}
+  upgradeSword: {fileID: 0}
 --- !u!114 &7225808317865480854
 MonoBehaviour:
   m_ObjectHideFlags: 0

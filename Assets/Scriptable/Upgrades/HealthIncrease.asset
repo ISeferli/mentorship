@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba264157c71d143499434d3aa8b08cbf, type: 3}
-  m_Name: FireAttack
+  m_Name: HealthIncrease
   m_EditorClassIdentifier: Assembly-CSharp::Upgrade
-  upgradeType: 0
-  upgradeName: Fire
-  upgradeTitle: Fire Element
-  upgradeDescription: Gain +5 fire attack ability
-  amount: 5
+  upgradeType: 2
+  upgradeName: HealthIncrease
+  upgradeTitle: Max Health
+  upgradeDescription: 'Increase your health by +10 '
+  amount: 10

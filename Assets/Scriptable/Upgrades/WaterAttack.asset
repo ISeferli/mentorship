@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba264157c71d143499434d3aa8b08cbf, type: 3}
   m_Name: WaterAttack
   m_EditorClassIdentifier: Assembly-CSharp::Upgrade
+  upgradeType: 0
   upgradeName: Water
+  upgradeTitle: Water Element
   upgradeDescription: Gain +10 water attack ability
   amount: 10

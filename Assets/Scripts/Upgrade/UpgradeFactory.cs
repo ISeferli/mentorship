@@ -11,4 +11,14 @@ public static class UpgradeFactory
             default: return null;
         }   
     }
+
+    public static IHealth CreateHealthUpgrade(string type, int amount, IHealth healthToWrap)
+    {
+        switch(type)
+        {
+            case "HealthIncrease": 
+                return new HealthMaxIncreaseDecorator(healthToWrap, amount);
+            default: return null;
+        }
+    }
 }

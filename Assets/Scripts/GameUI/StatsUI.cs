@@ -14,12 +14,14 @@ public class StatsUI : MonoBehaviour
 
     void OnEnable()
     {
-        GameEventsManager.instance.graphicEvents.OnHealthChange += ChangeHealthBar;
+        GameEventsManager.instance.graphicEvents.OnCurrentHealthChange += ChangeCurrentHealthBar;
+        GameEventsManager.instance.graphicEvents.OnMaxHealthChange += ChangeMaxHealthBar;
     }
 
     void OnDisable()
     {
-        GameEventsManager.instance.graphicEvents.OnHealthChange -= ChangeHealthBar;
+        GameEventsManager.instance.graphicEvents.OnCurrentHealthChange -= ChangeCurrentHealthBar;
+        GameEventsManager.instance.graphicEvents.OnMaxHealthChange -= ChangeMaxHealthBar;
     }
 
     void Start()
@@ -30,9 +32,14 @@ public class StatsUI : MonoBehaviour
         staminaBar.value = stats.GetStatValue("Speed");
     }
 
-    private void ChangeHealthBar(int amount)
+    private void ChangeCurrentHealthBar(int amount)
     {
         healthBar.value -= amount;
+    }
+
+    private void ChangeMaxHealthBar(int amount)
+    {
+        healthBar.maxValue += amount;
     }
 
     private void ChangeStaminaBar(int amount)

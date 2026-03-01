@@ -1,22 +1,31 @@
 using UnityEngine;
 
-public class Health : MonoBehaviour
+public class Health : MonoBehaviour, IHealth
 {
-    [Header("Character Stats")]
+    [Header("Stats")]
     [SerializeField] private PlayableStats stats;
 
     // Health Essential Components
     private Animator animator;
 
     // Stats during gameplay
-    private int maxHealth;
-    private int currentHealth;
+    public HealthData healthData { get; set; } = new HealthData();
 
     void Start()
     {
         animator = GetComponent<Animator>();
-        maxHealth = stats.GetStatValue("Health");
-        currentHealth = maxHealth;
+        healthData.maxHealth = stats.GetStatValue("Health");
+        healthData.currentHealth = healthData.maxHealth;
+    }
+
+    public void ChangeHealth(int healthPoints)
+    {
+        healthData.currentHealth = Mathf.Clamp(healthData.currentHealth + healthPoints, 0, healthData.maxHealth);
+    }
+
+    public void GetAbilityUpgrade(string type, IAbility statUpgrade)
+    {
+        Debug.Log("Upgraded health");
     }
 
     /// <summary>
@@ -26,8 +35,7 @@ public class Health : MonoBehaviour
     /// <param name="damage">Points of damage done to character</param>
     public void DamageHealth(int damage)
     {
-        currentHealth -= damage;
-        Debug.Log("Current Health: " + currentHealth);
+        healthData.currentHealth -= damage;
         animator.SetTrigger("TakeDamage");
     }
 
@@ -38,7 +46,7 @@ public class Health : MonoBehaviour
     /// has 0 life, false if life is still positive</returns>
     public bool DetectDeath()
     {
-        if(currentHealth <= 0)
+        if(healthData.currentHealth <= 0)
             return true;
         return false;
     }
