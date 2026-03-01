@@ -12,8 +12,8 @@ public class CharacterAttack : MonoBehaviour
 
     void Start()
     {
-        rightSword.SetAttackAbility(new FireAttackDecorator(rightSword.baseAttack));
-        leftSword.SetAttackAbility(new WaterAttackDecorator(leftSword.baseAttack));
+        // rightSword.SetAttackAbility(new FireAttackDecorator(rightSword.baseAttack));
+        // leftSword.SetAttackAbility(new WaterAttackDecorator(leftSword.baseAttack));
     }
 
     void Update()

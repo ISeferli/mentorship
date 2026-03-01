@@ -7,9 +7,11 @@ public class GameManager : LevelSingleton<GameManager>
     [SerializeField] public int enemyWaves;
     [SerializeField] public int enemyNumber;
 
+    [Header("Upgrade Settings")]
+    [SerializeField] public int upgradesNo;
+
     protected override void Awake()
     {
         base.Awake();
-        Debug.Log("Game Manager exists everywhere");
     }
 }

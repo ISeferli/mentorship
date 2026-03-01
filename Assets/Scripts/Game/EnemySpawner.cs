@@ -9,7 +9,7 @@ public class EnemySpawner : MonoBehaviour
 
     // Current settings of enemy waves
     private int currentEnemyWave = 0;
-    private int currentEnemies;
+    private int currentEnemies = 0;
 
     void OnEnable()
     {
@@ -30,7 +30,7 @@ public class EnemySpawner : MonoBehaviour
     {
         if(GetCurrentEnemies()==0 && GetCurrentWave()<GameManager.Instance.enemyWaves)
             SpawnWave(GameManager.Instance.enemyNumber);
-        if(GetCurrentWave()>=GameManager.Instance.enemyWaves)
+        else
             GameEventsManager.instance.gameEvents.EnemyWaveCompletedEvent();
     }
 

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 public class GraphicEvents
 {
@@ -10,5 +11,16 @@ public class GraphicEvents
         {
             OnShowEnemyDamage(damageTaken);            
         }
+    }
+
+    /// <summary>
+    /// Event that is called when the wave of enemies are terminated
+    /// to inform the UI to show the upgrades
+    /// </summary>
+    public event Action<List<Upgrade>> OnWaveEnemyKilled;
+
+    public void ShowUpgradesOnWaveTerm(List<Upgrade> posUpgrades)
+    {
+        OnWaveEnemyKilled?.Invoke(posUpgrades);
     }
 }
