@@ -23,4 +23,14 @@ public class GraphicEvents
     {
         OnWaveEnemyKilled?.Invoke(posUpgrades);
     }
+
+    /// <summary>
+    /// Event that is called from the EnemyAttack when the character takes damage
+    /// </summary>
+    public event Action<int> OnHealthChange;
+
+    public void ChangeHealthUI(int damageTaken)
+    {
+        OnHealthChange?.Invoke(damageTaken);
+    }
 }
