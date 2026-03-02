@@ -14,10 +14,9 @@ public class CharacterMovement : LevelSingleton<CharacterMovement>
     [Header("Character Movement Settings")]
     [SerializeField] private float charRotationSpeed;
     [SerializeField] private float charDashSpeed;
-    [SerializeField] private float dashTime;
-    [SerializeField] private float dashCooldown;
 
     // Movement Speed Settings
+    public IStamina baseStamina;
     private float charMovementSpeed;
     private bool isDashing = false;
 
@@ -33,6 +32,7 @@ public class CharacterMovement : LevelSingleton<CharacterMovement>
             GetCharacterInPosition(startPoint);
         }
         charMovementSpeed = stats.GetStatValue("Speed");
+        baseStamina = new BaseStamina(stats.GetStatValue("Stamina"));
     }
 
     void Update()
@@ -88,20 +88,19 @@ public class CharacterMovement : LevelSingleton<CharacterMovement>
 
     private void Dash()
     {
-        if(!isDashing)
+        if(baseStamina.CanDash() && !isDashing)
         {
-            isDashing = true;
-            charMovementSpeed *= charDashSpeed;
-            StartCoroutine(EndDashRoutine());           
+            StartCoroutine(baseStamina.DashRoutine(
+                onDashStart: () => {
+                    isDashing = true;
+                    charMovementSpeed *= charDashSpeed;
+                },
+                onDashEnd: () => {
+                    charMovementSpeed /= charDashSpeed;
+                    isDashing = false;
+                }
+            ));         
         }
-    }
-
-    private IEnumerator EndDashRoutine()
-    {
-        yield return new WaitForSeconds(dashTime);
-        charMovementSpeed /= charDashSpeed;
-        yield return new WaitForSeconds(dashCooldown);
-        isDashing = false;
     }
 
     public void GetCharacterInPosition(Transform sPoint)

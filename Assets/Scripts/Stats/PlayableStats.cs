@@ -8,6 +8,7 @@ public class PlayableStats : ScriptableObject
 
     public int GetStatValue(string statName)
     {
+        if (statsList == null) return 0;
         foreach (BaseStat stat in statsList)
         {
             if(stat.statName.Equals(statName)) return stat.CalculateStatValue();

@@ -43,4 +43,14 @@ public class GraphicEvents
     {
         OnMaxHealthChange?.Invoke(damageTaken);
     }
+
+    /// <summary>
+    /// Event that is called when a stamina use is used
+    /// </summary>
+    public event Action<bool> OnStaminaUse;
+
+    public void ChangeStaminaUI(bool riseStamina)
+    {
+        OnStaminaUse?.Invoke(riseStamina);
+    }
 }

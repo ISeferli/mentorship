@@ -29,13 +29,21 @@ public class Health : MonoBehaviour, IHealth
     }
 
     /// <summary>
+    /// Base regenaration function for health. While not upgraded, it does nothings.
+    /// </summary>
+    public void RegenTick()
+    {
+        /* Base health does nothing every frame */
+    }
+
+    /// <summary>
     /// This function handles the damage that can be done to any character that
     /// has the Health component
     /// </summary>
     /// <param name="damage">Points of damage done to character</param>
     public void DamageHealth(int damage)
     {
-        healthData.currentHealth -= damage;
+        ChangeHealth(-damage);
         animator.SetTrigger("TakeDamage");
     }
 

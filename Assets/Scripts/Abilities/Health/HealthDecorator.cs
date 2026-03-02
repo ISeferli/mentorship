@@ -27,4 +27,9 @@ public abstract class HealthDecorator : IHealth
     {
         wrappedHealth.ChangeHealth(healthPoints);
     }
+
+    public virtual void RegenTick()
+    {
+        wrappedHealth.RegenTick();
+    }
 }

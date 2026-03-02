@@ -18,6 +18,8 @@ public static class UpgradeFactory
         {
             case "HealthIncrease": 
                 return new HealthMaxIncreaseDecorator(healthToWrap, amount);
+            case "HealthRegen":
+                return new HealthRegenDecorator(healthToWrap, amount);
             default: return null;
         }
     }

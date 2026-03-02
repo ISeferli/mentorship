@@ -4,11 +4,12 @@ public class BaseStat {
         Health,
         Speed,
         Attack,
+        Stamina,
     }
 
     public BaseStatType statType;
     public int baseValue;
-    public string statName;
+    public string statName = "";
 
     public BaseStat(int baseValue, string statName){
         foreach (BaseStatType value in System.Enum.GetValues(typeof(BaseStatType))){

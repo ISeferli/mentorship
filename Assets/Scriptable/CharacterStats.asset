@@ -22,3 +22,6 @@ MonoBehaviour:
   - statType: 2
     baseValue: 15
     statName: Attack
+  - statType: 3
+    baseValue: 2
+    statName: Stamina

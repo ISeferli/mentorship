@@ -17,7 +17,7 @@ MonoBehaviour:
     baseValue: 25
     statName: Health
   - statType: 1
-    baseValue: 0
+    baseValue: 3
     statName: Speed
   - statType: 2
     baseValue: 3
