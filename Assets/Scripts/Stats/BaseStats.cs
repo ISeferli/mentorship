@@ -8,7 +8,7 @@ public class BaseStat {
     }
 
     public BaseStatType statType;
-    public int baseValue;
+    public int baseValue = 0;
     public string statName = "";
 
     public BaseStat(int baseValue, string statName){

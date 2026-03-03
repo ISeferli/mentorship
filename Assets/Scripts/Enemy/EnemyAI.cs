@@ -32,7 +32,7 @@ public class EnemyAI : MonoBehaviour
     {
         // Initialize the state of the enemy to roaming
         enemyState = EnemyState.Roaming;
-        targetPlayer = CharacterMovement.Instance.gameObject;
+        targetPlayer = GameObject.FindGameObjectWithTag("Player");
         enemyMovement = GetComponent<EnemyMovement>();
         enemyAttack = GetComponent<EnemyAttack>();
         enemyAgent = GetComponent<NavMeshAgent>();

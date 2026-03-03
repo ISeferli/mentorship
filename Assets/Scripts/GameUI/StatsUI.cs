@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class StatsUI : MonoBehaviour
+public class StatsUI : LevelSingleton<StatsUI>
 {
     [Header("Starting Stats")]
     [SerializeField] private PlayableStats stats;
@@ -30,8 +30,8 @@ public class StatsUI : MonoBehaviour
     {
         healthBar.maxValue = stats.GetStatValue("Health");
         healthBar.value = stats.GetStatValue("Health");
-        staminaBar.maxValue = 2;
-        staminaBar.value = 2;
+        staminaBar.maxValue = stats.GetStatValue("Stamina");
+        staminaBar.value = stats.GetStatValue("Stamina");
     }
 
     private void ChangeCurrentHealthBar(int amount)

@@ -28,7 +28,7 @@ public class EnemySpawner : MonoBehaviour
 
     public void SpawnEnemiesForLevel()
     {
-        if(GetCurrentEnemies()==0 && GetCurrentWave()<GameManager.Instance.enemyWaves)
+        if(GetCurrentEnemies()==0 && GetCurrentWave()<GameManager.Instance.enemyWaves) 
             SpawnWave(GameManager.Instance.enemyNumber);
         else
             GameEventsManager.instance.gameEvents.EnemyWaveCompletedEvent();

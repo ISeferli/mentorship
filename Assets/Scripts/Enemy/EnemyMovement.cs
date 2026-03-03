@@ -8,7 +8,7 @@ public class EnemyMovement : MonoBehaviour
     
     private NavMeshAgent enemyAgent;
 
-    private void Start()
+    private void Awake()
     {
         enemyAgent = GetComponent<NavMeshAgent>();
         enemyAgent.speed = moveSpeed;
