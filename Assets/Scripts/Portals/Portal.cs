@@ -30,6 +30,7 @@ public class Portal : MonoBehaviour
         {
             // Transition To Scene
             Debug.Log("Scene to transition: " + transitionScene);
+            GameManager.Instance.IncreaseCurrentLevel();
             GameEventsManager.instance.levelEvents.LoadSceneEvent(transitionScene);
         }
     }

@@ -39,6 +39,9 @@ public class UpgradePrefab : MonoBehaviour
             case UpgradeType.Health:
                 player.GetComponent<Character>().CurrentHealth = UpgradeFactory.CreateHealthUpgrade(assignedUpgrade.upgradeName, assignedUpgrade.amount, player.GetComponent<Character>().CurrentHealth);
                 break;
+            case UpgradeType.Stamina:
+                player.GetComponent<Character>().CurrentStamina = UpgradeFactory.CreateStaminUpgrade(assignedUpgrade.upgradeName, player.GetComponent<Character>().CurrentStamina);
+                break;
         }
         assignedPanel.ClosePanel();
     }

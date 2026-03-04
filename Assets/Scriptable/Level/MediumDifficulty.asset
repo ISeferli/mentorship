@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 938dd1a0039db224391e8d35c317f65f, type: 3}
   m_Name: MediumDifficulty
   m_EditorClassIdentifier: Assembly-CSharp::LevelDifficulty
-  enemyWaves: 4
-  enemyNumber: 2
+  enemyWaves: 2
+  enemyNumber: 1

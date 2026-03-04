@@ -23,4 +23,14 @@ public static class UpgradeFactory
             default: return null;
         }
     }
+
+    public static IStamina CreateStaminUpgrade(string type, IStamina statUpgrade)
+    {
+        switch(type)
+        {
+            case "StaminaIncrease": return new StaminaMaxDecorator(statUpgrade);
+            case "StaminaRegen": return new StaminaRegenDecorator(statUpgrade);
+            default: return null;
+        }   
+    }
 }

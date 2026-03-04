@@ -23,4 +23,9 @@ public class GameManager : LevelSingleton<GameManager>
     {
         return currentLevel;
     }
+
+    public void IncreaseCurrentLevel()
+    {
+        currentLevel++;
+    }
 }

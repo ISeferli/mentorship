@@ -368,12 +368,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 332169720}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -960, y: -540, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 436557259}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &347096652
 PrefabInstance:
@@ -759,6 +759,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 332169724}
   - {fileID: 1645890974}
   - {fileID: 524219318}
   - {fileID: 102543718}
@@ -1716,9 +1717,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeManager
   attackUpgrades:
   - {fileID: 11400000, guid: e53583cff1f4b864eb180edcfb70e015, type: 2}
-  - {fileID: 11400000, guid: b821a7df2a6043043b79c0d23f56bfa3, type: 2}
   - {fileID: 11400000, guid: c0efe3c0c5874fd46810a04271d0ea29, type: 2}
   - {fileID: 11400000, guid: 5b0469a3e5176c84fa9c0e404a9d5806, type: 2}
+  - {fileID: 11400000, guid: 63f3f205b8b4d4240b250ec193e78882, type: 2}
+  - {fileID: 11400000, guid: f1bc627c458c1db49bb91d637559da5f, type: 2}
+  - {fileID: 11400000, guid: b821a7df2a6043043b79c0d23f56bfa3, type: 2}
 --- !u!114 &1635122603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2157,7 +2160,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1511124892}
-  - {fileID: 332169724}
   - {fileID: 642805857}
   - {fileID: 425761109}
   - {fileID: 1635122604}

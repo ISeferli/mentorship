@@ -88,6 +88,7 @@ public class CharacterMovement : LevelSingleton<CharacterMovement>
 
     private void Dash()
     {
+        Debug.Log(baseStamina.staminaData.dashCooldown);
         if(baseStamina.CanDash() && !isDashing)
         {
             StartCoroutine(baseStamina.DashRoutine(

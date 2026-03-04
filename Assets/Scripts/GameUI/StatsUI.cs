@@ -17,6 +17,7 @@ public class StatsUI : LevelSingleton<StatsUI>
         GameEventsManager.instance.graphicEvents.OnCurrentHealthChange += ChangeCurrentHealthBar;
         GameEventsManager.instance.graphicEvents.OnMaxHealthChange += ChangeMaxHealthBar;
         GameEventsManager.instance.graphicEvents.OnStaminaUse += ChangeStaminaBar;
+        GameEventsManager.instance.graphicEvents.OnMaxStaminaChange += ChangeMaxStaminaBar;
     }
 
     void OnDisable()
@@ -24,6 +25,7 @@ public class StatsUI : LevelSingleton<StatsUI>
         GameEventsManager.instance.graphicEvents.OnCurrentHealthChange -= ChangeCurrentHealthBar;
         GameEventsManager.instance.graphicEvents.OnMaxHealthChange -= ChangeMaxHealthBar;
         GameEventsManager.instance.graphicEvents.OnStaminaUse -= ChangeStaminaBar;
+        GameEventsManager.instance.graphicEvents.OnMaxStaminaChange -= ChangeMaxStaminaBar;
     }
 
     void Start()
@@ -50,5 +52,10 @@ public class StatsUI : LevelSingleton<StatsUI>
             staminaBar.value += 1;
         else
             staminaBar.value -= 1;
+    }
+
+    private void ChangeMaxStaminaBar(int rise)
+    {
+        staminaBar.maxValue += rise;
     }
 }

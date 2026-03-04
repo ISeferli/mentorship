@@ -53,4 +53,14 @@ public class GraphicEvents
     {
         OnStaminaUse?.Invoke(riseStamina);
     }
+
+    /// <summary>
+    /// Event that is called when an upgrade on max stamina is used
+    /// </summary>
+    public event Action<int> OnMaxStaminaChange;
+
+    public void ChangeMaxStaminaUI(int rise)
+    {
+        OnMaxStaminaChange?.Invoke(rise);
+    }
 }
