@@ -29,9 +29,4 @@ public abstract class StaminaDecorator : IStamina
     {
         wrappedStamina.RegenTick();
     }
-
-    public void GetAbilityUpgrade(string type, IAbility statUpgrade)
-    {
-        wrappedStamina.GetAbilityUpgrade(type, statUpgrade);
-    }
 }

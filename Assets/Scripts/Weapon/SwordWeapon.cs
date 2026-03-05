@@ -20,12 +20,17 @@ public class SwordWeapon : MonoBehaviour
 
     void OnTriggerEnter(Collider collider)
     {
+        // When the collider of the sword hits an object with an Enemy tag
         if (collider.CompareTag("Enemy") && isAttacking)
         {
             baseAttack.PerformAttack(stats.GetStatValue("Attack"), collider.gameObject);
         }
     }
 
+    /// <summary>
+    /// Update the upgrade in the Base Attack object
+    /// </summary>
+    /// <param name="extraAttack">Upgrade for the base attack</param>
     public void SetAttackAbility(AttackDecorator extraAttack)
     {
         baseAttack = extraAttack;

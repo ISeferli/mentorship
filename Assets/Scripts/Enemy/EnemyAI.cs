@@ -43,6 +43,10 @@ public class EnemyAI : MonoBehaviour
         HandleStates();
     }
 
+    /// <summary>
+    /// Handler of each different state of the enemy. It contains logic for each
+    /// state in <b>EnemyState</b> enum and the connection between each of them.
+    /// </summary>
     private void HandleStates()
     {
         switch (enemyState)
@@ -143,6 +147,12 @@ public class EnemyAI : MonoBehaviour
         return false;
     }
 
+    /// <summary>
+    /// Function that handle the enemy attack on character. At the moment, as the enemy
+    /// has no weapon collider, it has a four seconds cooldown to attack the character to
+    /// not continuously make the character lose life.
+    /// </summary>
+    /// <returns></returns>
     private IEnumerator AttackRoutine()
     {
         canAttack = false;
@@ -151,6 +161,12 @@ public class EnemyAI : MonoBehaviour
         canAttack = true;
     }
 
+    /// <summary>
+    /// When the enemy is hit, make them change state to
+    /// show they are damaged
+    /// </summary>
+    /// <param name="damagePoints"><b>int</b> that shows the points of damage the 
+    /// object will take</param>
     public void TakeDamage(int damagePoints)
     {
         pointsOfDamage = damagePoints;

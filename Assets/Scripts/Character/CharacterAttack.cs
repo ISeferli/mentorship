@@ -33,12 +33,20 @@ public class CharacterAttack : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Function that is called on animation and handles the
+    /// end of the left attack
+    /// </summary>
     public void EndLeftAttack()
     {
         leftAttack = false;
         leftSword.IsAttacking = false;
     }
 
+    /// <summary>
+    /// Function that is called on animation and handles the
+    /// end of the right attack
+    /// </summary>
     public void EndRightAttack()
     {
         rightAttack = false;

@@ -26,6 +26,11 @@ public class EnemySpawner : MonoBehaviour
         SpawnEnemiesForLevel();
     }
 
+    /// <summary>
+    /// For each level difficulty sees if a wave should be spawned and if there are no
+    /// enemies currently on level. If all the waves are completed, calls the event to inform
+    /// that the waves are completed and to inform every listener that the level is completed
+    /// </summary>
     public void SpawnEnemiesForLevel()
     {
         if(GetCurrentEnemies()==0 && GetCurrentWave()<GameManager.Instance.enemyWaves) 
@@ -34,6 +39,11 @@ public class EnemySpawner : MonoBehaviour
             GameEventsManager.instance.gameEvents.EnemyWaveCompletedEvent();
     }
 
+    /// <summary>
+    /// For the number of enemies that we want spawned, spawns each enemy and 
+    /// increases the wave
+    /// </summary>
+    /// <param name="enemyNumber">Number of enemies that need to be spawned</param>
     public void SpawnWave(int enemyNumber)
     {
         for (int i = 0; i < enemyNumber; i++)
@@ -41,6 +51,11 @@ public class EnemySpawner : MonoBehaviour
         currentEnemyWave++;
     }
 
+    /// <summary>
+    /// Spawns each enemy separately. Inside a Sphere, points to the nav mesh to 
+    /// see in which place it is valiable to spawn an enemy. Then increases the current
+    /// enemy number
+    /// </summary>
     private void SpawnOneEnemy()
     {
         Vector3 randomPoint = this.transform.position + Random.insideUnitSphere * spawnRadius;

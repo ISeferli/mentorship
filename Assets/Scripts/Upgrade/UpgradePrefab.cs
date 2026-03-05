@@ -34,13 +34,13 @@ public class UpgradePrefab : MonoBehaviour
         switch (assignedUpgrade.upgradeType)
         {
             case UpgradeType.Ability:
-                player.GetComponent<CharacterAttack>().upgradeSword.SetAttackAbility((AttackDecorator)UpgradeFactory.CreateAttackUpgrade(assignedUpgrade.upgradeName, player.GetComponent<CharacterAttack>().upgradeSword.baseAttack));
+                player.GetComponent<CharacterAttack>().upgradeSword.SetAttackAbility((AttackDecorator)UpgradeFactory.CreateAttackUpgrade(assignedUpgrade.upgradeName, assignedUpgrade.amount, player.GetComponent<CharacterAttack>().upgradeSword.baseAttack));
                 break;
             case UpgradeType.Health:
                 player.GetComponent<Character>().CurrentHealth = UpgradeFactory.CreateHealthUpgrade(assignedUpgrade.upgradeName, assignedUpgrade.amount, player.GetComponent<Character>().CurrentHealth);
                 break;
             case UpgradeType.Stamina:
-                player.GetComponent<Character>().CurrentStamina = UpgradeFactory.CreateStaminUpgrade(assignedUpgrade.upgradeName, player.GetComponent<Character>().CurrentStamina);
+                player.GetComponent<Character>().CurrentStamina = UpgradeFactory.CreateStaminUpgrade(assignedUpgrade.upgradeName, assignedUpgrade.amount, player.GetComponent<Character>().CurrentStamina);
                 break;
         }
         assignedPanel.ClosePanel();

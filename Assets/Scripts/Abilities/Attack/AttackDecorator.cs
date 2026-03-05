@@ -26,9 +26,4 @@ public abstract class AttackDecorator : IAttack
     {
         specificAttack.PerformAttack(pointsDamage, personToHit);
     }
-
-    public void GetAbilityUpgrade(string type, IAbility statUpgrade)
-    {
-        specificAttack.GetAbilityUpgrade(type, statUpgrade);
-    }
 }

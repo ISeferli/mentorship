@@ -18,16 +18,19 @@ public abstract class HealthDecorator : IHealth
         this.healthData = wrappedHealth.healthData;
     }    
 
-    public void GetAbilityUpgrade(string type, IAbility statUpgrade)
-    {
-        wrappedHealth.GetAbilityUpgrade(type, statUpgrade);
-    }
-
+    /// <summary>
+    /// Changes the health over until it reaches the base health
+    /// </summary>
+    /// <param name="healthPoints"></param>
     public void ChangeHealth(int healthPoints)
     {
         wrappedHealth.ChangeHealth(healthPoints);
     }
 
+    /// <summary>
+    /// Regeneration function for when the ability specifies it. The base
+    /// health does not contain any logic behind it.
+    /// </summary>
     public virtual void RegenTick()
     {
         wrappedHealth.RegenTick();

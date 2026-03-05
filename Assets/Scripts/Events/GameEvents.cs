@@ -2,6 +2,9 @@ using System;
 
 public class GameEvents
 {
+    /// <summary>
+    /// Event that is called when an enemy is destroyed by the character
+    /// </summary>
     public event Action OnEnemyDeath;
 
     public void EnemyDeathEvent()
@@ -9,6 +12,10 @@ public class GameEvents
         OnEnemyDeath?.Invoke();
     }
 
+    /// <summary>
+    /// Event that is called when the wave of enemies are terminated
+    /// to inform the listeners in case they want to bring other enemies
+    /// </summary>
     public event Action OnEnemyWaveComplete;
 
     public void EnemyWaveCompletedEvent()

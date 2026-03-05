@@ -1,6 +1,6 @@
 using System.Collections;
 
-public interface IStamina : IAbility
+public interface IStamina
 {
     public StaminaData staminaData { get; set; }
     public bool CanDash();

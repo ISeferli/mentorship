@@ -38,7 +38,7 @@ public class StatsUI : LevelSingleton<StatsUI>
 
     private void ChangeCurrentHealthBar(int amount)
     {
-        healthBar.value -= amount;
+        healthBar.value += amount;
     }
 
     private void ChangeMaxHealthBar(int amount)

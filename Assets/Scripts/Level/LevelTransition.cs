@@ -24,11 +24,21 @@ public class LevelTransition : MonoBehaviour
         levelAnimator = GetComponent<Animator>();  
     }
 
+    /// <summary>
+    /// Call the coroutine to start loading the next level
+    /// </summary>
+    /// <param name="sceneName">The name of the next level</param>
     private void LoadNextLevel(string sceneName)
     {
         StartCoroutine(LoadLevel(sceneName));
     }
 
+    /// <summary>
+    /// Load the next level. Wait for the transition time and then load it, for
+    /// the animation to finish
+    /// </summary>
+    /// <param name="sceneName">Scene name that will come up next</param>
+    /// <returns>Waits for specific seconds until the scene changes</returns>
     private IEnumerator LoadLevel(string sceneName)
     {
         levelAnimator.SetTrigger("Start");
@@ -40,10 +50,7 @@ public class LevelTransition : MonoBehaviour
         yield return new WaitForSeconds(transitionTime);
 
         while (operation.progress < 0.9f)
-        {
             yield return null;
-        }
-
         operation.allowSceneActivation = true;
     }
 }

@@ -22,6 +22,10 @@ public class UpgradeManager : MonoBehaviour
     /// </summary>
     private List<Upgrade> currentlyPickedUpgrades;
 
+    /// <summary>
+    /// Checks from a pre-determined list the possible upgrades. It gathers two of them
+    /// and sends them to the panel
+    /// </summary>
     public void AssignDifferentUpgrades()
     {
         currentlyPickedUpgrades = new List<Upgrade>();

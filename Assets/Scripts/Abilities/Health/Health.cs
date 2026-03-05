@@ -18,14 +18,15 @@ public class Health : MonoBehaviour, IHealth
         healthData.currentHealth = healthData.maxHealth;
     }
 
+    /// <summary>
+    /// Changes health by adding the health points that you want to
+    /// increase.
+    /// </summary>
+    /// <param name="healthPoints">Health points that you want to add.
+    /// If it is negative number, it decreases the health</param>
     public void ChangeHealth(int healthPoints)
     {
         healthData.currentHealth = Mathf.Clamp(healthData.currentHealth + healthPoints, 0, healthData.maxHealth);
-    }
-
-    public void GetAbilityUpgrade(string type, IAbility statUpgrade)
-    {
-        Debug.Log("Upgraded health");
     }
 
     /// <summary>

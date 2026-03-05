@@ -14,6 +14,7 @@ public class Character : MonoBehaviour
 
     void Update()
     {
+        // If the character has regeneration abilities, then call the function inside
         if(CurrentHealth.healthData.regenRate > 0 && CurrentHealth.healthData.currentHealth<CurrentHealth.healthData.maxHealth)
             CurrentHealth.RegenTick();
         if (CurrentStamina.staminaData.currentStaminaUses < CurrentStamina.staminaData.maxStaminaUses)

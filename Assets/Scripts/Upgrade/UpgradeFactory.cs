@@ -2,12 +2,12 @@ using UnityEngine;
 
 public static class UpgradeFactory
 {
-    public static IAbility CreateAttackUpgrade(string type, IAttack statUpgrade)
+    public static IAttack CreateAttackUpgrade(string type, int amount, IAttack statUpgrade)
     {
         switch(type)
         {
-            case "Fire": return new FireAttackDecorator(statUpgrade);
-            case "Water": return new WaterAttackDecorator(statUpgrade);
+            case "Fire": return new FireAttackDecorator(amount, statUpgrade);
+            case "Water": return new WaterAttackDecorator(amount, statUpgrade);
             default: return null;
         }   
     }
@@ -24,12 +24,12 @@ public static class UpgradeFactory
         }
     }
 
-    public static IStamina CreateStaminUpgrade(string type, IStamina statUpgrade)
+    public static IStamina CreateStaminUpgrade(string type, int amount, IStamina statUpgrade)
     {
         switch(type)
         {
             case "StaminaIncrease": return new StaminaMaxDecorator(statUpgrade);
-            case "StaminaRegen": return new StaminaRegenDecorator(statUpgrade);
+            case "StaminaRegen": return new StaminaRegenDecorator(statUpgrade, amount);
             default: return null;
         }   
     }

@@ -4,6 +4,8 @@ public class Portal : MonoBehaviour
 {
     [SerializeField] private string transitionScene;
 
+    private bool isOpen = false;
+
     void OnEnable()
     {
         GameEventsManager.instance.gameEvents.OnEnemyWaveComplete += PortalEffectAppear;
@@ -16,20 +18,25 @@ public class Portal : MonoBehaviour
 
     void Start()
     {
-        GetComponent<MeshRenderer>().enabled = false;    
+        GetComponent<MeshRenderer>().enabled = false;
+        isOpen = false;
     }
 
+    /// <summary>
+    /// Portal appears and is opened when the event is called
+    /// </summary>
     private void PortalEffectAppear()
     {
-        GetComponent<MeshRenderer>().enabled = true; 
+        GetComponent<MeshRenderer>().enabled = true;
+        isOpen = true;
     }
 
     void OnTriggerEnter(Collider collider)
     {
-        if (collider.CompareTag("Player"))
+        // Triggers the collider only when a player only is passing through
+        // and when the portal is open
+        if (collider.CompareTag("Player") && isOpen)
         {
-            // Transition To Scene
-            Debug.Log("Scene to transition: " + transitionScene);
             GameManager.Instance.IncreaseCurrentLevel();
             GameEventsManager.instance.levelEvents.LoadSceneEvent(transitionScene);
         }

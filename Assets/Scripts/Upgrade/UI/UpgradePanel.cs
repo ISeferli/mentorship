@@ -22,6 +22,11 @@ public class UpgradePanel : MonoBehaviour
         upgradePanel.gameObject.SetActive(false);
     }
 
+    /// <summary>
+    /// Shows upgrades panel. It instantiates a new panel upgrade from the list
+    /// provided by the argument
+    /// </summary>
+    /// <param name="posUpgrades">List of the upgrades that are selected</param>
     private void ShowUpgrades(List<Upgrade> posUpgrades)
     {
         upgradePanel.gameObject.SetActive(true);

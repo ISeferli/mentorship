@@ -86,9 +86,14 @@ public class CharacterMovement : LevelSingleton<CharacterMovement>
         charRigidBody.MovePosition(transform.position + (transform.forward * userInput.magnitude) * charMovementSpeed * Time.deltaTime);
     }
 
+    /// <summary>
+    /// Dash function that is called when the character can dash, handles by the stamina interface
+    /// and the character isn't dashing, to prevent spamming. The character movement speed is multiplied
+    /// at the start of the dash and by the end of it, when the dash time ends, the the movement spped gets
+    /// back to normal
+    /// </summary>
     private void Dash()
     {
-        Debug.Log(baseStamina.staminaData.dashCooldown);
         if(baseStamina.CanDash() && !isDashing)
         {
             StartCoroutine(baseStamina.DashRoutine(
@@ -104,6 +109,10 @@ public class CharacterMovement : LevelSingleton<CharacterMovement>
         }
     }
 
+    /// <summary>
+    /// Gets the character position in a specific point
+    /// </summary>
+    /// <param name="sPoint">Point where the character will be transported to</param>
     public void GetCharacterInPosition(Transform sPoint)
     {
         charRigidBody.position = sPoint.position;
