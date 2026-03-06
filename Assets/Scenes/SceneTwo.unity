@@ -1018,7 +1018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46566cc7605d88a44844a5e6689fb9e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelDifficultyManager
-  levelDifficulty: {fileID: 11400000, guid: 8b928217191787c419e208dc5963d30c, type: 2}
+  levelDifficulty: {fileID: 11400000, guid: c52f1d68fcec353469d9cb037f4971cf, type: 2}
 --- !u!4 &584202748
 Transform:
   m_ObjectHideFlags: 0

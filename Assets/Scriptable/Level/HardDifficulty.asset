@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 938dd1a0039db224391e8d35c317f65f, type: 3}
-  m_Name: NormalDifficulty
+  m_Name: HardDifficulty
   m_EditorClassIdentifier: Assembly-CSharp::LevelDifficulty
-  enemyWaves: 2
-  enemyNumber: 3
+  enemyWaves: 3
+  enemyNumber: 5

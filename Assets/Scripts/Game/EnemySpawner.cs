@@ -58,13 +58,29 @@ public class EnemySpawner : MonoBehaviour
     /// </summary>
     private void SpawnOneEnemy()
     {
-        Vector3 randomPoint = this.transform.position + Random.insideUnitSphere * spawnRadius;
-        NavMeshHit hit;
-        if (NavMesh.SamplePosition(randomPoint, out hit, 10.0f, NavMesh.AllAreas))
+        int maxAttempts = 20;
+        int attempts = 0;
+        while(attempts < maxAttempts)
         {
-            GameObject newEnemy = Instantiate(enemyPrefab, hit.position, Quaternion.identity);
-            newEnemy.transform.parent = transform;
-            currentEnemies++;
+            Vector3 randomPoint = this.transform.position + Random.insideUnitSphere * spawnRadius;
+            NavMeshHit hit;
+            if (NavMesh.SamplePosition(randomPoint, out hit, 10.0f, NavMesh.AllAreas))
+            {
+                int waterLayer = LayerMask.NameToLayer("Water");
+                Collider[] colliders = Physics.OverlapSphere(hit.position, 0.5f, 1 << waterLayer);
+                // If collider finds water then find another spot to spawn
+                if (colliders.Length > 0)
+                {
+                    attempts++;
+                    Debug.Log("Found");
+                    continue;
+                }
+                GameObject newEnemy = Instantiate(enemyPrefab, hit.position, Quaternion.identity);
+                newEnemy.transform.parent = transform;
+                currentEnemies++;
+                return;
+            }
+            attempts++;
         }
     }
 
