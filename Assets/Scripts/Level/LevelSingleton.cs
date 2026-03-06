@@ -7,10 +7,12 @@ public class LevelSingleton<T> : MonoBehaviour where T: LevelSingleton<T>
 
     protected virtual void Awake()
     {
-        if(instance != null && this.gameObject != null)
-            Destroy(this.gameObject);
-        else
-            instance = (T)this;
+        if(instance != null && instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        instance = (T)this;
         DontDestroyOnLoad(gameObject);
     }
 }

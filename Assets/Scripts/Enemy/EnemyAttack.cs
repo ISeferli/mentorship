@@ -11,7 +11,7 @@ public class EnemyAttack : MonoBehaviour
     /// <param name="pointsOfDamage">Points of damage that the enemy does</param>
     public void DamagePlayer(Health targetHealth, int pointsOfDamage)
     {
-        GameEventsManager.instance.graphicEvents.ChangeCurrentHealthUI(-pointsOfDamage);
+        GameEventsManager.Instance.graphicEvents.ChangeCurrentHealthUI(-pointsOfDamage);
         targetHealth.DamageHealth(pointsOfDamage);
     }
 }

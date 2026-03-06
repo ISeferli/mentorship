@@ -8,12 +8,12 @@ public class Portal : MonoBehaviour
 
     void OnEnable()
     {
-        GameEventsManager.instance.gameEvents.OnEnemyWaveComplete += PortalEffectAppear;
+        GameEventsManager.Instance.gameEvents.OnEnemyWaveComplete += PortalEffectAppear;
     }
 
     void OnDisable()
     {
-        GameEventsManager.instance.gameEvents.OnEnemyWaveComplete -= PortalEffectAppear;
+        GameEventsManager.Instance.gameEvents.OnEnemyWaveComplete -= PortalEffectAppear;
     }
 
     void Start()
@@ -38,7 +38,7 @@ public class Portal : MonoBehaviour
         if (collider.CompareTag("Player") && isOpen)
         {
             GameManager.Instance.IncreaseCurrentLevel();
-            GameEventsManager.instance.levelEvents.LoadSceneEvent(transitionScene);
+            GameEventsManager.Instance.levelEvents.LoadSceneEvent(transitionScene);
         }
     }
 }

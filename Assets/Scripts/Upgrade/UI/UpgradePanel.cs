@@ -9,12 +9,12 @@ public class UpgradePanel : MonoBehaviour
 
     void OnEnable()
     {
-        GameEventsManager.instance.graphicEvents.OnWaveEnemyKilled += ShowUpgrades;
+        GameEventsManager.Instance.graphicEvents.OnWaveEnemyKilled += ShowUpgrades;
     }
 
     void OnDisable()
     {
-        GameEventsManager.instance.graphicEvents.OnWaveEnemyKilled -= ShowUpgrades;
+        GameEventsManager.Instance.graphicEvents.OnWaveEnemyKilled -= ShowUpgrades;
     }
 
     void Start()

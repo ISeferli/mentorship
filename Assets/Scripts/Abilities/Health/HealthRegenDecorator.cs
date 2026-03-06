@@ -28,7 +28,7 @@ public class HealthRegenDecorator : HealthDecorator
         {
             wrappedHealth.ChangeHealth(healthData.regenRate);
             // Inform the UI to change the current health in the bar
-            GameEventsManager.instance.graphicEvents.ChangeCurrentHealthUI(-healthData.regenRate);
+            GameEventsManager.Instance.graphicEvents.ChangeCurrentHealthUI(healthData.regenRate);
             timer = 0;
         }
     }

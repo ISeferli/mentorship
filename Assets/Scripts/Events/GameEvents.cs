@@ -22,4 +22,14 @@ public class GameEvents
     {
         OnEnemyWaveComplete?.Invoke();
     }
+
+    /// <summary>
+    /// Event that is called when the run is completed
+    /// </summary>
+    public event Action OnRunCompleted;
+
+    public void RunCompleteEvent()
+    {
+        OnRunCompleted?.Invoke();
+    }
 }

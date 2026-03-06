@@ -13,12 +13,12 @@ public class EnemySpawner : MonoBehaviour
 
     void OnEnable()
     {
-        GameEventsManager.instance.gameEvents.OnEnemyDeath += DeleteEnemy;
+        GameEventsManager.Instance.gameEvents.OnEnemyDeath += DeleteEnemy;
     }
 
     void OnDisable()
     {
-        GameEventsManager.instance.gameEvents.OnEnemyDeath -= DeleteEnemy;
+        GameEventsManager.Instance.gameEvents.OnEnemyDeath -= DeleteEnemy;
     }
 
     void Start()
@@ -36,7 +36,7 @@ public class EnemySpawner : MonoBehaviour
         if(GetCurrentEnemies()==0 && GetCurrentWave()<GameManager.Instance.enemyWaves) 
             SpawnWave(GameManager.Instance.enemyNumber);
         else
-            GameEventsManager.instance.gameEvents.EnemyWaveCompletedEvent();
+            GameEventsManager.Instance.gameEvents.EnemyWaveCompletedEvent();
     }
 
     /// <summary>

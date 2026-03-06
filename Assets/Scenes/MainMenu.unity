@@ -983,6 +983,74 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1007523269}
   m_CullTransparentMesh: 1
+--- !u!1 &1053676124
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1053676127}
+  - component: {fileID: 1053676126}
+  - component: {fileID: 1053676125}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1053676125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053676124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c413b4235b90344bb7e5ebb0bb63a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradeManager
+  attackUpgrades:
+  - {fileID: 11400000, guid: e53583cff1f4b864eb180edcfb70e015, type: 2}
+  - {fileID: 11400000, guid: c0efe3c0c5874fd46810a04271d0ea29, type: 2}
+  - {fileID: 11400000, guid: 5b0469a3e5176c84fa9c0e404a9d5806, type: 2}
+  - {fileID: 11400000, guid: 63f3f205b8b4d4240b250ec193e78882, type: 2}
+  - {fileID: 11400000, guid: f1bc627c458c1db49bb91d637559da5f, type: 2}
+  - {fileID: 11400000, guid: b821a7df2a6043043b79c0d23f56bfa3, type: 2}
+--- !u!114 &1053676126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053676124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a47f2e1b8c4b19f4da306167b6b3e306, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  enemyWaves: 2
+  enemyNumber: 1
+  upgradesNo: 3
+  maxLevelRun: 3
+--- !u!4 &1053676127
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053676124}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.66558, y: 1.55649, z: 20.38639}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1143060552
 GameObject:
   m_ObjectHideFlags: 0
@@ -1870,5 +1938,6 @@ SceneRoots:
   - {fileID: 248021838}
   - {fileID: 1754080983}
   - {fileID: 1325333101}
+  - {fileID: 1053676127}
   - {fileID: 1892586759}
   - {fileID: 1449949643}

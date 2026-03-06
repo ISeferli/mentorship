@@ -1,10 +1,10 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class StatsUI : LevelSingleton<StatsUI>
+public class StatsUI : MonoBehaviour
 {
-    [Header("Starting Stats")]
-    [SerializeField] private PlayableStats stats;
+    [Header("Playable Stats")]
+    [SerializeField] PlayableStats stats;
 
     [Header("Health Bar Settings")]
     [SerializeField] Slider healthBar;
@@ -14,26 +14,35 @@ public class StatsUI : LevelSingleton<StatsUI>
 
     void OnEnable()
     {
-        GameEventsManager.instance.graphicEvents.OnCurrentHealthChange += ChangeCurrentHealthBar;
-        GameEventsManager.instance.graphicEvents.OnMaxHealthChange += ChangeMaxHealthBar;
-        GameEventsManager.instance.graphicEvents.OnStaminaUse += ChangeStaminaBar;
-        GameEventsManager.instance.graphicEvents.OnMaxStaminaChange += ChangeMaxStaminaBar;
+        GameEventsManager.Instance.graphicEvents.OnCurrentHealthChange += ChangeCurrentHealthBar;
+        GameEventsManager.Instance.graphicEvents.OnMaxHealthChange += ChangeMaxHealthBar;
+        GameEventsManager.Instance.graphicEvents.OnStaminaUse += ChangeStaminaBar;
+        GameEventsManager.Instance.graphicEvents.OnMaxStaminaChange += ChangeMaxStaminaBar;
     }
 
     void OnDisable()
     {
-        GameEventsManager.instance.graphicEvents.OnCurrentHealthChange -= ChangeCurrentHealthBar;
-        GameEventsManager.instance.graphicEvents.OnMaxHealthChange -= ChangeMaxHealthBar;
-        GameEventsManager.instance.graphicEvents.OnStaminaUse -= ChangeStaminaBar;
-        GameEventsManager.instance.graphicEvents.OnMaxStaminaChange -= ChangeMaxStaminaBar;
+        GameEventsManager.Instance.graphicEvents.OnCurrentHealthChange -= ChangeCurrentHealthBar;
+        GameEventsManager.Instance.graphicEvents.OnMaxHealthChange -= ChangeMaxHealthBar;
+        GameEventsManager.Instance.graphicEvents.OnStaminaUse -= ChangeStaminaBar;
+        GameEventsManager.Instance.graphicEvents.OnMaxStaminaChange -= ChangeMaxStaminaBar;
     }
 
     void Start()
     {
-        healthBar.maxValue = stats.GetStatValue("Health");
-        healthBar.value = stats.GetStatValue("Health");
-        staminaBar.maxValue = stats.GetStatValue("Stamina");
-        staminaBar.value = stats.GetStatValue("Stamina");
+        if(GameManager.Instance.GetCurrentLevel()==0)
+        {
+            healthBar.maxValue = stats.GetStatValue("Health");
+            healthBar.value = stats.GetStatValue("Health");
+            staminaBar.maxValue = stats.GetStatValue("Stamina");
+            staminaBar.value = stats.GetStatValue("Stamina");
+        } else
+        {
+            healthBar.maxValue = CharacterMovement.Instance.GetComponent<Character>().CurrentHealth.healthData.maxHealth;
+            healthBar.value = CharacterMovement.Instance.GetComponent<Character>().CurrentHealth.healthData.currentHealth;
+            staminaBar.maxValue = CharacterMovement.Instance.GetComponent<Character>().CurrentStamina.staminaData.maxStaminaUses;
+            staminaBar.value = CharacterMovement.Instance.GetComponent<Character>().CurrentStamina.staminaData.currentStaminaUses;
+        }
     }
 
     private void ChangeCurrentHealthBar(int amount)

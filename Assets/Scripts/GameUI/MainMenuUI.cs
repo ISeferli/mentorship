@@ -4,7 +4,8 @@ public class MainMenuUI : MonoBehaviour
 {
     public void StartButton()
     {
-        GameEventsManager.instance.levelEvents.LoadSceneEvent("SceneThree");
+        GameManager.startedFromMainMenu = true;
+        GameEventsManager.Instance.levelEvents.LoadSceneEvent("SceneThree");
     }
 
     public void QuitButton()

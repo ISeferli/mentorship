@@ -40,7 +40,7 @@ public class BaseStamina : IStamina
     public IEnumerator DashRoutine(System.Action onDashStart, System.Action onDashEnd)
     {
         staminaData.currentStaminaUses--;
-        GameEventsManager.instance.graphicEvents.ChangeStaminaUI(false);
+        GameEventsManager.Instance.graphicEvents.ChangeStaminaUI(false);
         onDashStart?.Invoke();
         yield return new WaitForSeconds(staminaData.dashTime);
         onDashEnd?.Invoke();
@@ -57,7 +57,7 @@ public class BaseStamina : IStamina
         if(regenTimer >= staminaData.dashCooldown)
         {
             staminaData.currentStaminaUses++;
-            GameEventsManager.instance.graphicEvents.ChangeStaminaUI(true);
+            GameEventsManager.Instance.graphicEvents.ChangeStaminaUI(true);
             regenTimer = 0f;
         }
     }

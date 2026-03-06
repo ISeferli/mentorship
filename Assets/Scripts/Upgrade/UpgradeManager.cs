@@ -9,12 +9,12 @@ public class UpgradeManager : MonoBehaviour
 
     void OnEnable()
     {
-        GameEventsManager.instance.gameEvents.OnEnemyWaveComplete += AssignDifferentUpgrades;
+        GameEventsManager.Instance.gameEvents.OnEnemyWaveComplete += AssignDifferentUpgrades;
     }
 
     void OnDisable()
     {
-        GameEventsManager.instance.gameEvents.OnEnemyWaveComplete -= AssignDifferentUpgrades;
+        GameEventsManager.Instance.gameEvents.OnEnemyWaveComplete -= AssignDifferentUpgrades;
     }
 
     /// <summary>
@@ -36,6 +36,6 @@ public class UpgradeManager : MonoBehaviour
         // If it's the first set of upgrades, delete from the list the ability upgrades to not appear again for now
         if (GameManager.Instance.GetCurrentLevel()==0)
             attackUpgrades.RemoveAll(upgrade => upgrade.upgradeType.ToString().Equals("Ability"));
-        GameEventsManager.instance.graphicEvents.ShowUpgradesOnWaveTerm(currentlyPickedUpgrades);
+        GameEventsManager.Instance.graphicEvents.ShowUpgradesOnWaveTerm(currentlyPickedUpgrades);
     }
 }

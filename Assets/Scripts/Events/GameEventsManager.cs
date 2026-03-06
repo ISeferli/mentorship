@@ -1,20 +1,14 @@
 using UnityEngine;
 
-public class GameEventsManager : MonoBehaviour
+public class GameEventsManager : LevelSingleton<GameEventsManager>
 {
-    public static GameEventsManager instance { get; private set; }
     public LevelEvents levelEvents;
     public GraphicEvents graphicEvents;
     public GameEvents gameEvents;
 
-    private void Awake()
+    protected override void Awake()
     {
-        if (instance != null)
-        {
-            Debug.LogError("Found more than one Game Events Manager in Scene");
-        }
-        instance = this;
-
+        base.Awake();
         // Initialize all events
         levelEvents = new LevelEvents();
         graphicEvents = new GraphicEvents();

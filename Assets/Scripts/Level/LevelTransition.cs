@@ -11,12 +11,12 @@ public class LevelTransition : MonoBehaviour
 
     private void OnEnable()
     {
-        GameEventsManager.instance.levelEvents.OnSceneLoad += LoadNextLevel;
+        GameEventsManager.Instance.levelEvents.OnSceneLoad += LoadNextLevel;
     }
 
     private void OnDisable()
     {
-        GameEventsManager.instance.levelEvents.OnSceneLoad -= LoadNextLevel;
+        GameEventsManager.Instance.levelEvents.OnSceneLoad -= LoadNextLevel;
     }
 
     void Start()
