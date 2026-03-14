@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class WaterAttackDecorator : AttackDecorator
+public class WaterAttackDecorator : ElementalDecorator
 {
     /// <summary>
     /// Water decorator adds to the base damage and changes the base weapon color

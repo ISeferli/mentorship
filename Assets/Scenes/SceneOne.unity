@@ -493,10 +493,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 760844043732975200, guid: f8b8cdefd887d4944ba60d671f627e02, type: 3}
-      propertyPath: character
-      value: 
-      objectReference: {fileID: 1481275155}
-    - target: {fileID: 760844043732975200, guid: f8b8cdefd887d4944ba60d671f627e02, type: 3}
       propertyPath: startPoint
       value: 
       objectReference: {fileID: 928214078162098086}
@@ -2303,17 +2299,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1436992045100486415, guid: 9697931021ac855428bf30fa214e5bf4, type: 3}
   m_PrefabInstance: {fileID: 1479641834}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1481275155 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6552221010644080239, guid: f8b8cdefd887d4944ba60d671f627e02, type: 3}
-  m_PrefabInstance: {fileID: 425935895}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb7e9722552ee7b44ac1c4a4adbafdb6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Character
 --- !u!1001 &1530702924
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3429,6 +3414,10 @@ PrefabInstance:
     - target: {fileID: 8386697004315552863, guid: 94a90a37faa0ee842a464894e7331003, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683251536556687514, guid: 94a90a37faa0ee842a464894e7331003, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1.7089844
       objectReference: {fileID: 0}
     - target: {fileID: 8916259964777312225, guid: 94a90a37faa0ee842a464894e7331003, type: 3}
       propertyPath: m_Name

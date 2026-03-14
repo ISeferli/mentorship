@@ -1,36 +1,22 @@
+using System;
+using System.Collections.Generic;
+using NUnit.Framework;
 using UnityEngine;
 
 public static class UpgradeFactory
 {
-    public static IAttack CreateAttackUpgrade(string type, int amount, IAttack statUpgrade)
-    {
-        switch(type)
+    private static Dictionary<string, Func<int, IAbility, IAbility>> availableUpgrades = new Dictionary<string, Func<int, IAbility, IAbility>>()
         {
-            case "Fire": return new FireAttackDecorator(amount, statUpgrade);
-            case "Water": return new WaterAttackDecorator(amount, statUpgrade);
-            default: return null;
-        }   
-    }
+            { "Fire", (amount, stat) => new FireAttackDecorator(amount, (IAttack)stat) },
+            { "Water", (amount, stat) => new WaterAttackDecorator(amount, (IAttack)stat) },
+            { "HealthIncrease", (amount, stat) => new HealthMaxIncreaseDecorator((IHealth)stat, amount) },
+            { "HealthRegen", (amount, stat) => new HealthRegenDecorator((IHealth)stat, amount) },
+            { "StaminaIncrease", (amount, stat) => new StaminaMaxDecorator((IStamina)stat) },
+            { "StaminaRegen", (amount, stat) => new StaminaRegenDecorator((IStamina)stat, amount) }
+        };
 
-    public static IHealth CreateHealthUpgrade(string type, int amount, IHealth healthToWrap)
+    public static T CreateUpgrade<T>(string type, int amount, T stat) where T : IAbility
     {
-        switch(type)
-        {
-            case "HealthIncrease": 
-                return new HealthMaxIncreaseDecorator(healthToWrap, amount);
-            case "HealthRegen":
-                return new HealthRegenDecorator(healthToWrap, amount);
-            default: return null;
-        }
-    }
-
-    public static IStamina CreateStaminUpgrade(string type, int amount, IStamina statUpgrade)
-    {
-        switch(type)
-        {
-            case "StaminaIncrease": return new StaminaMaxDecorator(statUpgrade);
-            case "StaminaRegen": return new StaminaRegenDecorator(statUpgrade, amount);
-            default: return null;
-        }   
+        return (T)availableUpgrades[type](amount, stat);
     }
 }

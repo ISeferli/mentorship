@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public interface IHealth
+public interface IHealth: IAbility
 {
     public HealthData healthData { get; set; }
     public void ChangeHealth(int healthPoints);

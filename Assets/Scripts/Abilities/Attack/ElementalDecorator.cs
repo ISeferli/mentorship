@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public abstract class AttackDecorator : IAttack
+public abstract class ElementalDecorator : IAttack
 {
     // Get the instance of a specific interface of the attacks
     protected IAttack specificAttack;
@@ -9,10 +9,10 @@ public abstract class AttackDecorator : IAttack
     public AttackData attackData { get; set; }
 
     /// <summary>
-    /// Constructor that creates the instance of the AttackDecorator that wraps the attack abilities together.
+    /// Constructor that creates the instance of the ElementalDecorator that wraps the attack abilities together.
     /// </summary>
     /// <param name="specificAttack"><b>AttackInterface</b> variable that specifies the kind of attack ability</param>
-    public AttackDecorator(IAttack specificAttack)
+    public ElementalDecorator(IAttack specificAttack)
     {
         this.specificAttack = specificAttack;
         this.attackData = specificAttack.attackData;

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class FireAttackDecorator : AttackDecorator
+public class FireAttackDecorator : ElementalDecorator
 {
     /// <summary>
     /// Fire decorator adds to the base damage and changes the base weapon color
