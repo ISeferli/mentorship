@@ -1087,8 +1087,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b466a3e9a9f05b4581936440cb2bfe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
-  enemyPrefab: {fileID: 5516671942443497728, guid: e7e0e5125f27ab642a8da44ba8c832b2, type: 3}
   spawnRadius: 10
+  enemyType: {fileID: 11400000, guid: 69b467bce1b8a894390cc1d0e5378b63, type: 2}
 --- !u!4 &939961382
 Transform:
   m_ObjectHideFlags: 0
@@ -3037,7 +3037,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2271152655702253156, guid: 68d078b17193296468bf6499be78d8f6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.56
+      value: 17.28
       objectReference: {fileID: 0}
     - target: {fileID: 2271152655702253156, guid: 68d078b17193296468bf6499be78d8f6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3045,7 +3045,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2271152655702253156, guid: 68d078b17193296468bf6499be78d8f6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 36.9
+      value: 12.91
       objectReference: {fileID: 0}
     - target: {fileID: 2271152655702253156, guid: 68d078b17193296468bf6499be78d8f6, type: 3}
       propertyPath: m_LocalRotation.w

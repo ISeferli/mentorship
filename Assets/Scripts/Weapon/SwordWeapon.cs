@@ -7,7 +7,7 @@ public class SwordWeapon : MonoBehaviour
     [Header("Attack Settings")]
     [SerializeField] private PlayableStats stats;
     [SerializeField] private LayerMask enemyLayer;
-    [SerializeField] private Collider hitbox;
+    [SerializeField] private BoxCollider hitbox;
 
     public bool IsAttacking {set {isAttacking = value;}}
 
@@ -18,7 +18,8 @@ public class SwordWeapon : MonoBehaviour
     void Start()
     {
         hitbox.enabled = false;
-        baseAttack = new BaseAttack(stats.GetStatValue("Attack"));
+        baseAttack = new BaseAttack(stats.GetStatValue("Attack"), 1);
+        UpdateAttackRange();
     }
 
     public void EnableHitbox()
@@ -31,6 +32,13 @@ public class SwordWeapon : MonoBehaviour
     {
         isAttacking = false;
         hitbox.enabled = false;
+    }
+
+    public void UpdateAttackRange()
+    {
+        int attackRange = baseAttack.attackData.range;
+        hitbox.size = new Vector3(1f, 1f, attackRange);
+        hitbox.center = new Vector3(0, 0, attackRange / 2f);
     }
 
     public void HandleHit(Collider collider)
@@ -50,5 +58,6 @@ public class SwordWeapon : MonoBehaviour
     {
         baseAttack = extraAttack;
         GetComponent<Renderer>().material.color = extraAttack.attackData.color;
+        UpdateAttackRange();
     }
 }

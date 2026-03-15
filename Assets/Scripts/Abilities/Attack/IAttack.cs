@@ -12,4 +12,5 @@ public class AttackData
     public Color color;
     public Color weakColor;
     public Color betterColor;
+    public int range;
 }

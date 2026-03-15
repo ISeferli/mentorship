@@ -4,8 +4,10 @@ using UnityEngine.AI;
 public class EnemySpawner : MonoBehaviour
 {
     [Header("Spawn Settings")]
-    [SerializeField] private GameObject enemyPrefab;
     [SerializeField] float spawnRadius;
+
+    [Header("Enemy Type To Spawn")]
+    [SerializeField] private EnemyType enemyType;
 
     // Current settings of enemy waves
     private int currentEnemyWave = 0;
@@ -72,10 +74,11 @@ public class EnemySpawner : MonoBehaviour
                 if (colliders.Length > 0)
                 {
                     attempts++;
-                    Debug.Log("Found");
                     continue;
                 }
-                GameObject newEnemy = Instantiate(enemyPrefab, hit.position, Quaternion.identity);
+                GameObject newEnemy = Instantiate(enemyType.prefab, hit.position, Quaternion.identity);
+                Enemy enemy = newEnemy.GetComponent<Enemy>();
+                enemy.Initialize(enemyType.attackProfile, enemyType.stats);
                 newEnemy.transform.parent = transform;
                 currentEnemies++;
                 return;

@@ -8,14 +8,15 @@ public class BaseAttack : IAttack
     /// Constructor of the base attack the user will have
     /// </summary>
     /// <param name="baseDamage">Points of the base damage the character does on hit</param>
-    public BaseAttack(int baseDamage)
+    public BaseAttack(int baseDamage, int baseRange)
     {
         attackData = new AttackData
         {
             betterColor = Color.white,
             color = Color.white,
             weakColor = Color.white,
-            damage = baseDamage
+            damage = baseDamage,
+            range = baseRange
         };
     }
 

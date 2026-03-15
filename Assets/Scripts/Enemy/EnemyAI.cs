@@ -68,7 +68,7 @@ public class EnemyAI : MonoBehaviour
                 break;
             case EnemyState.Attack:
                 if(DistanceToPlayer() > enemyAgent.stoppingDistance + 2) enemyState = EnemyState.Chase;
-                if (DistanceToPlayer() < 2.5 && canAttack) StartCoroutine(AttackRoutine());
+                if (DistanceToPlayer() < 2.5) AttackRoutine();
                 break;
             case EnemyState.Damage:
                 GetComponent<Health>().DamageHealth(pointsOfDamage);
@@ -152,13 +152,9 @@ public class EnemyAI : MonoBehaviour
     /// has no weapon collider, it has a four seconds cooldown to attack the character to
     /// not continuously make the character lose life.
     /// </summary>
-    /// <returns></returns>
-    private IEnumerator AttackRoutine()
+    private void AttackRoutine()
     {
-        canAttack = false;
-        enemyAttack.DamagePlayer(targetPlayer.GetComponent<Health>(), stats.GetStatValue("Attack"));
-        yield return new WaitForSeconds(4f);
-        canAttack = true;
+        enemyAttack.AttackPlayer();
     }
 
     /// <summary>
