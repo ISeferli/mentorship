@@ -753,8 +753,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b466a3e9a9f05b4581936440cb2bfe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
-  enemyPrefab: {fileID: 5516671942443497728, guid: e7e0e5125f27ab642a8da44ba8c832b2, type: 3}
   spawnRadius: 5
+  enemyType: {fileID: 11400000, guid: 69b467bce1b8a894390cc1d0e5378b63, type: 2}
 --- !u!4 &1432958600
 Transform:
   m_ObjectHideFlags: 0

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2981bf7358af5fc4c8fcf0421a771442, type: 3}
+  m_Name: FireBoss
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyType
+  prefab: {fileID: 0}
+  stats: {fileID: 11400000, guid: c9414da9460eb124885c707ebc93b67a, type: 2}
+  attackProfile: {fileID: 11400000, guid: 5000672d309fd7a478ba61cce11cb6f8, type: 2}

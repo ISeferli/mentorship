@@ -10,7 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 52ca99468abffa942abaa5e9f998a1bd, type: 3}
-  m_Name: NormalAttack
+  m_Name: WaterBossAttack
   m_EditorClassIdentifier: Assembly-CSharp::AttackProfile
-  elements: 0
-  additionalEffects: []
+  elements: 2
+  additionalEffects:
+  - effectID: Projectile

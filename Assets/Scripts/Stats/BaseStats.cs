@@ -7,7 +7,7 @@ public class BaseStat {
         Stamina,
     }
 
-    public BaseStatType statType;
+    public BaseStatType statType = BaseStatType.Health;
     public int baseValue = 0;
     public string statName = "";
 

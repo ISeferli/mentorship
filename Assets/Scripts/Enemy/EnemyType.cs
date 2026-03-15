@@ -3,7 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName="Enemy/EnemyType")]
 public class EnemyType : ScriptableObject
 {
-    public GameObject prefab;
-    public PlayableStats stats;
-    public AttackProfile attackProfile;
+    public GameObject prefab = null;
+    public PlayableStats stats = null;
+    public AttackProfile attackProfile = null;
 }

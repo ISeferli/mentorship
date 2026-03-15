@@ -4,11 +4,11 @@ using UnityEngine;
 public class Upgrade : ScriptableObject
 {
     public Texture icon { get; set; }
-    public UpgradeType upgradeType;
-    public string upgradeName;
-    public string upgradeTitle;
-    public string upgradeDescription;
-    public int amount;
+    public UpgradeType upgradeType = UpgradeType.Ability;
+    public string upgradeName = "";
+    public string upgradeTitle = "";
+    public string upgradeDescription = "";
+    public int amount = 0;
 }
 
 public enum UpgradeType

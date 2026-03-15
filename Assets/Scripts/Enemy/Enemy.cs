@@ -12,6 +12,6 @@ public class Enemy : MonoBehaviour
     public void Initialize(AttackProfile profile, PlayableStats stats)
     {
         IAttack baseAttack = new BaseAttack(stats.GetStatValue("Attack"), 1);
-        enemyAttack.BaseAttack = AttackFactory.CreateAttack(profile, stats, baseAttack);
+        enemyAttack.BaseAttack = EnemyAttackFactory.CreateAttack(profile, stats, baseAttack, enemyAttack);
     }
 }
