@@ -28,7 +28,10 @@ public class BaseAttack : IAttack
     /// <param name="personToHit">The object that is hit from the collider</param>
     public void PerformAttack(int pointsDamage, GameObject personToHit)
     {
-        // Detect enemies in range of attack
-        personToHit.GetComponent<EnemyAI>().TakeDamage(attackData.damage);
+        // Detect enemies in range of attack        
+        if (personToHit.CompareTag("Enemy"))
+            personToHit.GetComponent<EnemyAI>().TakeDamage(attackData.damage);
+        else if (personToHit.CompareTag("Boss")) 
+            personToHit.GetComponent<Health>().DamageHealth(attackData.damage);
     }
 }

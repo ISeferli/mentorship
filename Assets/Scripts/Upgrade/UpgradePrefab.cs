@@ -41,7 +41,7 @@ public class UpgradePrefab : MonoBehaviour
                 break;
             case UpgradeType.Damage:
                 if (player.GetComponent<CharacterAttack>().upgradeSword.baseAttack is ElementalDecorator decorator)
-                    decorator.AddEffect(UpgradeFactory.CreateEffect(assignedUpgrade.upgradeName));
+                    decorator.AddEffect(UpgradeFactory.CreateEffect(assignedUpgrade.upgradeName, assignedUpgrade.amount));
                 break;
             case UpgradeType.Stamina:
                 player.GetComponent<Character>().CurrentStamina = UpgradeFactory.CreateUpgrade(assignedUpgrade.upgradeName, assignedUpgrade.amount, player.GetComponent<Character>().CurrentStamina);

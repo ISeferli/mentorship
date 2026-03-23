@@ -15,13 +15,13 @@ public static class UpgradeFactory
         { "StaminaRegen", (amount, stat) => new StaminaRegenDecorator((IStamina)stat, amount) }
     };
 
-    public static IEffect CreateEffect(string effectName)
+    public static IEffect CreateEffect(string effectName, int effectDamage)
     {
         IEffect effect = null;
         switch(effectName)
         {
             case "Projectile":
-                effect = new ProjectileEffect();
+                // effect = new ProjectileEffect(effectDamage);
                 break;
         };
         return effect;

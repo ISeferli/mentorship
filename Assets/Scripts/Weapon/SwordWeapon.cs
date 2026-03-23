@@ -44,7 +44,7 @@ public class SwordWeapon : MonoBehaviour
     public void HandleHit(Collider collider)
     {
         // When the collider of the sword hits an object with an Enemy tag
-        if (collider.CompareTag("Enemy") && isAttacking)
+        if ((collider.CompareTag("Enemy") || collider.CompareTag("Boss")) && isAttacking)
         {
             baseAttack.PerformAttack(stats.GetStatValue("Attack"), collider.gameObject);
         }

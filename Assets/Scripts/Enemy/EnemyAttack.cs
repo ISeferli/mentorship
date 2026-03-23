@@ -49,4 +49,20 @@ public class EnemyAttack : MonoBehaviour
             collider.GetComponent<Health>().DamageHealth(damagePoints);
         }
     }
+
+
+    // Boss Attack Functionality
+    public void MeleeAttackPlayer()
+    {
+        damagePoints = BaseAttack.attackData.damage;
+        Debug.Log("Enemy does: " + damagePoints);
+        isAttacking = true;
+    }
+
+    public void BossRangeAttack()
+    {
+        Debug.Log("Boss Range Attack");
+        if (BaseAttack is ElementalDecorator decorator)
+            decorator.UseEffect("Spawn", GameObject.FindGameObjectWithTag("Player"));
+    }
 }

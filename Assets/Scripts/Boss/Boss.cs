@@ -21,7 +21,7 @@ public class Boss : MonoBehaviour
         {
             // Add from factory the specific effect based on the string name
             if (enemyAttack.BaseAttack is ElementalDecorator decorator)
-                decorator.AddEffect(EnemyAttackFactory.CreateEffect(effect.effectID));
+                decorator.AddEffect(EnemyAttackFactory.CreateEffect(effect.effectID, effect.effectDamage, effect.prefab));
         }
     }
 }

@@ -11,7 +11,9 @@ public class AttackProfile : ScriptableObject
 [System.Serializable]
 public class EffectData 
 {
-    public string effectID;
+    public string effectID = "";
+    public int effectDamage = 0;
+    public GameObject prefab = null;
 }
 
 public enum AttackElement

@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AttackProfile
   elements: 2
   additionalEffects:
-  - effectID: Projectile
+  - effectID: Spawn
+    effectDamage: 0
+    prefab: {fileID: 1931298151966786, guid: f6b195d7dbb49e74e87bd8fb7f4e95e9, type: 3}
