@@ -10,13 +10,11 @@ public class BossRun : StateMachineBehaviour
 
     Transform player;
     NavMeshAgent bossAgent;
-    Rigidbody bossRb;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
        player = GameObject.FindGameObjectWithTag("Player").transform;
-       bossRb = animator.GetComponent<Rigidbody>();
        bossAgent = animator.GetComponent<NavMeshAgent>();
     }
 
@@ -31,7 +29,7 @@ public class BossRun : StateMachineBehaviour
             if (distance <= attackRange)
             {
                 // Does mostly melee damage when close in range
-                if (Random.value < 0.8f)
+                if (Random.value < 0.9f)
                     animator.SetTrigger("Attack");
                 else
                     animator.SetTrigger("Attack2");
@@ -39,7 +37,7 @@ public class BossRun : StateMachineBehaviour
             else if (distance <= rangedRange)
             {
                 // Randomly choose which attack to do
-                if (Random.value < 0.5f)
+                if (Random.value < 0.3f)
                     animator.SetTrigger("Attack");
                 else
                     animator.SetTrigger("Attack2");
@@ -58,5 +56,6 @@ public class BossRun : StateMachineBehaviour
     {
         animator.ResetTrigger("Attack");
         animator.ResetTrigger("Attack2");
+        animator.ResetTrigger("Attack3");
     }
 }

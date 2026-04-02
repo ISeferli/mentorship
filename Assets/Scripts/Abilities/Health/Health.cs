@@ -11,6 +11,8 @@ public class Health : MonoBehaviour, IHealth
     // Stats during gameplay
     public HealthData healthData { get; set; } = new HealthData();
 
+    private int phases = 4; // Maximum phases number
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -45,6 +47,7 @@ public class Health : MonoBehaviour, IHealth
     public void DamageHealth(int damage)
     {
         ChangeHealth(-damage);
+        Debug.Log(healthData.currentHealth);
         animator.SetTrigger("TakeDamage");
     }
 
@@ -58,5 +61,31 @@ public class Health : MonoBehaviour, IHealth
         if(healthData.currentHealth <= 0)
             return true;
         return false;
+    }
+
+    /// <summary>
+    /// Detect the life percentage that the character has lost
+    /// throughout the game
+    /// </summary>
+    /// <returns> The life percentage in decimal that is lost </returns>
+    public float DetectLifePercentage()
+    {
+        return (float)healthData.currentHealth/healthData.maxHealth;
+    }
+
+    public void CheckLifeStatus()
+    {
+        if(DetectDeath()) Debug.Log("Death");
+        float lifePer = DetectLifePercentage();
+        int currentPhase = Mathf.CeilToInt(lifePer * 4);
+        // If the current quarter is less than the last recorded quarter
+        // it means the character just lost 25% of its life
+        if (currentPhase < phases && currentPhase > 0)
+        {
+            // Trigger your specific attack
+            animator.SetTrigger("Attack3");
+            // Update the last phase
+            phases = currentPhase;
+        }
     }
 }

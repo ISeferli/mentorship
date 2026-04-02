@@ -50,6 +50,8 @@ public class SwordWeapon : MonoBehaviour
         if ((collider.CompareTag("Enemy") || collider.CompareTag("Boss")) && isAttacking)
         {
             attackSet.GetBaseAttack("Base").PerformAttack(stats.GetStatValue("Attack"), collider.gameObject, this.gameObject);
+            if(collider.CompareTag("Boss"))
+                GameEventsManager.Instance.graphicEvents.ChangeEnemyHealthUI(attackSet.GetBaseAttack("Base").attackData.damage);
         }
     }
 
