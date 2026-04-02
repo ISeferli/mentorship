@@ -78,7 +78,7 @@ public class EnemySpawner : MonoBehaviour
                 }
                 GameObject newEnemy = Instantiate(enemyType.prefab, hit.position, Quaternion.identity);
                 Enemy enemy = newEnemy.GetComponent<Enemy>();
-                enemy.Initialize(enemyType.attackProfile, enemyType.stats);
+                enemy.Initialize();
                 newEnemy.transform.parent = transform;
                 currentEnemies++;
                 return;

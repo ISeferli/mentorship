@@ -592,7 +592,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f902dcfda3588646ac3bb10b01d6ce9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAttack
-  stats: {fileID: 11400000, guid: 75862ee5f0930e3498dbbf40dbf3bdac, type: 2}
   enemyCollider: {fileID: 8834200476350909665}
 --- !u!114 &-459917708291979385
 MonoBehaviour:
@@ -645,3 +644,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 785056830b252644e97fa361de265b9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
+  profile: {fileID: 11400000, guid: 5000672d309fd7a478ba61cce11cb6f8, type: 2}
+  stats: {fileID: 11400000, guid: 75862ee5f0930e3498dbbf40dbf3bdac, type: 2}

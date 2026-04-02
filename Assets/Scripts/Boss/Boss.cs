@@ -13,6 +13,11 @@ public class Boss : MonoBehaviour
         Initialize(bossAttackProfile, bossStats);
     }
 
+    /// <summary>
+    /// Initializing a specific Boss object based on the specified arguments
+    /// </summary>
+    /// <param name="profile"> Boss attack profile </param>
+    /// <param name="stats"> Boss specific stats </param>
     public void Initialize(AttackProfile profile, PlayableStats stats)
     {
         IAttack baseAttack = new BaseAttack(stats.GetStatValue("Attack"), 1, "Base");
@@ -21,7 +26,7 @@ public class Boss : MonoBehaviour
         {
             // Add from factory the specific attack based on the ID name
             IAttack additionalAttack = new BaseAttack(stats.GetStatValue("Attack"), 1, attack.attackID);
-            enemyAttack.EnemyAttackLibrary.AddAttack(EnemyAttackFactory.CreateAttack(attack.attackDecoratorID, attack.attackDamage, attack.attackPrefab, additionalAttack));
+            enemyAttack.EnemyAttackLibrary.AddAttack(EnemyAttackFactory.CreateAttack(attack.attackDecoratorID, attack.attackDamage, attack.attackRadius, attack.attackPrefab, additionalAttack));
         }
     }
 }

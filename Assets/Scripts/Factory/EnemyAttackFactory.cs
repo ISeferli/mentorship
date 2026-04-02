@@ -16,12 +16,15 @@ public static class EnemyAttackFactory
         return attack;
     }
 
-    public static IAttack CreateAttack(string attackDecID, int effectDamage, GameObject effectPrefab, IAttack attack)
+    public static IAttack CreateAttack(string attackDecID, int effectDamage, int attackRadius, GameObject effectPrefab, IAttack attack)
     {
         switch(attackDecID)
         {
             case "Projectile":
                 attack = new ProjectileAttackDecorator(effectDamage, effectPrefab, attack);
+                break;
+            case "Spawn":
+                attack = new SpawnAttackDecorator(effectDamage, attackRadius, effectPrefab, attack);
                 break;
         };
         return attack;

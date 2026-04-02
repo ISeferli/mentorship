@@ -14,6 +14,7 @@ public class EffectData
     public string attackID = "";
     public string attackDecoratorID = "";
     public int attackDamage = 0;
+    public int attackRadius = 0;
     public GameObject attackPrefab = null;
 }
 

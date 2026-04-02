@@ -74,4 +74,10 @@ public class EnemyAttack : MonoBehaviour
         Debug.Log("Boss Range Attack");
         EnemyAttackLibrary.GetBaseAttack("Range").PerformAttack(EnemyAttackLibrary.GetBaseAttack("Range").attackData.damage, GameObject.FindGameObjectWithTag("Player"), this.gameObject);
     }
+
+    public void BossSpecialAttack()
+    {
+        Debug.Log("Boss Special Attack");
+        EnemyAttackLibrary.GetBaseAttack("Special").PerformAttack(EnemyAttackLibrary.GetBaseAttack("Range").attackData.damage, GameObject.FindGameObjectWithTag("Player"), this.gameObject);
+    }
 }

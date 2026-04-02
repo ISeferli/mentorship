@@ -644,3 +644,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 785056830b252644e97fa361de265b9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
+  profile: {fileID: 11400000, guid: 937809c7d38cff843a80ea3d60664f87, type: 2}
+  stats: {fileID: 11400000, guid: 75862ee5f0930e3498dbbf40dbf3bdac, type: 2}
