@@ -2874,3 +2874,6 @@ Assets/RPG Monster DUO PBR Polyart/Textures/Metallic-Smoothness.png
 Assets/RPG Monster DUO PBR Polyart/Textures/Metallic-Smoothness.png.meta
 Assets/RPG Monster DUO PBR Polyart/Prefabs/PolyartDefault/TurtleShellPolyart.prefab.meta
 Assets/RPG Monster DUO PBR Polyart/Prefabs/PolyartDefault/TurtleShellPolyart.prefab
+plantuml/Upgrade/UpgradeFactory.puml
+plantuml/Abilities/Attack/AttackType.puml
+*.puml
