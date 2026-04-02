@@ -8,10 +8,13 @@ public class BaseAttack : IAttack
     /// Constructor of the base attack the user will have
     /// </summary>
     /// <param name="baseDamage">Points of the base damage the character does on hit</param>
-    public BaseAttack(int baseDamage, int baseRange)
+    /// <param name="baseRange">Range of the attack</param>
+    /// <param name="attackID">Name of the specific attack</param>
+    public BaseAttack(int baseDamage, int baseRange, string attackID)
     {
         attackData = new AttackData
         {
+            id = attackID,
             betterColor = Color.white,
             color = Color.white,
             weakColor = Color.white,
@@ -26,7 +29,8 @@ public class BaseAttack : IAttack
     /// </summary>
     /// <param name="pointsDamage">Points of damage the character does to the enemy</param>
     /// <param name="personToHit">The object that is hit from the collider</param>
-    public void PerformAttack(int pointsDamage, GameObject personToHit)
+    /// <param name="attacker">The object that calls the attack</param>
+    public void PerformAttack(int pointsDamage, GameObject personToHit, GameObject attacker)
     {
         // Detect enemies in range of attack        
         if (personToHit.CompareTag("Enemy"))

@@ -15,13 +15,13 @@ public class Boss : MonoBehaviour
 
     public void Initialize(AttackProfile profile, PlayableStats stats)
     {
-        IAttack baseAttack = new BaseAttack(stats.GetStatValue("Attack"), 1);
-        enemyAttack.BaseAttack = EnemyAttackFactory.CreateAttack(profile, stats, baseAttack, enemyAttack);
-        foreach(var effect in profile.additionalEffects)
+        IAttack baseAttack = new BaseAttack(stats.GetStatValue("Attack"), 1, "Base");
+        enemyAttack.EnemyAttackLibrary.AddAttack(EnemyAttackFactory.CreateElementalAttack(profile, stats, baseAttack, enemyAttack));
+        foreach (var attack in profile.additionalAttacks)
         {
-            // Add from factory the specific effect based on the string name
-            if (enemyAttack.BaseAttack is ElementalDecorator decorator)
-                decorator.AddEffect(EnemyAttackFactory.CreateEffect(effect.effectID, effect.effectDamage, effect.prefab));
+            // Add from factory the specific attack based on the ID name
+            IAttack additionalAttack = new BaseAttack(stats.GetStatValue("Attack"), 1, attack.attackID);
+            enemyAttack.EnemyAttackLibrary.AddAttack(EnemyAttackFactory.CreateAttack(attack.attackDecoratorID, attack.attackDamage, attack.attackPrefab, additionalAttack));
         }
     }
 }

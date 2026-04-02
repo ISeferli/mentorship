@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: WaterBossAttack
   m_EditorClassIdentifier: Assembly-CSharp::AttackProfile
   elements: 2
-  additionalEffects:
-  - effectID: Spawn
-    effectDamage: 0
-    prefab: {fileID: 1931298151966786, guid: f6b195d7dbb49e74e87bd8fb7f4e95e9, type: 3}
+  additionalAttacks:
+  - attackID: Range
+    attackDecoratorID: Projectile
+    attackDamage: 5
+    attackPrefab: {fileID: 2433604377404512625, guid: 204991f04dfff364aa098225a2cf9088, type: 3}

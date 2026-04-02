@@ -16,9 +16,9 @@ public class WaterAttackDecorator : ElementalDecorator
         attackData.damage += upgradeAmount;
     }
 
-    public override void PerformAttack(int pointsDamage, GameObject personToHit)
+    public override void PerformAttack(int pointsDamage, GameObject personToHit, GameObject attacker)
     {
-        base.PerformAttack(pointsDamage, personToHit);
+        base.PerformAttack(pointsDamage, personToHit, attacker);
         Debug.Log("Add water attack");
     }
 }

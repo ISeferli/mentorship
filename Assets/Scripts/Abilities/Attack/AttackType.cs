@@ -5,15 +5,16 @@ using UnityEngine;
 public class AttackProfile : ScriptableObject
 {
     public AttackElement elements = AttackElement.None;
-    public List<EffectData> additionalEffects = new List<EffectData>();
+    public List<EffectData> additionalAttacks = new List<EffectData>();
 }
 
 [System.Serializable]
 public class EffectData 
 {
-    public string effectID = "";
-    public int effectDamage = 0;
-    public GameObject prefab = null;
+    public string attackID = "";
+    public string attackDecoratorID = "";
+    public int attackDamage = 0;
+    public GameObject attackPrefab = null;
 }
 
 public enum AttackElement

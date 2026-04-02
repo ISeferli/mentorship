@@ -13,12 +13,15 @@ public class SwordWeapon : MonoBehaviour
 
     // Is the character attacking
     public IAttack baseAttack;
+    public BaseAttackComposition attackSet;
     private bool isAttacking = false;
 
     void Start()
     {
+        attackSet = new BaseAttackComposition();
         hitbox.enabled = false;
-        baseAttack = new BaseAttack(stats.GetStatValue("Attack"), 1);
+        baseAttack = new BaseAttack(stats.GetStatValue("Attack"), 1, "Base");
+        attackSet.AddAttack(baseAttack);
         UpdateAttackRange();
     }
 
@@ -46,7 +49,7 @@ public class SwordWeapon : MonoBehaviour
         // When the collider of the sword hits an object with an Enemy tag
         if ((collider.CompareTag("Enemy") || collider.CompareTag("Boss")) && isAttacking)
         {
-            baseAttack.PerformAttack(stats.GetStatValue("Attack"), collider.gameObject);
+            attackSet.GetBaseAttack("Base").PerformAttack(stats.GetStatValue("Attack"), collider.gameObject, this.gameObject);
         }
     }
 

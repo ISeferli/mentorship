@@ -2,7 +2,7 @@ using UnityEngine;
 
 public static class EnemyAttackFactory
 {
-    public static IAttack CreateAttack(AttackProfile profile, PlayableStats stats, IAttack attack, EnemyAttack enemyAttack)
+    public static IAttack CreateElementalAttack(AttackProfile profile, PlayableStats stats, IAttack attack, EnemyAttack enemyAttack)
     {
         switch(profile.elements)
         {
@@ -16,18 +16,14 @@ public static class EnemyAttackFactory
         return attack;
     }
 
-    public static IEffect CreateEffect(string effectName, int effectDamage, GameObject effectPrefab)
+    public static IAttack CreateAttack(string attackDecID, int effectDamage, GameObject effectPrefab, IAttack attack)
     {
-        IEffect effect = null;
-        switch(effectName)
+        switch(attackDecID)
         {
             case "Projectile":
-                effect = new ProjectileEffect(effectDamage, effectPrefab);
-                break;
-            case "Spawn":
-                effect = new SpawnEffect(effectPrefab);
+                attack = new ProjectileAttackDecorator(effectDamage, effectPrefab, attack);
                 break;
         };
-        return effect;
+        return attack;
     }
 }

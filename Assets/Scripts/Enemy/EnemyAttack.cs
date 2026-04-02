@@ -8,10 +8,12 @@ public class EnemyAttack : MonoBehaviour
     private int damagePoints;
 
     public IAttack BaseAttack {get;set;}
+    public BaseAttackComposition EnemyAttackLibrary {get;set;}
 
-    void Start()
+    void Awake()
     {
         enemyCollider.enabled = false;
+        EnemyAttackLibrary = new BaseAttackComposition();
     }
 
     /// <summary>
@@ -23,17 +25,25 @@ public class EnemyAttack : MonoBehaviour
     /// <param name="pointsOfDamage">Points of damage that the enemy does</param>
     public void AttackPlayer()
     {
-        damagePoints = BaseAttack.attackData.damage;
+        damagePoints = EnemyAttackLibrary.GetBaseAttack("Base").attackData.damage;
         Debug.Log("Enemy does: " + damagePoints);
         GetComponent<Animator>().SetTrigger("Attack");
         isAttacking = true;
     }
 
+    /// <summary>
+    /// Function that is called on animation that enables the
+    /// collider of the enemy to detect hit
+    /// </summary>
     public void EnableAttackColliderAnim()
     {
         enemyCollider.enabled = true;
     }
 
+    /// <summary>
+    /// Function that is called on animation that disables the
+    /// collider of the enemy's hit box
+    /// </summary>
     public void EndOfAttackAnim()
     {
         isAttacking = false;
@@ -54,7 +64,7 @@ public class EnemyAttack : MonoBehaviour
     // Boss Attack Functionality
     public void MeleeAttackPlayer()
     {
-        damagePoints = BaseAttack.attackData.damage;
+        damagePoints = EnemyAttackLibrary.GetBaseAttack("Base").attackData.damage;
         Debug.Log("Enemy does: " + damagePoints);
         isAttacking = true;
     }
@@ -62,7 +72,6 @@ public class EnemyAttack : MonoBehaviour
     public void BossRangeAttack()
     {
         Debug.Log("Boss Range Attack");
-        if (BaseAttack is ElementalDecorator decorator)
-            decorator.UseEffect("Spawn", GameObject.FindGameObjectWithTag("Player"));
+        EnemyAttackLibrary.GetBaseAttack("Range").PerformAttack(EnemyAttackLibrary.GetBaseAttack("Range").attackData.damage, GameObject.FindGameObjectWithTag("Player"), this.gameObject);
     }
 }
