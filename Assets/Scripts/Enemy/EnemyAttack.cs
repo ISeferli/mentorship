@@ -6,8 +6,6 @@ public class EnemyAttack : MonoBehaviour
     [SerializeField] private CapsuleCollider enemyCollider;
     private bool isAttacking {get;set;}
     private int damagePoints;
-
-    public IAttack BaseAttack {get;set;}
     public BaseAttackComposition EnemyAttackLibrary {get;set;}
 
     void Awake()
