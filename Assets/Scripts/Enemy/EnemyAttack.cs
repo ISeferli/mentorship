@@ -24,7 +24,6 @@ public class EnemyAttack : MonoBehaviour
     public void AttackPlayer()
     {
         damagePoints = EnemyAttackLibrary.GetBaseAttack("Base").attackData.damage;
-        Debug.Log("Enemy does: " + damagePoints);
         GetComponent<Animator>().SetTrigger("Attack");
         isAttacking = true;
     }

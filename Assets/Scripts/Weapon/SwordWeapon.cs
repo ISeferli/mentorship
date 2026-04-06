@@ -12,7 +12,6 @@ public class SwordWeapon : MonoBehaviour
     public bool IsAttacking {set {isAttacking = value;}}
 
     // Is the character attacking
-    public IAttack baseAttack;
     public BaseAttackComposition attackSet;
     private bool isAttacking = false;
 
@@ -20,7 +19,7 @@ public class SwordWeapon : MonoBehaviour
     {
         attackSet = new BaseAttackComposition();
         hitbox.enabled = false;
-        baseAttack = new BaseAttack(stats.GetStatValue("Attack"), 1, "Base");
+        BaseAttack baseAttack = new BaseAttack(stats.GetStatValue("Attack"), 1, "Base");
         attackSet.AddAttack(baseAttack);
         UpdateAttackRange();
     }
@@ -39,7 +38,7 @@ public class SwordWeapon : MonoBehaviour
 
     public void UpdateAttackRange()
     {
-        int attackRange = baseAttack.attackData.range;
+        int attackRange = attackSet.GetBaseAttack("Base").attackData.range;
         hitbox.size = new Vector3(1f, 1f, attackRange);
         hitbox.center = new Vector3(0, 0, attackRange / 2f);
     }
@@ -59,10 +58,13 @@ public class SwordWeapon : MonoBehaviour
     /// Update the upgrade in the Base Attack object
     /// </summary>
     /// <param name="extraAttack">Upgrade for the base attack</param>
-    public void SetAttackAbility(ElementalDecorator extraAttack)
+    /// <param name="attackID">Attack ID to be upgraded</param>
+    public void SetAttackAbility(IAttack extraAttack, string attackID)
     {
-        baseAttack = extraAttack;
-        GetComponent<Renderer>().material.color = extraAttack.attackData.color;
+        BaseAttack newBaseAttack = new BaseAttack(stats.GetStatValue("Attack"), 1, attackID);
+        attackSet.UpgradeSpecificAttack(attackID, extraAttack, newBaseAttack);
+        if(attackID.Equals("Base"))
+            GetComponent<Renderer>().material.color = extraAttack.attackData.color;
         UpdateAttackRange();
     }
 }

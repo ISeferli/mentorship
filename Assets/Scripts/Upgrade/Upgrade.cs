@@ -9,12 +9,13 @@ public class Upgrade : ScriptableObject
     public string upgradeTitle = "";
     public string upgradeDescription = "";
     public int amount = 0;
+    public GameObject upgradePrefab;
 }
 
 public enum UpgradeType
 {
     Ability,
-    Damage,
+    Attack,
     Health,
     Stamina
 }

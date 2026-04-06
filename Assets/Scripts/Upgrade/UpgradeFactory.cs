@@ -5,30 +5,24 @@ using UnityEngine;
 
 public static class UpgradeFactory
 {
-    private static Dictionary<string, Func<int, IAbility, IAbility>> availableUpgrades = new Dictionary<string, Func<int, IAbility, IAbility>>()
+    private static Dictionary<string, Func<Upgrade, IAbility, IAbility>> availableUpgrades = 
+        new Dictionary<string, Func<Upgrade, IAbility, IAbility>>()
     {
-        { "Fire", (amount, stat) => new FireAttackDecorator(amount, (IAttack)stat) },
-        { "Water", (amount, stat) => new WaterAttackDecorator(amount, (IAttack)stat) },
-        { "HealthIncrease", (amount, stat) => new HealthMaxIncreaseDecorator((IHealth)stat, amount) },
-        { "HealthRegen", (amount, stat) => new HealthRegenDecorator((IHealth)stat, amount) },
-        { "StaminaIncrease", (amount, stat) => new StaminaMaxDecorator((IStamina)stat) },
-        { "StaminaRegen", (amount, stat) => new StaminaRegenDecorator((IStamina)stat, amount) }
+        { "Fire", (upgr, stat) => new FireAttackDecorator(upgr.amount, (IAttack)stat) },
+        { "Water", (upgr, stat) => new WaterAttackDecorator(upgr.amount, (IAttack)stat) },
+        { "HealthIncrease", (upgr, stat) => new HealthMaxIncreaseDecorator((IHealth)stat, upgr.amount) },
+        { "HealthRegen", (upgr, stat) => new HealthRegenDecorator((IHealth)stat, upgr.amount) },
+        { "StaminaIncrease", (upgr, stat) => new StaminaMaxDecorator((IStamina)stat) },
+        { "StaminaRegen", (upgr, stat) => new StaminaRegenDecorator((IStamina)stat, upgr.amount) },
+        { "Projectile", (upgr, stat) => new ProjectileAttackDecorator(upgr.amount, upgr.upgradePrefab, (IAttack)stat)},
     };
 
-    public static IEffect CreateEffect(string effectName, int effectDamage)
+    public static T CreateUpgrade<T>(Upgrade upgrade, T stat) where T : IAbility
     {
-        IEffect effect = null;
-        switch(effectName)
+        if (availableUpgrades.TryGetValue(upgrade.upgradeName, out var factory))
         {
-            case "Projectile":
-                // effect = new ProjectileEffect(effectDamage);
-                break;
-        };
-        return effect;
-    }
-
-    public static T CreateUpgrade<T>(string type, int amount, T stat) where T : IAbility
-    {
-        return (T)availableUpgrades[type](amount, stat);
+            return (T)factory(upgrade, stat);
+        }
+        return stat;
     }
 }

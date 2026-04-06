@@ -6,7 +6,7 @@ using UnityEngine;
 public class CharacterMovement : LevelSingleton<CharacterMovement>
 {
     [Header("Necessary Movement Components")]
-    [SerializeField] private PlayableStats stats;
+    [SerializeField] public PlayableStats stats;
     [SerializeField] private Rigidbody charRigidBody;
     [SerializeField] private Animator charAnimator;
     [SerializeField] private Transform startPoint;

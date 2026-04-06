@@ -22,7 +22,7 @@ public class BaseAttackComposition
     /// </summary>
     /// <param name="attackID">The base attack that will be added to the list</param>
     /// <returns> <b>True</b> if the id of the attack already exists on the list, <b>False</b> otherwise </returns>
-    private bool AttackExists(string attackID)
+    public bool AttackExists(string attackID)
     {
         for(int i=0; i<baseAttacks.Count; i++)
         {
@@ -44,6 +44,31 @@ public class BaseAttackComposition
             if(baseAttacks[i].attackData.id.Equals(attackID))
                 return baseAttacks[i];
         }
+
         return null;
+    }
+
+    public IAttack CreateNewBaseAttack(PlayableStats stats, string attackID)
+    {
+        return new BaseAttack(stats.GetStatValue("Attack"), 1, attackID);
+    }
+
+    public void UpgradeSpecificAttack(string attackID, IAttack upgradeAttack, IAttack baseAttack)
+    {
+        baseAttack = upgradeAttack;
+        if(!AttackExists(attackID))
+            AddAttack(baseAttack);
+        else
+        {
+            for (int i = 0; i < baseAttacks.Count; i++)
+            {
+                if (baseAttacks[i].attackData.id.Equals(attackID))
+                {
+                    // Replace the old version with the new decorated version
+                    baseAttacks[i] = baseAttack;
+                    return;
+                }
+            }
+        }
     }
 }
