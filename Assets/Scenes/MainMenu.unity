@@ -1035,6 +1035,7 @@ MonoBehaviour:
   enemyWaves: 2
   enemyNumber: 1
   upgradesNo: 3
+  levelDifficulty: {fileID: 11400000, guid: c3eeacdded80648a4a5d11f29388d512, type: 2}
   maxLevelRun: 3
 --- !u!4 &1053676127
 Transform:

@@ -25,6 +25,7 @@ public class EnemySpawner : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("From spawn " + GameManager.Instance.enemyNumber);
         SpawnEnemiesForLevel();
     }
 
@@ -87,16 +88,27 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Get the current level's enemy waves number
+    /// </summary>
+    /// <returns>Current enemy wave</returns>
     public int GetCurrentWave()
     {
         return currentEnemyWave;
     }
 
+    /// <summary>
+    /// Get the current level's enemies number
+    /// </summary>
+    /// <returns>Current enemy number</returns>
     public int GetCurrentEnemies()
     {
         return currentEnemies;
     }
 
+    /// <summary>
+    /// Function that handles logic after enemy deletion
+    /// </summary>
     private void DeleteEnemy()
     {
         currentEnemies--;

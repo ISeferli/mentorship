@@ -826,6 +826,10 @@ PrefabInstance:
       value: Portal
       objectReference: {fileID: 0}
     - target: {fileID: 8797525927726500189, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: levelDifficulty
+      value: 
+      objectReference: {fileID: 11400000, guid: c3eeacdded80648a4a5d11f29388d512, type: 2}
+    - target: {fileID: 8797525927726500189, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
       propertyPath: transitionScene
       value: MainMenu
       objectReference: {fileID: 0}
@@ -1018,7 +1022,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46566cc7605d88a44844a5e6689fb9e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelDifficultyManager
-  levelDifficulty: {fileID: 11400000, guid: c52f1d68fcec353469d9cb037f4971cf, type: 2}
 --- !u!4 &584202748
 Transform:
   m_ObjectHideFlags: 0
@@ -2389,6 +2392,7 @@ MonoBehaviour:
   enemyWaves: 2
   enemyNumber: 1
   upgradesNo: 3
+  levelDifficulty: {fileID: 11400000, guid: c3eeacdded80648a4a5d11f29388d512, type: 2}
   maxLevelRun: 3
 --- !u!4 &1243077259
 Transform:

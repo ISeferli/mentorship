@@ -590,7 +590,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46566cc7605d88a44844a5e6689fb9e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelDifficultyManager
-  levelDifficulty: {fileID: 11400000, guid: 0dd3188944fd53f43ab18795808cf49c, type: 2}
 --- !u!4 &642805857
 Transform:
   m_ObjectHideFlags: 0
@@ -715,6 +714,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Portal
       objectReference: {fileID: 0}
+    - target: {fileID: 8797525927726500189, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: levelDifficulty
+      value: 
+      objectReference: {fileID: 11400000, guid: c3eeacdded80648a4a5d11f29388d512, type: 2}
     - target: {fileID: 8797525927726500189, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
       propertyPath: transitionScene
       value: SceneOne
@@ -947,9 +950,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a47f2e1b8c4b19f4da306167b6b3e306, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  enemyWaves: 2
+  enemyWaves: 3
   enemyNumber: 1
   upgradesNo: 3
+  levelDifficulty: {fileID: 11400000, guid: c3eeacdded80648a4a5d11f29388d512, type: 2}
   maxLevelRun: 3
 --- !u!4 &1635122604
 Transform:
@@ -966,6 +970,75 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1755801182
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4180203847223829744, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 4180203847223829744, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4180203847223829744, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 47.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4180203847223829744, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4180203847223829744, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4180203847223829744, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4180203847223829744, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4180203847223829744, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4180203847223829744, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4180203847223829744, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7071920140859548086, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7093871047334897480, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: m_Name
+      value: Portal
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797525927726500189, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: levelDifficulty
+      value: 
+      objectReference: {fileID: 11400000, guid: c3eeacdded80648a4a5d11f29388d512, type: 2}
+    - target: {fileID: 8797525927726500189, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: transitionScene
+      value: SceneOne
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
 --- !u!1001 &1761970091
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1321,4 +1394,5 @@ SceneRoots:
   - {fileID: 2048177884}
   - {fileID: 347096652}
   - {fileID: 1068633235}
+  - {fileID: 1755801182}
   - {fileID: 1432958600}

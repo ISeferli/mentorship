@@ -483,7 +483,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46566cc7605d88a44844a5e6689fb9e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelDifficultyManager
-  levelDifficulty: {fileID: 11400000, guid: 8b928217191787c419e208dc5963d30c, type: 2}
 --- !u!1001 &425935895
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -782,6 +781,7 @@ MonoBehaviour:
   enemyWaves: 2
   enemyNumber: 1
   upgradesNo: 3
+  levelDifficulty: {fileID: 11400000, guid: c3eeacdded80648a4a5d11f29388d512, type: 2}
   maxLevelRun: 3
 --- !u!114 &578840508
 MonoBehaviour:
@@ -2692,6 +2692,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8062400752479137105, guid: ea31395063cdeee4ca3b947c0ad3fb68, type: 3}
   m_PrefabInstance: {fileID: 1695297316}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1855837369
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4180203847223829744, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 4180203847223829744, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 4180203847223829744, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 4180203847223829744, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4180203847223829744, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4180203847223829744, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4180203847223829744, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4180203847223829744, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4180203847223829744, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4180203847223829744, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7071920140859548086, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7093871047334897480, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: m_Name
+      value: Portal
+      objectReference: {fileID: 0}
+    - target: {fileID: 8797525927726500189, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: levelDifficulty
+      value: 
+      objectReference: {fileID: 11400000, guid: c3eeacdded80648a4a5d11f29388d512, type: 2}
+    - target: {fileID: 8797525927726500189, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: transitionScene
+      value: SceneTwo
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
 --- !u!1001 &1920139595
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3215,6 +3284,10 @@ PrefabInstance:
       value: Portal
       objectReference: {fileID: 0}
     - target: {fileID: 8797525927726500189, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
+      propertyPath: levelDifficulty
+      value: 
+      objectReference: {fileID: 11400000, guid: c3eeacdded80648a4a5d11f29388d512, type: 2}
+    - target: {fileID: 8797525927726500189, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
       propertyPath: transitionScene
       value: SceneTwo
       objectReference: {fileID: 0}
@@ -3446,6 +3519,7 @@ SceneRoots:
   - {fileID: 425935895}
   - {fileID: 1982846778567111625}
   - {fileID: 1232614528914071198}
+  - {fileID: 1855837369}
   - {fileID: 928214078162098085}
   - {fileID: 939961382}
   - {fileID: 1428908207}
