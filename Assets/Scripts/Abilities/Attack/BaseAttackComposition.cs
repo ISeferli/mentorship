@@ -48,11 +48,35 @@ public class BaseAttackComposition
         return null;
     }
 
-    public IAttack CreateNewBaseAttack(PlayableStats stats, string attackID)
+    
+    /// <summary>
+    /// Gets the attack of the list by number
+    /// </summary>
+    /// <param name="no">The position number of the attack</param>
+    /// <returns> The attack in the list with that specific position number </returns>
+    public IAttack GetAttackByNo(int no)
     {
-        return new BaseAttack(stats.GetStatValue("Attack"), 1, attackID);
+        return baseAttacks[no];
     }
 
+
+    /// <summary>
+    /// Creates a new BaseAttack instance for adding a new attack in list
+    /// </summary>
+    /// <param name="attackID">The attack ID that you will add in the list</param>
+    /// <returns> The attack that gets created </returns>
+    public IAttack CreateNewAttack(string attackID)
+    {
+        return new BaseAttack(0, 1, attackID);
+    }
+
+    
+    /// <summary>
+    /// Upgrades the specific attack that handles the upgrade
+    /// </summary>
+    /// <param name="attackID">The attack ID that will be upgraded</param>
+    /// <param name="upgradeAttack">The upgrade of the attack</param>
+    /// <param name="baseAttack">The previous attack without the upgrade</param>
     public void UpgradeSpecificAttack(string attackID, IAttack upgradeAttack, IAttack baseAttack)
     {
         baseAttack = upgradeAttack;
@@ -70,5 +94,15 @@ public class BaseAttackComposition
                 }
             }
         }
+    }
+
+
+    /// <summary>
+    /// Gets the length of the attack list
+    /// </summary>
+    /// <returns> The length of the attack list </returns>
+    public int GetAttackListLength()
+    {
+        return baseAttacks.Count;
     }
 }

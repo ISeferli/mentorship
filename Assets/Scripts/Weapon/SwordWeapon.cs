@@ -24,6 +24,16 @@ public class SwordWeapon : MonoBehaviour
         UpdateAttackRange();
     }
 
+    void Update()
+    {
+        // Informa all the attacks in the attackSet so all internal decorators update their timers
+        if (attackSet != null)
+        {
+            for(int i=0; i<attackSet.GetAttackListLength();i++)
+                attackSet.GetAttackByNo(i).AttackTick();
+        }
+    }
+
     public void EnableHitbox()
     {
         isAttacking = true;
@@ -48,7 +58,12 @@ public class SwordWeapon : MonoBehaviour
         // When the collider of the sword hits an object with an Enemy tag
         if ((collider.CompareTag("Enemy") || collider.CompareTag("Boss")) && isAttacking)
         {
-            attackSet.GetBaseAttack("Base").PerformAttack(stats.GetStatValue("Attack"), collider.gameObject, this.gameObject);
+            for(int i=0; i < attackSet.GetAttackListLength(); i++)
+            {
+                Debug.Log("Attack type: " + attackSet.GetAttackByNo(i).attackData.id);
+                Debug.Log("Attack damage: " + attackSet.GetAttackByNo(i).attackData.damage);
+                attackSet.GetAttackByNo(i).PerformAttack(stats.GetStatValue("Attack"), collider.gameObject, this.gameObject);
+            }
             if(collider.CompareTag("Boss"))
                 GameEventsManager.Instance.graphicEvents.ChangeEnemyHealthUI(attackSet.GetBaseAttack("Base").attackData.damage);
         }

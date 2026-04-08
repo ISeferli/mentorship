@@ -23,11 +23,6 @@ public class EnemyAI : MonoBehaviour
     private NavMeshAgent enemyAgent;
     private GameObject targetPlayer;
 
-    // Enemy changing settings
-    private bool canAttack = true;
-    private int pointsOfDamage = 0;
-
-
     private void Awake()
     {
         // Initialize the state of the enemy to roaming
@@ -71,8 +66,6 @@ public class EnemyAI : MonoBehaviour
                 if (DistanceToPlayer() < 2.5) AttackRoutine();
                 break;
             case EnemyState.Damage:
-                GetComponent<Health>().DamageHealth(pointsOfDamage);
-                pointsOfDamage = 0;
                 if(GetComponent<Health>().DetectDeath()) enemyState = EnemyState.Death;
                 else enemyState = EnemyState.Chase;
                 break;
@@ -165,7 +158,7 @@ public class EnemyAI : MonoBehaviour
     /// object will take</param>
     public void TakeDamage(int damagePoints)
     {
-        pointsOfDamage = damagePoints;
+        GetComponent<Health>().DamageHealth(damagePoints);
         enemyState = EnemyState.Damage;
     }
 }

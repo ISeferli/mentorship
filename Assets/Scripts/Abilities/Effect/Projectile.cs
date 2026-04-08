@@ -22,17 +22,14 @@ public class Projectile : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        // Apply damage
+        Health health = other.GetComponent<Health>();
+        if(health!=null)
+            health.DamageHealth(damage);
         if (other.CompareTag("Player"))
         {
-            // Apply damage
-            Debug.Log("here");
-            Health health = other.GetComponent<Health>();
-            if (health != null)
-            {
-                health.DamageHealth(damage);
-                GameEventsManager.Instance.graphicEvents.ChangeCurrentHealthUI(-damage);
-            }
-            Destroy(gameObject);
+            GameEventsManager.Instance.graphicEvents.ChangeCurrentHealthUI(-damage);   
         }
+        Destroy(gameObject);
     }
 }

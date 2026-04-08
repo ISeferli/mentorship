@@ -14,22 +14,31 @@ public class ProjectileAttackDecorator : ElementalDecorator
     {
         attackData.damage += damageAmount;
         attackData.attackPrefab = attackPrefab;
+        attackData.cooldown = 5f;
     }
 
     public override void PerformAttack(int pointsDamage, GameObject personToHit, GameObject attacker)
     {
         base.PerformAttack(pointsDamage, personToHit, attacker);
-        if (attackData.attackPrefab == null)
+        Debug.Log("Projectile attack");
+        if (attackData.cooldownTimer <= 0)
         {
-            Debug.LogWarning("Projectile Attack missing prefab");
-            return;
+            Debug.Log("Reached cooldown");
+            if (attackData.attackPrefab == null)
+            {
+                Debug.LogWarning("Projectile Attack missing prefab");
+                return;
+            }
+            // Find direction of the road the projectile will take to reach the person to hit
+            Vector3 direction = (personToHit.transform.position - attacker.transform.position).normalized;
+            Debug.Log("Possible prefab " + attackData.attackPrefab.name);
+            GameObject projectile = GameObject.Instantiate(attackData.attackPrefab, attacker.transform.position, Quaternion.identity);
+            // Initialize projectile
+            Projectile proj = projectile.GetComponent<Projectile>();
+            Debug.Log("Damage to do: " +attackData.damage);
+            if (proj != null)
+                proj.Initialize(direction, attackData.damage);
+            attackData.cooldownTimer = attackData.cooldown;
         }
-        // Find direction of the road the projectile will take to reach the person to hit
-        Vector3 direction = (personToHit.transform.position - attacker.transform.position).normalized;
-        GameObject projectile = GameObject.Instantiate(attackData.attackPrefab, attacker.transform.position, Quaternion.identity);
-        // Initialize projectile
-        Projectile proj = projectile.GetComponent<Projectile>();
-        if (proj != null)
-            proj.Initialize(direction, pointsDamage);
     }
 }

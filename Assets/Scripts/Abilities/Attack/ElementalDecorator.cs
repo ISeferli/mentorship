@@ -28,4 +28,9 @@ public abstract class ElementalDecorator : IAttack
     {
         specificAttack.PerformAttack(pointsDamage, personToHit, attacker);
     }
+
+    public virtual void AttackTick()
+    {     
+        specificAttack.AttackTick();
+    }
 }

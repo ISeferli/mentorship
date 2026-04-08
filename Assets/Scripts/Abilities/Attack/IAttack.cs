@@ -4,6 +4,7 @@ public interface IAttack: IAbility
 {
     public AttackData attackData { get; set; }
     public void PerformAttack(int pointsDamage, GameObject personToHit, GameObject attacker);
+    public void AttackTick();
 }
 
 public class AttackData
@@ -15,4 +16,6 @@ public class AttackData
     public Color betterColor;
     public int range;
     public GameObject attackPrefab;
+    public float cooldown;
+    public float cooldownTimer;
 }

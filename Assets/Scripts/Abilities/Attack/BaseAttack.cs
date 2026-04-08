@@ -19,7 +19,9 @@ public class BaseAttack : IAttack
             color = Color.white,
             weakColor = Color.white,
             damage = baseDamage,
-            range = baseRange
+            range = baseRange,
+            cooldown = 0f,
+            cooldownTimer = 0f,
         };
     }
 
@@ -37,5 +39,16 @@ public class BaseAttack : IAttack
             personToHit.GetComponent<EnemyAI>().TakeDamage(attackData.damage);
         else if (personToHit.CompareTag("Boss")) 
             personToHit.GetComponent<Health>().DamageHealth(attackData.damage);
+    }
+
+    /// <summary>
+    /// Function to be called automatically if the timer of the attack has reached
+    /// its peak.
+    /// </summary>
+    public void AttackTick()
+    {
+         // Reduce the timer for this specific attack layer
+        if (attackData.cooldownTimer > 0)
+            attackData.cooldownTimer -= Time.deltaTime;
     }
 }
