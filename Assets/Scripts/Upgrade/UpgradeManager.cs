@@ -29,13 +29,36 @@ public class UpgradeManager : MonoBehaviour
     public void AssignDifferentUpgrades()
     {
         currentlyPickedUpgrades = new List<Upgrade>();
+        List<Upgrade> selectedUpgrades;
         // If list has fewer items, pick all of them
         int amountToPick = Mathf.Min(2, attackUpgrades.Count);
-        currentlyPickedUpgrades = attackUpgrades.OrderBy(x => Random.value).Take(amountToPick).ToList();
+        if (GameManager.Instance.GetCurrentLevel() == 0)
+        {
+            selectedUpgrades = attackUpgrades.Where(u => u.upgradeType == UpgradeType.Ability).ToList();
+            Debug.Log("First level detected: Filtering for Abilities only.");
+        }
+        else
+            selectedUpgrades = attackUpgrades.OrderBy(x => Random.value).Take(amountToPick).ToList();
+        RollUpgradeStats(selectedUpgrades);
 
         // If it's the first set of upgrades, delete from the list the ability upgrades to not appear again for now
         if (GameManager.Instance.GetCurrentLevel()==0)
             attackUpgrades.RemoveAll(upgrade => upgrade.upgradeType.ToString().Equals("Ability"));
         GameEventsManager.Instance.graphicEvents.ShowUpgradesOnWaveTerm(currentlyPickedUpgrades);
+    }
+
+    private void RollUpgradeStats(List<Upgrade> selected)
+    {
+        foreach (var upgrade in selected)
+        {
+            // Create a runtime instance so we don't overwrite the actual ScriptableObject file
+            Upgrade runtimeUpgrade = Instantiate(upgrade);
+            float difficultyBonus = 1.0f + (GameManager.Instance.GetCurrentLevel() * 0.1f); 
+            
+            // Roll the random number and apply difficulty
+            int baseRoll = Random.Range(runtimeUpgrade.minAmount, runtimeUpgrade.maxAmount + 1);
+            runtimeUpgrade.amount = Mathf.RoundToInt(baseRoll * difficultyBonus);
+            currentlyPickedUpgrades.Add(runtimeUpgrade);
+        }
     }
 }

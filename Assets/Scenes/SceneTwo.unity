@@ -831,7 +831,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: c3eeacdded80648a4a5d11f29388d512, type: 2}
     - target: {fileID: 8797525927726500189, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
       propertyPath: transitionScene
-      value: MainMenu
+      value: SceneThree
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -993,50 +993,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8837269382709941426, guid: 73b1d59dd9d49be4f9606b5bf0826ad0, type: 3}
   m_PrefabInstance: {fileID: 537735562}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &584202746
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 584202748}
-  - component: {fileID: 584202747}
-  m_Layer: 0
-  m_Name: Level Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &584202747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584202746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46566cc7605d88a44844a5e6689fb9e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LevelDifficultyManager
---- !u!4 &584202748
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584202746}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 560.9965, y: 483.79504, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &607102340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2393,7 +2349,6 @@ MonoBehaviour:
   enemyNumber: 1
   upgradesNo: 3
   levelDifficulty: {fileID: 11400000, guid: c3eeacdded80648a4a5d11f29388d512, type: 2}
-  maxLevelRun: 3
 --- !u!4 &1243077259
 Transform:
   m_ObjectHideFlags: 0
@@ -3383,7 +3338,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1973518308}
-  - {fileID: 584202748}
   - {fileID: 2104829478}
   - {fileID: 1243077259}
   - {fileID: 615761957}

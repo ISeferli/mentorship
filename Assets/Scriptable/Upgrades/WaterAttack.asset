@@ -15,5 +15,8 @@ MonoBehaviour:
   upgradeType: 0
   upgradeName: Water
   upgradeTitle: Water Element
-  upgradeDescription: Gain +10 water attack ability
+  upgradeDescription: Gain +{0} water attack ability
+  minAmount: 10
+  maxAmount: 20
   amount: 10
+  upgradePrefab: {fileID: 0}

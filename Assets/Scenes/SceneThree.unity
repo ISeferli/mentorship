@@ -561,50 +561,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79a95b37507382542bc97d59b0ef0752, type: 3}
---- !u!1 &642805855
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 642805857}
-  - component: {fileID: 642805856}
-  m_Layer: 0
-  m_Name: Level Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &642805856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 642805855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46566cc7605d88a44844a5e6689fb9e7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LevelDifficultyManager
---- !u!4 &642805857
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 642805855}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 560.9965, y: 483.79504, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &917022590
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,6 +867,7 @@ GameObject:
   - component: {fileID: 1635122604}
   - component: {fileID: 1635122603}
   - component: {fileID: 1635122602}
+  - component: {fileID: 1635122605}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -954,7 +911,6 @@ MonoBehaviour:
   enemyNumber: 1
   upgradesNo: 3
   levelDifficulty: {fileID: 11400000, guid: c3eeacdded80648a4a5d11f29388d512, type: 2}
-  maxLevelRun: 3
 --- !u!4 &1635122604
 Transform:
   m_ObjectHideFlags: 0
@@ -970,6 +926,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1635122605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635122601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d2ef90e136ff4b8a96d9c484056c5c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ColorSourceController
+  effectMaterial: {fileID: 2100000, guid: 0a2a4a48d11094ddd90bd5172ab0b6d5, type: 2}
+  colorSource: {fileID: 2048177885}
 --- !u!1001 &1755801182
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1380,12 +1350,16 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8b8cdefd887d4944ba60d671f627e02, type: 3}
+--- !u!4 &2048177885 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6029277159792281365, guid: f8b8cdefd887d4944ba60d671f627e02, type: 3}
+  m_PrefabInstance: {fileID: 2048177884}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1511124892}
-  - {fileID: 642805857}
   - {fileID: 425761109}
   - {fileID: 1635122604}
   - {fileID: 332169724}

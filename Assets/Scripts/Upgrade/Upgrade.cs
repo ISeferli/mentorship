@@ -7,8 +7,14 @@ public class Upgrade : ScriptableObject
     public UpgradeType upgradeType = UpgradeType.Ability;
     public string upgradeName = "";
     public string upgradeTitle = "";
-    public string upgradeDescription = "";
-    public int amount = 0;
+    [TextArea] public string upgradeDescription = "";
+    
+    [Header("Stats Range")]
+    public int minAmount = 5;
+    public int maxAmount = 10;
+    
+    [Header("Dynamic Value (Runtime Only)")]
+    [HideInInspector] public int amount;
     public GameObject upgradePrefab;
 }
 

@@ -11,7 +11,7 @@ public class GameManager : LevelSingleton<GameManager>
 
     [Header("Level Difficulty Database")]
     [SerializeField] private LevelDifficulty levelDifficulty;
-    [SerializeField] public int maxLevelRun = 3;
+    // [SerializeField] public int maxLevelRun = 3;
 
     // Prepare the next spawn
     private int nextWaves;
@@ -50,7 +50,7 @@ public class GameManager : LevelSingleton<GameManager>
     {
         Debug.Log("increasing levels");
         currentLevel++;
-        if(currentLevel >= maxLevelRun) GameEventsManager.Instance.gameEvents.RunCompleteEvent();
+        // if(currentLevel >= maxLevelRun) GameEventsManager.Instance.gameEvents.RunCompleteEvent();
     }
 
 

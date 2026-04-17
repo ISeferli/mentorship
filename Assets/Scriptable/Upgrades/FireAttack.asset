@@ -15,5 +15,8 @@ MonoBehaviour:
   upgradeType: 0
   upgradeName: Fire
   upgradeTitle: Fire Element
-  upgradeDescription: Gain +5 fire attack ability
+  upgradeDescription: Gain +{0} fire attack ability
+  minAmount: 5
+  maxAmount: 10
   amount: 5
+  upgradePrefab: {fileID: 0}

@@ -15,5 +15,8 @@ MonoBehaviour:
   upgradeType: 2
   upgradeName: HealthIncrease
   upgradeTitle: Max Health
-  upgradeDescription: 'Increase your health by +10 '
+  upgradeDescription: Increase your health by +{0}
+  minAmount: 10
+  maxAmount: 15
   amount: 10
+  upgradePrefab: {fileID: 0}

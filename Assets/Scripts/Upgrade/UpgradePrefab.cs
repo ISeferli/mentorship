@@ -24,7 +24,7 @@ public class UpgradePrefab : MonoBehaviour
         assignedUpgrade = upgrade;
         assignedPanel = panel;
         title.text = upgrade.upgradeTitle;
-        description.text = upgrade.upgradeDescription;
+        description.text = string.Format(upgrade.upgradeDescription, upgrade.amount);
         icon.texture = upgrade.icon;
         GetComponent<Button>().onClick.AddListener(OnClick);
     }

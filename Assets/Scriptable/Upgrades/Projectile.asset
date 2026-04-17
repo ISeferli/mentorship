@@ -15,6 +15,8 @@ MonoBehaviour:
   upgradeType: 1
   upgradeName: Projectile
   upgradeTitle: Water Gun
-  upgradeDescription: Water gun attack every 10 seconds with 5 damage.
+  upgradeDescription: Water gun attack every 10 seconds with {0} damage.
+  minAmount: 5
+  maxAmount: 10
   amount: 5
   upgradePrefab: {fileID: 2433604377404512625, guid: 204991f04dfff364aa098225a2cf9088, type: 3}
