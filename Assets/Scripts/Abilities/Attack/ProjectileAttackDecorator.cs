@@ -21,7 +21,9 @@ public class ProjectileAttackDecorator : ElementalDecorator
     {
         base.PerformAttack(pointsDamage, personToHit, attacker);
         Debug.Log("Projectile attack");
-        if (attackData.cooldownTimer <= 0)
+        bool isBoss = attacker.CompareTag("Boss");
+        bool canAttack = isBoss || attackData.cooldownTimer <= 0;
+        if (canAttack)
         {
             Debug.Log("Reached cooldown");
             if (attackData.attackPrefab == null)
@@ -35,7 +37,7 @@ public class ProjectileAttackDecorator : ElementalDecorator
             GameObject projectile = GameObject.Instantiate(attackData.attackPrefab, attacker.transform.position, Quaternion.identity);
             // Initialize projectile
             Projectile proj = projectile.GetComponent<Projectile>();
-            Debug.Log("Damage to do: " +attackData.damage);
+            Debug.Log("Damage to do: " + attackData.damage);
             if (proj != null)
                 proj.Initialize(direction, attackData.damage);
             attackData.cooldownTimer = attackData.cooldown;

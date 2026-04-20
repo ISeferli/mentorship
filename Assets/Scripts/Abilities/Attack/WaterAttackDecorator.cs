@@ -8,12 +8,13 @@ public class WaterAttackDecorator : ElementalDecorator
     /// </summary>
     /// <param name="specificAttack">The base attack that will be modified</param>
     /// <param name="upgradeAmount">The amount with which the base attac damage will be upgraded</param>
-    public WaterAttackDecorator(int upgradeAmount, IAttack specificAttack) : base(specificAttack)
+    public WaterAttackDecorator(int upgradeAmount, GameObject upgradeEffect, IAttack specificAttack) : base(specificAttack)
     {
         attackData.color = Color.blue;
         attackData.betterColor = Color.green;
         attackData.weakColor = Color.red;
         attackData.damage += upgradeAmount;
+        attackData.effect = upgradeEffect;
     }
 
     public override void PerformAttack(int pointsDamage, GameObject personToHit, GameObject attacker)

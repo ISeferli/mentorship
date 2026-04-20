@@ -7,10 +7,10 @@ public static class EnemyAttackFactory
         switch(profile.elements)
         {
             case AttackElement.Fire:
-                attack = new FireAttackDecorator(4, attack);
+                attack = new FireAttackDecorator(4, null, attack);
                 break;
             case AttackElement.Water:
-                attack = new WaterAttackDecorator(7, attack);
+                attack = new WaterAttackDecorator(7, null, attack);
                 break;
         }
         return attack;
@@ -25,6 +25,9 @@ public static class EnemyAttackFactory
                 break;
             case "Spawn":
                 attack = new SpawnAttackDecorator(effectDamage, attackRadius, effectPrefab, attack);
+                break;
+            case "FireBoulder":
+                attack = new FallingBoulderDecorator(effectDamage, attackRadius, effectPrefab, attack);
                 break;
         };
         return attack;

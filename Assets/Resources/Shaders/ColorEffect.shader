@@ -7,6 +7,13 @@ Shader "Custom/ColorEffect"
         _SourcePos ("Source Position", Vector) = (0,0,0,0)
         _Radius ("Radius", Float) = 5.0
         _Softness ("Softness", Float) = 2.0
+
+        [Header(Outline Settings)]
+        _OutlineColor ("Outline Color", Color) = (1,1,1,1)
+        _OutlineWidth ("Outline Width", Float) = 0.2
+        _NoiseTex ("Noise Texture", 2D) = "white" {}
+        _NoiseSpeed ("Noise Speed", Float) = 1.0
+        _NoiseStrength ("Noise Strength", Float) = 0.5
     }
     SubShader
     {
@@ -25,9 +32,13 @@ Shader "Custom/ColorEffect"
             float3 _SourcePos;
             float _Radius;
             float _Softness;
+            float4 _OutlineColor;
+            float _OutlineWidth, _NoiseSpeed, _NoiseStrength;
 
             TEXTURE2D_X(_BlitTexture);
             SAMPLER(sampler_BlitTexture);
+            TEXTURE2D(_NoiseTex);
+            SAMPLER(sampler_NoiseTex);
 
             Varyings vert(Attributes input) {
                 Varyings output;
@@ -38,28 +49,40 @@ Shader "Custom/ColorEffect"
             }
 
             float4 frag(Varyings input) : SV_Target {
-                // 1. Get the original color
-                float3 col = SAMPLE_TEXTURE2D(_BlitTexture, sampler_BlitTexture, input.uv).rgb;
+                float3 col = SAMPLE_TEXTURE2D_X(_BlitTexture, sampler_BlitTexture, input.uv).rgb;
 
-                // 2. Reconstruct World Position from Depth
+                // 1. Reconstruct World Position
                 float depth = SampleSceneDepth(input.uv);
                 float3 worldPos = ComputeWorldSpacePosition(input.uv, depth, UNITY_MATRIX_I_VP);
 
-                // 3. Grayscale Logic
-                float gray = dot(col, float3(0.2126, 0.7152, 0.0722));
-                float3 grayscaleCol = float3(gray, gray, gray);
-
-                // 4. Distance Mask (comparing pixel world pos to player world pos)
-                float dist = distance(worldPos, _SourcePos);
+                // 2. Sampling Noise
+                // We use world-space or UVs for noise. World-space makes it "stick" to the ground.
+                float2 noiseUV = input.uv + _Time.y * _NoiseSpeed;
+                float noise = SAMPLE_TEXTURE2D(_NoiseTex, sampler_NoiseTex, noiseUV).r;
                 
-                // If depth is at the skybox (infinity), we usually want it grayscale too
+                // 3. Distance Mask with Noise Distortion
+                float dist = distance(worldPos, _SourcePos);
+                float distortedDist = dist + (noise * _NoiseStrength);
+
+                // Handle Skybox
                 if (depth <= 0.00001) dist = 1000.0; 
 
-                float mask = smoothstep(_Radius, _Radius + _Softness, dist);
+                // 4. Color Transition Mask
+                float mask = smoothstep(_Radius, _Radius + _Softness, distortedDist);
+                float gray = dot(col, float3(0.2126, 0.7152, 0.0722));
+                float3 finalCol = lerp(col, float3(gray, gray, gray), mask);
 
-                // mask = 0 (near player) -> original color
-                // mask = 1 (far away) -> grayscale
-                return float4(lerp(col, grayscaleCol, mask), 1.0);
+                // 5. Outline Logic
+                // We create a thin ring right at the edge of the radius
+                float edge = abs(distortedDist - _Radius);
+                float outlineMask = smoothstep(_OutlineWidth, 0, edge);
+                
+                // Prevent outline from showing on the skybox if not desired
+                if (depth <= 0.00001) outlineMask = 0;
+
+                finalCol = lerp(finalCol, _OutlineColor.rgb, outlineMask * _OutlineColor.a);
+
+                return float4(finalCol, 1.0);
             }
             ENDHLSL
         }

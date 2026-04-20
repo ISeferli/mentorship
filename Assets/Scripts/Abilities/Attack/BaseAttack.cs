@@ -18,6 +18,7 @@ public class BaseAttack : IAttack
             betterColor = Color.white,
             color = Color.white,
             weakColor = Color.white,
+            effect = null,
             damage = baseDamage,
             range = baseRange,
             cooldown = 0f,

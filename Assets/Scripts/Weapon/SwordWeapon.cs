@@ -79,7 +79,11 @@ public class SwordWeapon : MonoBehaviour
         BaseAttack newBaseAttack = new BaseAttack(stats.GetStatValue("Attack"), 1, attackID);
         attackSet.UpgradeSpecificAttack(attackID, extraAttack, newBaseAttack);
         if(attackID.Equals("Base"))
+        {
             GetComponent<Renderer>().material.color = extraAttack.attackData.color;
+            if(extraAttack.attackData.effect)
+                Instantiate(extraAttack.attackData.effect, this.transform);
+        }
         UpdateAttackRange();
     }
 }

@@ -8,7 +8,7 @@ public class ColorSourceController : MonoBehaviour
     [SerializeField] private Transform colorSource;
 
     // Shader Setting taking effect
-    private float radius = 2f;
+    private float radius = 1.5f;
     private float softness = 2f;
 
     void OnEnable()
@@ -34,6 +34,6 @@ public class ColorSourceController : MonoBehaviour
     private void IncreaseRadiusOnEnemyDeath()
     {
         Debug.Log("Color radius = " + radius);
-        radius++;
+        radius = radius + 0.3f;
     }
 }

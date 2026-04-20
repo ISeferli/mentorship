@@ -518,6 +518,7 @@ GameObject:
   - component: {fileID: 386342260}
   - component: {fileID: 386342259}
   - component: {fileID: 386342258}
+  - component: {fileID: 386342261}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -555,7 +556,7 @@ MonoBehaviour:
   enemyWaves: 2
   enemyNumber: 1
   upgradesNo: 3
-  maxLevelRun: 3
+  levelDifficulty: {fileID: 0}
 --- !u!4 &386342260
 Transform:
   m_ObjectHideFlags: 0
@@ -571,6 +572,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &386342261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386342257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d2ef90e136ff4b8a96d9c484056c5c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ColorSourceController
+  effectMaterial: {fileID: 2100000, guid: 0a2a4a48d11094ddd90bd5172ab0b6d5, type: 2}
+  colorSource: {fileID: 1662447504}
 --- !u!1001 &443161874
 PrefabInstance:
   m_ObjectHideFlags: 0

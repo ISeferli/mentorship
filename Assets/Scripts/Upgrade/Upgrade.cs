@@ -7,6 +7,7 @@ public class Upgrade : ScriptableObject
     public UpgradeType upgradeType = UpgradeType.Ability;
     public string upgradeName = "";
     public string upgradeTitle = "";
+    public GameObject upgradeEffect = null;
     [TextArea] public string upgradeDescription = "";
     
     [Header("Stats Range")]

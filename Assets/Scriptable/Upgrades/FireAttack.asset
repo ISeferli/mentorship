@@ -15,6 +15,7 @@ MonoBehaviour:
   upgradeType: 0
   upgradeName: Fire
   upgradeTitle: Fire Element
+  upgradeEffect: {fileID: 4994054905783420375, guid: b1ea8c004a08af04e9bc943afa8069c9, type: 3}
   upgradeDescription: Gain +{0} fire attack ability
   minAmount: 5
   maxAmount: 10
