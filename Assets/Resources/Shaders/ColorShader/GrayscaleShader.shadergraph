@@ -927,7 +927,7 @@
     "m_Title": "Filter Character Position Color With Radius",
     "m_Position": {
         "x": -1369.9998779296875,
-        "y": -839.9999389648438
+        "y": -840.0
     }
 }
 
@@ -1424,7 +1424,7 @@
     "m_ObjectId": "9c8b61c5bd2f4d349af08edce929353e",
     "m_Title": "Calculate Grayscale Color",
     "m_Position": {
-        "x": -1862.0,
+        "x": -1861.9998779296875,
         "y": -1592.9998779296875
     }
 }

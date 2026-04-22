@@ -70,7 +70,7 @@ public class EnemyAI : MonoBehaviour
                 else enemyState = EnemyState.Chase;
                 break;
             case EnemyState.Death:
-                GameEventsManager.Instance.gameEvents.EnemyDeathEvent();
+                GameEventsManager.Instance.gameEvents.EnemyDeathEvent(transform.position, targetPlayer.transform);
                 Destroy(gameObject);
                 break;
         }

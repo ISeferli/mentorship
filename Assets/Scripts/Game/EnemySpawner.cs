@@ -109,7 +109,7 @@ public class EnemySpawner : MonoBehaviour
     /// <summary>
     /// Function that handles logic after enemy deletion
     /// </summary>
-    private void DeleteEnemy()
+    private void DeleteEnemy(Vector3 position, Transform transform)
     {
         currentEnemies--;
         if (currentEnemies == 0) SpawnEnemiesForLevel();

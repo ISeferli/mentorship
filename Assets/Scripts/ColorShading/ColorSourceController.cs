@@ -7,18 +7,23 @@ public class ColorSourceController : MonoBehaviour
     [SerializeField] private Material effectMaterial;
     [SerializeField] private Transform colorSource;
 
+    [Header("Orb Settings")]
+    [SerializeField] private GameObject colorOrbPrefab;
+    [SerializeField] private float orbSpeed = 5f;
+    [SerializeField] private float radiusIncreaseAmount = 0.3f;
+
     // Shader Setting taking effect
     private float radius = 1.5f;
     private float softness = 2f;
 
     void OnEnable()
     {
-        GameEventsManager.Instance.gameEvents.OnEnemyDeath += IncreaseRadiusOnEnemyDeath;
+        GameEventsManager.Instance.gameEvents.OnEnemyDeath += SpawnOrbOnEnemyDeath;
     }
 
     void OnDisable()
     {
-        GameEventsManager.Instance.gameEvents.OnEnemyDeath -= IncreaseRadiusOnEnemyDeath;
+        GameEventsManager.Instance.gameEvents.OnEnemyDeath -= SpawnOrbOnEnemyDeath;
     }
 
     void Update()
@@ -31,9 +36,16 @@ public class ColorSourceController : MonoBehaviour
         }
     }
 
-    private void IncreaseRadiusOnEnemyDeath()
+    private void SpawnOrbOnEnemyDeath(Vector3 enemyPosition, Transform player)
     {
-        Debug.Log("Color radius = " + radius);
-        radius = radius + 0.3f;
+        if (colorOrbPrefab == null) return;
+        GameObject orb = Instantiate(colorOrbPrefab, enemyPosition, Quaternion.identity);
+        ColorOrb colorOrb = orb.GetComponent<ColorOrb>();
+
+        colorOrb.Initialize(player, orbSpeed, () =>
+        {
+            radius += radiusIncreaseAmount;
+            Debug.Log("Orb arrived! New radius = " + radius);
+        });
     }
 }

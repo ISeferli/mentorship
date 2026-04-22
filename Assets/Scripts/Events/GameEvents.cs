@@ -1,15 +1,16 @@
 using System;
+using UnityEngine;
 
 public class GameEvents
 {
     /// <summary>
     /// Event that is called when an enemy is destroyed by the character
     /// </summary>
-    public event Action OnEnemyDeath;
+    public event Action<Vector3, Transform> OnEnemyDeath;
 
-    public void EnemyDeathEvent()
+    public void EnemyDeathEvent(Vector3 position, Transform transform)
     {
-        OnEnemyDeath?.Invoke();
+        OnEnemyDeath?.Invoke(position, transform);
     }
 
     /// <summary>

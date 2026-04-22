@@ -940,6 +940,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ColorSourceController
   effectMaterial: {fileID: 2100000, guid: 0a2a4a48d11094ddd90bd5172ab0b6d5, type: 2}
   colorSource: {fileID: 2048177885}
+  colorOrbPrefab: {fileID: 7632309409448823393, guid: f18996da195600b4eae17699e4a5b0cd, type: 3}
+  orbSpeed: 5
+  radiusIncreaseAmount: 0.3
 --- !u!1001 &1755801182
 PrefabInstance:
   m_ObjectHideFlags: 0
