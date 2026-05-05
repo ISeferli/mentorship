@@ -11,7 +11,7 @@ public class GameManager : LevelSingleton<GameManager>
 
     [Header("Level Difficulty Database")]
     [SerializeField] private LevelDifficulty levelDifficulty;
-    // [SerializeField] public int maxLevelRun = 3;
+    [SerializeField] public int maxLevelRun = 2;
 
     // Prepare the next spawn
     private int nextWaves;
@@ -19,6 +19,7 @@ public class GameManager : LevelSingleton<GameManager>
 
     // Gameplay logic
     public static bool startedFromMainMenu = false;
+    public bool BossPortalAssigned { get; set; }
     private static int currentLevel = 0;
 
     protected override void Awake()

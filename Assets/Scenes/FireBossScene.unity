@@ -222,7 +222,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4047972025199878, guid: 6eea6e0671c87af48a62d8cf290ffe84, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 51.97167
+      value: 15.88
       objectReference: {fileID: 0}
     - target: {fileID: 4047972025199878, guid: 6eea6e0671c87af48a62d8cf290ffe84, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1175,6 +1175,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ColorSourceController
   effectMaterial: {fileID: 2100000, guid: 0a2a4a48d11094ddd90bd5172ab0b6d5, type: 2}
   colorSource: {fileID: 1363689706}
+  colorOrbPrefab: {fileID: 0}
+  orbSpeed: 5
+  radiusIncreaseAmount: 0.3
 --- !u!114 &1416721909
 MonoBehaviour:
   m_ObjectHideFlags: 0

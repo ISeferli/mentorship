@@ -30,4 +30,10 @@ MonoBehaviour:
     baseEnemies: 5
     multiplier: 1.5
     difficultyColor: {r: 0.6792453, g: 0.16981132, b: 0.16981132, a: 1}
+  boss:
+    tierName: Boss
+    baseWaves: 0
+    baseEnemies: 0
+    multiplier: 0
+    difficultyColor: {r: 0, g: 0, b: 0, a: 0}
   levelScalingFactor: 0.1

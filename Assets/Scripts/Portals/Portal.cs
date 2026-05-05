@@ -40,13 +40,23 @@ public class Portal : MonoBehaviour
     /// </summary>
     private void AssignNextLevelDifficulty()
     {
-        // Pick a random tier from the list of tiers in the LevelDifficultyManager
-        int roll = Random.Range(0, 3);
-        switch (roll)
+        bool canSpawnBoss = GameManager.Instance.GetCurrentLevel() >= GameManager.Instance.maxLevelRun && !GameManager.Instance.BossPortalAssigned;
+        if(canSpawnBoss)
         {
-            case 0: PortalLevelDifficulty = levelDifficulty.easy; break;
-            case 1: PortalLevelDifficulty = levelDifficulty.medium; break;
-            default: PortalLevelDifficulty = levelDifficulty.hard; break;
+            PortalLevelDifficulty = levelDifficulty.boss;
+            GameManager.Instance.BossPortalAssigned = true;
+            transitionScene = "BossScene";
+        }
+        else
+        {
+            // Pick a random tier from the list of tiers in the LevelDifficultyManager
+            int roll = Random.Range(0, 3);
+            switch (roll)
+            {
+                case 0: PortalLevelDifficulty = levelDifficulty.easy; break;
+                case 1: PortalLevelDifficulty = levelDifficulty.medium; break;
+                default: PortalLevelDifficulty = levelDifficulty.hard; break;
+            }
         }
         GetComponent<Renderer>().material.color = PortalLevelDifficulty.difficultyColor;
     }
@@ -56,6 +66,7 @@ public class Portal : MonoBehaviour
         // Triggers the collider only when a player only is passing through
         // and when the portal is open
         GameManager.Instance.GenerateLevelDifficulty(PortalLevelDifficulty);
+        GameManager.Instance.BossPortalAssigned = false;
         if (collider.CompareTag("Player") && isOpen)
         {
             GameManager.Instance.IncreaseCurrentLevel();

@@ -16,6 +16,7 @@ public class LevelDifficulty: ScriptableObject
     public DifficultyTier easy;
     public DifficultyTier medium;
     public DifficultyTier hard;
+    public DifficultyTier boss;
 
     [Tooltip("How much difficulty increases per level (e.g., 0.1 is 10% increase)")]
     public float levelScalingFactor = 0.1f;
