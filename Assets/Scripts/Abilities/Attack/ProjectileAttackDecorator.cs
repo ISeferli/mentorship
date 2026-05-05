@@ -22,6 +22,8 @@ public class ProjectileAttackDecorator : ElementalDecorator
         base.PerformAttack(pointsDamage, personToHit, attacker);
         Debug.Log("Projectile attack");
         bool isBoss = attacker.CompareTag("Boss");
+        float spawnOffset = 2.5f;
+        Vector3 spawnPosition = attacker.transform.position + attacker.transform.forward * spawnOffset;
         bool canAttack = isBoss || attackData.cooldownTimer <= 0;
         if (canAttack)
         {
@@ -32,9 +34,9 @@ public class ProjectileAttackDecorator : ElementalDecorator
                 return;
             }
             // Find direction of the road the projectile will take to reach the person to hit
-            Vector3 direction = (personToHit.transform.position - attacker.transform.position).normalized;
+            Vector3 direction = attacker.transform.forward;
             Debug.Log("Possible prefab " + attackData.attackPrefab.name);
-            GameObject projectile = GameObject.Instantiate(attackData.attackPrefab, attacker.transform.position, Quaternion.identity);
+            GameObject projectile = GameObject.Instantiate(attackData.attackPrefab, spawnPosition, Quaternion.identity);
             // Initialize projectile
             Projectile proj = projectile.GetComponent<Projectile>();
             Debug.Log("Damage to do: " + attackData.damage);

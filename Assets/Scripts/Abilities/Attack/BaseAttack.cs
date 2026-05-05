@@ -35,6 +35,7 @@ public class BaseAttack : IAttack
     /// <param name="attacker">The object that calls the attack</param>
     public void PerformAttack(int pointsDamage, GameObject personToHit, GameObject attacker)
     {
+        if(personToHit == null) return;
         // Detect enemies in range of attack        
         if (personToHit.CompareTag("Enemy"))
             personToHit.GetComponent<EnemyAI>().TakeDamage(attackData.damage);

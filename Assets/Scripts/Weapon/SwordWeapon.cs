@@ -29,8 +29,16 @@ public class SwordWeapon : MonoBehaviour
         // Informa all the attacks in the attackSet so all internal decorators update their timers
         if (attackSet != null)
         {
-            for(int i=0; i<attackSet.GetAttackListLength();i++)
+            for(int i=1; i < attackSet.GetAttackListLength(); i++)
+            {
+                Debug.Log("Attack type: " + attackSet.GetAttackByNo(i).attackData.id);
                 attackSet.GetAttackByNo(i).AttackTick();
+                if (attackSet.GetAttackByNo(i).attackData.cooldownTimer <= 0f)
+                {
+                    Debug.Log("Attack damage: " + attackSet.GetAttackByNo(i).attackData.damage);
+                    attackSet.GetAttackByNo(i).PerformAttack(stats.GetStatValue("Attack"), null, CharacterMovement.Instance.gameObject);
+                }
+            }
         }
     }
 
