@@ -791,7 +791,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4180203847223829744, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 42.1
+      value: 40.61
       objectReference: {fileID: 0}
     - target: {fileID: 4180203847223829744, guid: 2ba2f896c67df2a48a6c92d3c3df7458, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2349,6 +2349,7 @@ MonoBehaviour:
   enemyNumber: 1
   upgradesNo: 3
   levelDifficulty: {fileID: 11400000, guid: c3eeacdded80648a4a5d11f29388d512, type: 2}
+  maxLevelRun: 2
 --- !u!4 &1243077259
 Transform:
   m_ObjectHideFlags: 0

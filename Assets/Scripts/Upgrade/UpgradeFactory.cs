@@ -15,6 +15,8 @@ public static class UpgradeFactory
         { "StaminaIncrease", (upgr, stat) => new StaminaMaxDecorator((IStamina)stat) },
         { "StaminaRegen", (upgr, stat) => new StaminaRegenDecorator((IStamina)stat, upgr.amount) },
         { "Projectile", (upgr, stat) => new ProjectileAttackDecorator(upgr.amount, upgr.upgradePrefab, (IAttack)stat)},
+        { "Waterfall", (upgr, stat) => new WaterfallAttackDecorator(upgr.amount, 3, upgr.upgradePrefab, (IAttack)stat)},
+        { "Firebreath", (upgr, stat) => new FirebreathAttackDecorator(upgr.amount, upgr.upgradePrefab, (IAttack)stat)},
     };
 
     public static T CreateUpgrade<T>(Upgrade upgrade, T stat) where T : IAbility

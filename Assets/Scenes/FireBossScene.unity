@@ -1209,6 +1209,7 @@ MonoBehaviour:
   enemyNumber: 1
   upgradesNo: 3
   levelDifficulty: {fileID: 0}
+  maxLevelRun: 2
 --- !u!4 &1416721911
 Transform:
   m_ObjectHideFlags: 0
