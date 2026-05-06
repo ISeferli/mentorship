@@ -5,6 +5,7 @@ public class Upgrade : ScriptableObject
 {
     public Texture icon { get; set; }
     public UpgradeType upgradeType = UpgradeType.Ability;
+    public AttackElement element = AttackElement.None;
     public string upgradeName = "";
     public string upgradeTitle = "";
     public GameObject upgradeEffect = null;

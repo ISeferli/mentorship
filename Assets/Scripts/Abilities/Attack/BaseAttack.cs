@@ -19,6 +19,7 @@ public class BaseAttack : IAttack
             color = Color.white,
             weakColor = Color.white,
             effect = null,
+            element = AttackElement.None,
             damage = baseDamage,
             range = baseRange,
             cooldown = 0f,

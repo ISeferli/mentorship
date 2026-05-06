@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: FireAttack
   m_EditorClassIdentifier: Assembly-CSharp::Upgrade
   upgradeType: 0
+  element: 1
   upgradeName: Fire
   upgradeTitle: Fire Element
   upgradeEffect: {fileID: 4994054905783420375, guid: b1ea8c004a08af04e9bc943afa8069c9, type: 3}

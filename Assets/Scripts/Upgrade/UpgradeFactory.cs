@@ -8,8 +8,8 @@ public static class UpgradeFactory
     private static Dictionary<string, Func<Upgrade, IAbility, IAbility>> availableUpgrades = 
         new Dictionary<string, Func<Upgrade, IAbility, IAbility>>()
     {
-        { "Fire", (upgr, stat) => new FireAttackDecorator(upgr.amount, upgr.upgradeEffect, (IAttack)stat) },
-        { "Water", (upgr, stat) => new WaterAttackDecorator(upgr.amount, upgr.upgradeEffect, (IAttack)stat) },
+        { "Fire", (upgr, stat) => new FireAttackDecorator(upgr.amount, upgr.upgradeEffect, upgr.element, (IAttack)stat) },
+        { "Water", (upgr, stat) => new WaterAttackDecorator(upgr.amount, upgr.upgradeEffect, upgr.element, (IAttack)stat) },
         { "HealthIncrease", (upgr, stat) => new HealthMaxIncreaseDecorator((IHealth)stat, upgr.amount) },
         { "HealthRegen", (upgr, stat) => new HealthRegenDecorator((IHealth)stat, upgr.amount) },
         { "StaminaIncrease", (upgr, stat) => new StaminaMaxDecorator((IStamina)stat) },

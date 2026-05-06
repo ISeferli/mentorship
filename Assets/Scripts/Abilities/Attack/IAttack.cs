@@ -15,6 +15,7 @@ public class AttackData
     public Color weakColor;
     public Color betterColor;
     public GameObject effect;
+    public AttackElement element;
     public int range;
     public GameObject attackPrefab;
     public float cooldown;

@@ -7,10 +7,10 @@ public static class EnemyAttackFactory
         switch(profile.elements)
         {
             case AttackElement.Fire:
-                attack = new FireAttackDecorator(4, null, attack);
+                attack = new FireAttackDecorator(4, null, AttackElement.Fire, attack);
                 break;
             case AttackElement.Water:
-                attack = new WaterAttackDecorator(7, null, attack);
+                attack = new WaterAttackDecorator(7, null, AttackElement.Water, attack);
                 break;
         }
         return attack;

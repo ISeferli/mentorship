@@ -10,11 +10,13 @@ public class UpgradeManager : MonoBehaviour
     void OnEnable()
     {
         GameEventsManager.Instance.gameEvents.OnEnemyWaveComplete += AssignDifferentUpgrades;
+        GameEventsManager.Instance.gameEvents.OnAbilityChosen += RemoveOtherElementUpgrades;
     }
 
     void OnDisable()
     {
         GameEventsManager.Instance.gameEvents.OnEnemyWaveComplete -= AssignDifferentUpgrades;
+        GameEventsManager.Instance.gameEvents.OnAbilityChosen -= RemoveOtherElementUpgrades;
     }
 
     /// <summary>
@@ -60,5 +62,10 @@ public class UpgradeManager : MonoBehaviour
             runtimeUpgrade.amount = Mathf.RoundToInt(baseRoll * difficultyBonus);
             currentlyPickedUpgrades.Add(runtimeUpgrade);
         }
+    }
+
+    private void RemoveOtherElementUpgrades(AttackElement attackElement)
+    {
+        attackUpgrades.RemoveAll(upgrade => !upgrade.element.Equals(attackElement) && upgrade.upgradeType.ToString().Equals("Attack"));
     }
 }

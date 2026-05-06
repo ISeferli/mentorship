@@ -33,4 +33,14 @@ public class GameEvents
     {
         OnRunCompleted?.Invoke();
     }
+
+    /// <summary>
+    /// Event that is called when the first ability is chosen
+    /// </summary>
+    public event Action<AttackElement> OnAbilityChosen;
+
+    public void AbilityElemenyChosen(AttackElement atElement)
+    {
+        OnAbilityChosen?.Invoke(atElement);
+    }
 }

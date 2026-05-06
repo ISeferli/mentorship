@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: Projectile
   m_EditorClassIdentifier: Assembly-CSharp::Upgrade
   upgradeType: 1
+  element: 2
   upgradeName: Projectile
   upgradeTitle: Water Gun
+  upgradeEffect: {fileID: 0}
   upgradeDescription: Water gun attack every 10 seconds with {0} damage.
   minAmount: 5
   maxAmount: 10

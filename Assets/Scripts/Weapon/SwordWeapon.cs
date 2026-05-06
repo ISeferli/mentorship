@@ -14,6 +14,7 @@ public class SwordWeapon : MonoBehaviour
     // Is the character attacking
     public BaseAttackComposition attackSet;
     private bool isAttacking = false;
+    private AttackElement swordElement = AttackElement.None;
 
     void Start()
     {
@@ -88,9 +89,11 @@ public class SwordWeapon : MonoBehaviour
         attackSet.UpgradeSpecificAttack(attackID, extraAttack, newBaseAttack);
         if(attackID.Equals("Base"))
         {
+            swordElement = extraAttack.attackData.element;
             GetComponent<Renderer>().material.color = extraAttack.attackData.color;
             if(extraAttack.attackData.effect)
                 Instantiate(extraAttack.attackData.effect, this.transform);
+            GameEventsManager.Instance.gameEvents.AbilityElemenyChosen(swordElement);
         }
         UpdateAttackRange();
     }
