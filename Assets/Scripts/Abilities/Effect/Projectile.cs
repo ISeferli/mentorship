@@ -17,6 +17,7 @@ public class Projectile : MonoBehaviour
 
     void Update()
     {
+        // The projectile moves along as long as it stays active
         transform.position += target * speed * Time.deltaTime;
     }
 

@@ -30,12 +30,20 @@ public class ColorSourceController : MonoBehaviour
     {
         if (effectMaterial != null && colorSource != null)
         {
+            // Update variables that exist in shader to apply the visual changes
             effectMaterial.SetVector("_SourcePos", colorSource.position);
             effectMaterial.SetFloat("_Radius", radius);
             effectMaterial.SetFloat("_Softness", softness);
         }
     }
 
+    /// <summary>
+    /// Every time an enemy dies, an orb spawns that will track the player 
+    /// and disappear when it reaches the color range. Needs fixing to put the 
+    /// orb as a color source too.
+    /// </summary>
+    /// <param name="enemyPosition">Position of the enemy where the orb will spawn</param>
+    /// <param name="player">Player that the orb will go to</param>
     private void SpawnOrbOnEnemyDeath(Vector3 enemyPosition, Transform player)
     {
         if (colorOrbPrefab == null) return;

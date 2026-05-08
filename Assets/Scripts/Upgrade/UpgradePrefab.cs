@@ -40,6 +40,7 @@ public class UpgradePrefab : MonoBehaviour
                 player.GetComponent<CharacterAttack>().upgradeSword.SetAttackAbility(newAbility, "Base");
                 break;
             case UpgradeType.Attack:
+                // Add new object in list and update that new base attack to the one of the upgrade
                 var baseAtk = attackComposition.AttackExists(assignedUpgrade.upgradeName)
                     ? attackComposition.GetBaseAttack(assignedUpgrade.upgradeName)
                     : attackComposition.CreateNewAttack(assignedUpgrade.upgradeName);

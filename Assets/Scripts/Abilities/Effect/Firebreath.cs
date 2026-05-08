@@ -17,6 +17,7 @@ public class Firebreath : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
+        // As long as the enemy stays in the trigger, it takes damage
         if (other.CompareTag("Enemy"))
         {
             // Check if it's time to damage this specific enemy again

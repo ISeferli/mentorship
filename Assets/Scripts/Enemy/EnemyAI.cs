@@ -71,7 +71,7 @@ public class EnemyAI : MonoBehaviour
                 break;
             case EnemyState.Death:
                 GameEventsManager.Instance.gameEvents.EnemyDeathEvent(transform.position, targetPlayer.transform);
-                Destroy(gameObject);
+                ObjectPooler.Instance.ReturnToPool("Enemy", gameObject);
                 break;
         }
     }

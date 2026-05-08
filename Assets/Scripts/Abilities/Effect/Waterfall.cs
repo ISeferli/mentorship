@@ -31,9 +31,9 @@ public class Waterfall : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        // Adding special effect of the attack, to slow down the enemies
         if (other.CompareTag("Enemy"))
         {
-            // Restore speed when they leave the waterfall
             var enemyMovement = other.GetComponent<UnityEngine.AI.NavMeshAgent>();
             if (enemyMovement != null)
             {

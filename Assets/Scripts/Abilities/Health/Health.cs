@@ -88,4 +88,9 @@ public class Health : MonoBehaviour, IHealth
             phases = currentPhase;
         }
     }
+
+    public void RestoreHealth()
+    {
+        healthData.currentHealth = healthData.maxHealth;
+    }
 }

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2981bf7358af5fc4c8fcf0421a771442, type: 3}
   m_Name: SimpleFireEnemy
   m_EditorClassIdentifier: Assembly-CSharp::EnemyType
+  tag: Enemy
   prefab: {fileID: 1931298151966786, guid: 5275ca0b6f0585c4f9c4dcd9d5542fed, type: 3}
   stats: {fileID: 11400000, guid: 75862ee5f0930e3498dbbf40dbf3bdac, type: 2}
   attackProfile: {fileID: 11400000, guid: 5000672d309fd7a478ba61cce11cb6f8, type: 2}

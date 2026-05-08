@@ -21,6 +21,7 @@ public class BossRun : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        // Basic logic of attack system on boss
         bossAgent.SetDestination(player.position);
         timer += Time.deltaTime;
         if (timer >= decisionCooldown)

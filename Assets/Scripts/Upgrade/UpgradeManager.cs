@@ -49,6 +49,11 @@ public class UpgradeManager : MonoBehaviour
         GameEventsManager.Instance.graphicEvents.ShowUpgradesOnWaveTerm(currentlyPickedUpgrades);
     }
 
+    /// <summary>
+    /// Based on the minimum and maximum amount the upgrade has, randomly choose the
+    /// upgrade bonus based on the current level
+    /// </summary>
+    /// <param name="selected">List of the upgrades that are selected to be shown</param>
     private void RollUpgradeStats(List<Upgrade> selected)
     {
         foreach (var upgrade in selected)

@@ -33,38 +33,55 @@ public class GameManager : LevelSingleton<GameManager>
         }
     }
 
+    /// <summary>
+    /// Get the number of levels that the player has
+    /// played so far in the playthrough
+    /// </summary>
+    /// <returns></returns>
     public int GetCurrentLevel()
     {
         return currentLevel;
     }
 
+    /// <summary>
+    /// Detect first level and preassign the difficulty on easy
+    /// level
+    /// </summary>
     private void SetupFirstLevel()
     {
         // Manually set Level 1 stats to Easy Difficulty
         enemyWaves = levelDifficulty.easy.baseWaves;
         enemyNumber = levelDifficulty.easy.baseEnemies;
-        Debug.Log(enemyNumber);
-        Debug.Log(levelDifficulty.easy.baseEnemies);
     }
 
+    /// <summary>
+    /// Increase the level number when a level is complete
+    /// </summary>
     public void IncreaseCurrentLevel()
     {
-        Debug.Log("increasing levels");
         currentLevel++;
         // if(currentLevel >= maxLevelRun) GameEventsManager.Instance.gameEvents.RunCompleteEvent();
     }
 
 
+    /// <summary>
+    /// Generation of level difficulty based on the portal assigned difficulty
+    /// on start of the level. The enemy number and wave number is calculated with a
+    /// math formula: Base * TierMultiplier * (1 + (CurrentLevel * Scaling))
+    /// </summary>
+    /// <param name="portalTier"></param>
     public void GenerateLevelDifficulty(DifficultyTier portalTier)
     {
         // Calculate Level Multiplier
-        // Formula: Base * TierMultiplier * (1 + (CurrentLevel * Scaling))
         float levelBoost = 1f + (GetCurrentLevel() * levelDifficulty.levelScalingFactor);
         nextWaves = Mathf.RoundToInt(portalTier.baseWaves * portalTier.multiplier * levelBoost);
         nextEnemies = Mathf.RoundToInt(portalTier.baseEnemies * portalTier.multiplier * levelBoost);
-        Debug.Log($"Level {GetCurrentLevel()} generated: {portalTier.tierName} mode. Waves: {enemyWaves}, Enemies: {enemyNumber}");
     }
 
+    /// <summary>
+    /// Before loading next scene, assign the new numbers 
+    /// to the base variables
+    /// </summary>
     public void ApplyNextLevelSettings()
     {
         // Move the "Pending" stats into the "Active" stats

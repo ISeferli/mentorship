@@ -7,10 +7,12 @@ public class Enemy : MonoBehaviour
     [SerializeField] public PlayableStats stats;
 
     private EnemyAttack enemyAttack;
+    private Health enemyHealth;
 
     void Awake()
     {
         enemyAttack = GetComponent<EnemyAttack>();
+        enemyHealth = GetComponent<Health>();
     }
     
     /// <summary>
@@ -18,6 +20,7 @@ public class Enemy : MonoBehaviour
     /// </summary>
     public void Initialize()
     {
+        enemyHealth.RestoreHealth();
         IAttack baseAttack = new BaseAttack(stats.GetStatValue("Attack"), 1, "Base");
         enemyAttack.EnemyAttackLibrary.AddAttack(EnemyAttackFactory.CreateElementalAttack(profile, stats, baseAttack, enemyAttack));
     }

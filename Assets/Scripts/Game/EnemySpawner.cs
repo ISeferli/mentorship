@@ -77,10 +77,11 @@ public class EnemySpawner : MonoBehaviour
                     attempts++;
                     continue;
                 }
-                GameObject newEnemy = Instantiate(enemyType.prefab, hit.position, Quaternion.identity);
+                GameObject newEnemy = ObjectPooler.Instance.SpawnFromPool(enemyType.tag, hit.position, Quaternion.identity);
+                // GameObject newEnemy = Instantiate(enemyType.prefab, hit.position, Quaternion.identity);
                 Enemy enemy = newEnemy.GetComponent<Enemy>();
                 enemy.Initialize();
-                newEnemy.transform.parent = transform;
+                // newEnemy.transform.parent = transform;
                 currentEnemies++;
                 return;
             }
