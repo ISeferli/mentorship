@@ -71,6 +71,7 @@ public class UpgradeManager : MonoBehaviour
 
     private void RemoveOtherElementUpgrades(AttackElement attackElement)
     {
+        GameManager.Instance.playerElement = attackElement;
         attackUpgrades.RemoveAll(upgrade => !upgrade.element.Equals(attackElement) && upgrade.upgradeType.ToString().Equals("Attack"));
     }
 }

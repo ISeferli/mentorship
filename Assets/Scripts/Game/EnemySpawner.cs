@@ -12,6 +12,7 @@ public class EnemySpawner : MonoBehaviour
     // Current settings of enemy waves
     private int currentEnemyWave = 0;
     private int currentEnemies = 0;
+    private bool isSpawning = false;
 
     void OnEnable()
     {
@@ -49,9 +50,11 @@ public class EnemySpawner : MonoBehaviour
     /// <param name="enemyNumber">Number of enemies that need to be spawned</param>
     public void SpawnWave(int enemyNumber)
     {
+        isSpawning = true;
         for (int i = 0; i < enemyNumber; i++)
             SpawnOneEnemy();
         currentEnemyWave++;
+        isSpawning = false;
     }
 
     /// <summary>
@@ -78,10 +81,8 @@ public class EnemySpawner : MonoBehaviour
                     continue;
                 }
                 GameObject newEnemy = ObjectPooler.Instance.SpawnFromPool(enemyType.tag, hit.position, Quaternion.identity);
-                // GameObject newEnemy = Instantiate(enemyType.prefab, hit.position, Quaternion.identity);
                 Enemy enemy = newEnemy.GetComponent<Enemy>();
                 enemy.Initialize();
-                // newEnemy.transform.parent = transform;
                 currentEnemies++;
                 return;
             }
@@ -113,6 +114,6 @@ public class EnemySpawner : MonoBehaviour
     private void DeleteEnemy(Vector3 position, Transform transform)
     {
         currentEnemies--;
-        if (currentEnemies == 0) SpawnEnemiesForLevel();
+        if (currentEnemies == 0 && !isSpawning) SpawnEnemiesForLevel();
     }
 }

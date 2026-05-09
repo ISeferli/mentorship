@@ -18,8 +18,11 @@ EditorBuildSettings:
     path: Assets/Scenes/SceneTwo.unity
     guid: 3553ae623347e8849bd23c1cf2843918
   - enabled: 1
-    path: Assets/Scenes/BossScene.unity
+    path: Assets/Scenes/BossScene_Water.unity
     guid: 9a6abe2f1717a18489463e14f2e05fdd
+  - enabled: 1
+    path: Assets/Scenes/BossScene_Fire.unity
+    guid: 4b14a080630fdc44bb53ccfb3eca3215
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -11,7 +11,7 @@ public class GameManager : LevelSingleton<GameManager>
 
     [Header("Level Difficulty Database")]
     [SerializeField] private LevelDifficulty levelDifficulty;
-    [SerializeField] public int maxLevelRun = 2;
+    [SerializeField] public int maxLevelRun = 1;
 
     // Prepare the next spawn
     private int nextWaves;
@@ -20,6 +20,7 @@ public class GameManager : LevelSingleton<GameManager>
     // Gameplay logic
     public static bool startedFromMainMenu = false;
     public bool BossPortalAssigned { get; set; }
+    public AttackElement playerElement;
     private static int currentLevel = 0;
 
     protected override void Awake()
@@ -52,6 +53,10 @@ public class GameManager : LevelSingleton<GameManager>
         // Manually set Level 1 stats to Easy Difficulty
         enemyWaves = levelDifficulty.easy.baseWaves;
         enemyNumber = levelDifficulty.easy.baseEnemies;
+        // Reset character stats
+        GameObject character = CharacterMovement.Instance.gameObject;
+        character.GetComponent<CharacterAttack>().ResetUpgrades();
+        
     }
 
     /// <summary>

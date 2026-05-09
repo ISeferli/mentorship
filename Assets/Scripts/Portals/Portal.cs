@@ -45,7 +45,8 @@ public class Portal : MonoBehaviour
         {
             PortalLevelDifficulty = levelDifficulty.boss;
             GameManager.Instance.BossPortalAssigned = true;
-            transitionScene = "BossScene";
+            transitionScene = "BossScene_" + GameManager.Instance.playerElement;
+            Debug.Log(transitionScene);
         }
         else
         {

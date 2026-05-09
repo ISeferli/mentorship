@@ -35,6 +35,16 @@ public class GameEvents
     }
 
     /// <summary>
+    /// Event that is called when the run is completed in Game Over
+    /// </summary>
+    public event Action OnRunFailed;
+
+    public void RunFailedEvent()
+    {
+        OnRunFailed?.Invoke();
+    }
+
+    /// <summary>
     /// Event that is called when the first ability is chosen
     /// </summary>
     public event Action<AttackElement> OnAbilityChosen;

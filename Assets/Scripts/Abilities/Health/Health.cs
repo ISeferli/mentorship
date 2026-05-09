@@ -47,8 +47,9 @@ public class Health : MonoBehaviour, IHealth
     public void DamageHealth(int damage)
     {
         ChangeHealth(-damage);
-        Debug.Log(healthData.currentHealth);
         animator.SetTrigger("TakeDamage");
+        if(gameObject.CompareTag("Player") && DetectDeath())
+            GameEventsManager.Instance.gameEvents.RunFailedEvent();
     }
 
     /// <summary>

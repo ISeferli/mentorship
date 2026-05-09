@@ -71,6 +71,7 @@ public class EnemyAI : MonoBehaviour
                 break;
             case EnemyState.Death:
                 GameEventsManager.Instance.gameEvents.EnemyDeathEvent(transform.position, targetPlayer.transform);
+                enemyState = EnemyState.Roaming;
                 ObjectPooler.Instance.ReturnToPool("Enemy", gameObject);
                 break;
         }

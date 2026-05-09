@@ -34,6 +34,14 @@ public class CharacterAttack : MonoBehaviour
     }
 
     /// <summary>
+    /// Reset character sword back to default state
+    /// </summary>
+    public void ResetUpgrades()
+    {
+        upgradeSword = leftSword;
+    }
+
+    /// <summary>
     /// Function that is called on animation and handles the
     /// end of the left attack
     /// </summary>
