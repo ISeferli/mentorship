@@ -13,7 +13,12 @@ MonoBehaviour:
   m_Name: FireAttack
   m_EditorClassIdentifier: Assembly-CSharp::Upgrade
   upgradeType: 0
+  element: 1
   upgradeName: Fire
   upgradeTitle: Fire Element
-  upgradeDescription: Gain +5 fire attack ability
+  upgradeEffect: {fileID: 4994054905783420375, guid: b1ea8c004a08af04e9bc943afa8069c9, type: 3}
+  upgradeDescription: Gain +{0} fire attack ability
+  minAmount: 5
+  maxAmount: 10
   amount: 5
+  upgradePrefab: {fileID: 0}

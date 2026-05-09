@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba264157c71d143499434d3aa8b08cbf, type: 3}
+  m_Name: Waterfall
+  m_EditorClassIdentifier: Assembly-CSharp::Upgrade
+  upgradeType: 1
+  element: 2
+  upgradeName: Waterfall
+  upgradeTitle: Waterfall
+  upgradeEffect: {fileID: 0}
+  upgradeDescription: Water fountain appears in front of you every 10 seconds with
+    {0} damage.
+  minAmount: 10
+  maxAmount: 15
+  amount: 0
+  upgradePrefab: {fileID: 4452062855518531781, guid: d9276f2895e23a043ab9b9dd7a6b4f01, type: 3}

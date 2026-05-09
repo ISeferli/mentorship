@@ -1,15 +1,16 @@
 using System;
+using UnityEngine;
 
 public class GameEvents
 {
     /// <summary>
     /// Event that is called when an enemy is destroyed by the character
     /// </summary>
-    public event Action OnEnemyDeath;
+    public event Action<Vector3, Transform> OnEnemyDeath;
 
-    public void EnemyDeathEvent()
+    public void EnemyDeathEvent(Vector3 position, Transform transform)
     {
-        OnEnemyDeath?.Invoke();
+        OnEnemyDeath?.Invoke(position, transform);
     }
 
     /// <summary>
@@ -31,5 +32,25 @@ public class GameEvents
     public void RunCompleteEvent()
     {
         OnRunCompleted?.Invoke();
+    }
+
+    /// <summary>
+    /// Event that is called when the run is completed in Game Over
+    /// </summary>
+    public event Action OnRunFailed;
+
+    public void RunFailedEvent()
+    {
+        OnRunFailed?.Invoke();
+    }
+
+    /// <summary>
+    /// Event that is called when the first ability is chosen
+    /// </summary>
+    public event Action<AttackElement> OnAbilityChosen;
+
+    public void AbilityElemenyChosen(AttackElement atElement)
+    {
+        OnAbilityChosen?.Invoke(atElement);
     }
 }

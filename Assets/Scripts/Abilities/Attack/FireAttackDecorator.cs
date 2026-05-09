@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class FireAttackDecorator : AttackDecorator
+public class FireAttackDecorator : ElementalDecorator
 {
     /// <summary>
     /// Fire decorator adds to the base damage and changes the base weapon color
@@ -8,17 +8,19 @@ public class FireAttackDecorator : AttackDecorator
     /// </summary>
     /// <param name="specificAttack">The base attack that will be modified</param>
     /// <param name="upgradeAmount">The amount with which the base attac damage will be upgraded</param>
-    public FireAttackDecorator(int upgradeAmount, IAttack specificAttack) : base(specificAttack)
+    public FireAttackDecorator(int upgradeAmount, GameObject upgradeEffect, AttackElement atElement, IAttack specificAttack) : base(specificAttack)
     {
         attackData.color = Color.red;
         attackData.betterColor = Color.blue;
         attackData.weakColor = Color.green;
         attackData.damage += upgradeAmount;
+        attackData.effect = upgradeEffect;
+        attackData.element = atElement;
     }
 
-    public override void PerformAttack(int pointsDamage, GameObject personToHit)
+    public override void PerformAttack(int pointsDamage, GameObject personToHit, GameObject attacker)
     {
-        base.PerformAttack(pointsDamage, personToHit);
+        base.PerformAttack(pointsDamage, personToHit, attacker);
         Debug.Log("Add fire attack");
     }
 }

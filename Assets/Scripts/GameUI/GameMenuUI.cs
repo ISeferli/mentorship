@@ -4,16 +4,19 @@ public class GameMenuUI : MonoBehaviour
 {
     [Header("In-game Menu Settings")]
     [SerializeField] GameObject pausePanel;
+    [SerializeField] GameObject winPanel;
     [SerializeField] GameObject gameOverPanel;
 
     void OnEnable()
     {
-        GameEventsManager.Instance.gameEvents.OnRunCompleted += OpenGameOverPanel;
+        GameEventsManager.Instance.gameEvents.OnRunCompleted += OpenWinPanel;
+        GameEventsManager.Instance.gameEvents.OnRunFailed += OpenGameOverPanel;
     }
 
     void OnDisable()
     {
-        GameEventsManager.Instance.gameEvents.OnRunCompleted -= OpenGameOverPanel;
+        GameEventsManager.Instance.gameEvents.OnRunCompleted -= OpenWinPanel;
+        GameEventsManager.Instance.gameEvents.OnRunFailed -= OpenGameOverPanel;
     }
 
     void Start()
@@ -21,6 +24,7 @@ public class GameMenuUI : MonoBehaviour
         //At the start of the game don't show pause panel
         pausePanel.SetActive(false);
         gameOverPanel.SetActive(false);
+        winPanel.SetActive(false);
     }
 
     void Update()
@@ -50,5 +54,10 @@ public class GameMenuUI : MonoBehaviour
     public void OpenGameOverPanel()
     {
         gameOverPanel.SetActive(true);
+    }
+
+    public void OpenWinPanel()
+    {
+        winPanel.SetActive(true);
     }
 }

@@ -4,17 +4,26 @@ using UnityEngine;
 public class Upgrade : ScriptableObject
 {
     public Texture icon { get; set; }
-    public UpgradeType upgradeType;
-    public string upgradeName;
-    public string upgradeTitle;
-    public string upgradeDescription;
-    public int amount;
+    public UpgradeType upgradeType = UpgradeType.Ability;
+    public AttackElement element = AttackElement.None;
+    public string upgradeName = "";
+    public string upgradeTitle = "";
+    public GameObject upgradeEffect = null;
+    [TextArea] public string upgradeDescription = "";
+    
+    [Header("Stats Range")]
+    public int minAmount = 5;
+    public int maxAmount = 10;
+    
+    [Header("Dynamic Value (Runtime Only)")]
+    [HideInInspector] public int amount;
+    public GameObject upgradePrefab;
 }
 
 public enum UpgradeType
 {
     Ability,
-    Damage,
+    Attack,
     Health,
     Stamina
 }

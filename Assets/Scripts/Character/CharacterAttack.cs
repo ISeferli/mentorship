@@ -21,16 +21,24 @@ public class CharacterAttack : MonoBehaviour
         if(Input.GetMouseButtonDown(0) && !leftAttack)
         {
             charAnimator.SetTrigger("LeftAttack");
-            leftSword.IsAttacking = true;
+            leftSword.EnableHitbox();
             leftAttack = true;
         }
 
         if(Input.GetMouseButtonDown(1) && !rightAttack)
         {
             charAnimator.SetTrigger("RightAttack");
-            rightSword.IsAttacking = true;
+            rightSword.EnableHitbox();
             rightAttack = true;
         }
+    }
+
+    /// <summary>
+    /// Reset character sword back to default state
+    /// </summary>
+    public void ResetUpgrades()
+    {
+        upgradeSword = leftSword;
     }
 
     /// <summary>
@@ -40,7 +48,7 @@ public class CharacterAttack : MonoBehaviour
     public void EndLeftAttack()
     {
         leftAttack = false;
-        leftSword.IsAttacking = false;
+        leftSword.DisableHitbox();
     }
 
     /// <summary>
@@ -50,6 +58,6 @@ public class CharacterAttack : MonoBehaviour
     public void EndRightAttack()
     {
         rightAttack = false;
-        rightSword.IsAttacking = false;
+        rightSword.DisableHitbox();
     }
 }

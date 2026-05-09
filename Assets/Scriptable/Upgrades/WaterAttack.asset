@@ -13,7 +13,12 @@ MonoBehaviour:
   m_Name: WaterAttack
   m_EditorClassIdentifier: Assembly-CSharp::Upgrade
   upgradeType: 0
+  element: 2
   upgradeName: Water
   upgradeTitle: Water Element
-  upgradeDescription: Gain +10 water attack ability
+  upgradeEffect: {fileID: 2559236626330934803, guid: 39570b49084aa9548a1ef597b994af1c, type: 3}
+  upgradeDescription: Gain +{0} water attack ability
+  minAmount: 10
+  maxAmount: 20
   amount: 10
+  upgradePrefab: {fileID: 0}

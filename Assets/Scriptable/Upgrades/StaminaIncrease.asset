@@ -15,5 +15,8 @@ MonoBehaviour:
   upgradeType: 3
   upgradeName: StaminaIncrease
   upgradeTitle: Max Stamina
-  upgradeDescription: Increase your stamina by +1
+  upgradeDescription: Increase your stamina by +{0}
+  minAmount: 1
+  maxAmount: 4
   amount: 1
+  upgradePrefab: {fileID: 0}

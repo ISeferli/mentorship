@@ -4,12 +4,15 @@ using UnityEngine.AI;
 public class EnemySpawner : MonoBehaviour
 {
     [Header("Spawn Settings")]
-    [SerializeField] private GameObject enemyPrefab;
     [SerializeField] float spawnRadius;
+
+    [Header("Enemy Type To Spawn")]
+    [SerializeField] private EnemyType enemyType;
 
     // Current settings of enemy waves
     private int currentEnemyWave = 0;
     private int currentEnemies = 0;
+    private bool isSpawning = false;
 
     void OnEnable()
     {
@@ -23,6 +26,7 @@ public class EnemySpawner : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("From spawn " + GameManager.Instance.enemyNumber);
         SpawnEnemiesForLevel();
     }
 
@@ -46,9 +50,11 @@ public class EnemySpawner : MonoBehaviour
     /// <param name="enemyNumber">Number of enemies that need to be spawned</param>
     public void SpawnWave(int enemyNumber)
     {
+        isSpawning = true;
         for (int i = 0; i < enemyNumber; i++)
             SpawnOneEnemy();
         currentEnemyWave++;
+        isSpawning = false;
     }
 
     /// <summary>
@@ -72,11 +78,11 @@ public class EnemySpawner : MonoBehaviour
                 if (colliders.Length > 0)
                 {
                     attempts++;
-                    Debug.Log("Found");
                     continue;
                 }
-                GameObject newEnemy = Instantiate(enemyPrefab, hit.position, Quaternion.identity);
-                newEnemy.transform.parent = transform;
+                GameObject newEnemy = ObjectPooler.Instance.SpawnFromPool(enemyType.tag, hit.position, Quaternion.identity);
+                Enemy enemy = newEnemy.GetComponent<Enemy>();
+                enemy.Initialize();
                 currentEnemies++;
                 return;
             }
@@ -84,19 +90,30 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Get the current level's enemy waves number
+    /// </summary>
+    /// <returns>Current enemy wave</returns>
     public int GetCurrentWave()
     {
         return currentEnemyWave;
     }
 
+    /// <summary>
+    /// Get the current level's enemies number
+    /// </summary>
+    /// <returns>Current enemy number</returns>
     public int GetCurrentEnemies()
     {
         return currentEnemies;
     }
 
-    private void DeleteEnemy()
+    /// <summary>
+    /// Function that handles logic after enemy deletion
+    /// </summary>
+    private void DeleteEnemy(Vector3 position, Transform transform)
     {
         currentEnemies--;
-        if (currentEnemies == 0) SpawnEnemiesForLevel();
+        if (currentEnemies == 0 && !isSpawning) SpawnEnemiesForLevel();
     }
 }

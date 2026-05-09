@@ -15,5 +15,8 @@ MonoBehaviour:
   upgradeType: 3
   upgradeName: StaminaRegen
   upgradeTitle: Stamina Regeneration
-  upgradeDescription: Increase your stamina regenaration by +1
+  upgradeDescription: Increase your stamina regenaration by +{0}
+  minAmount: 1
+  maxAmount: 5
   amount: 1
+  upgradePrefab: {fileID: 0}

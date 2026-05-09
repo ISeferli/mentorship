@@ -24,23 +24,35 @@ public class UpgradePrefab : MonoBehaviour
         assignedUpgrade = upgrade;
         assignedPanel = panel;
         title.text = upgrade.upgradeTitle;
-        description.text = upgrade.upgradeDescription;
+        description.text = string.Format(upgrade.upgradeDescription, upgrade.amount);
         icon.texture = upgrade.icon;
         GetComponent<Button>().onClick.AddListener(OnClick);
     }
 
     private void OnClick()
     {
+        BaseAttackComposition attackComposition = player.GetComponent<CharacterAttack>().upgradeSword.attackSet;
+        CharacterMovement character = player.GetComponent<CharacterMovement>();
         switch (assignedUpgrade.upgradeType)
         {
             case UpgradeType.Ability:
-                player.GetComponent<CharacterAttack>().upgradeSword.SetAttackAbility((AttackDecorator)UpgradeFactory.CreateAttackUpgrade(assignedUpgrade.upgradeName, assignedUpgrade.amount, player.GetComponent<CharacterAttack>().upgradeSword.baseAttack));
+                var newAbility = UpgradeFactory.CreateUpgrade(assignedUpgrade, attackComposition.GetBaseAttack("Base"));
+                player.GetComponent<CharacterAttack>().upgradeSword.SetAttackAbility(newAbility, "Base");
+                break;
+            case UpgradeType.Attack:
+                // Add new object in list and update that new base attack to the one of the upgrade
+                var baseAtk = attackComposition.AttackExists(assignedUpgrade.upgradeName)
+                    ? attackComposition.GetBaseAttack(assignedUpgrade.upgradeName)
+                    : attackComposition.CreateNewAttack(assignedUpgrade.upgradeName);
+
+                var newAttack = UpgradeFactory.CreateUpgrade(assignedUpgrade, baseAtk);
+                player.GetComponent<CharacterAttack>().upgradeSword.SetAttackAbility(newAttack, assignedUpgrade.upgradeName);
                 break;
             case UpgradeType.Health:
-                player.GetComponent<Character>().CurrentHealth = UpgradeFactory.CreateHealthUpgrade(assignedUpgrade.upgradeName, assignedUpgrade.amount, player.GetComponent<Character>().CurrentHealth);
+                player.GetComponent<Character>().CurrentHealth = UpgradeFactory.CreateUpgrade(assignedUpgrade, player.GetComponent<Character>().CurrentHealth);
                 break;
             case UpgradeType.Stamina:
-                player.GetComponent<Character>().CurrentStamina = UpgradeFactory.CreateStaminUpgrade(assignedUpgrade.upgradeName, assignedUpgrade.amount, player.GetComponent<Character>().CurrentStamina);
+                player.GetComponent<Character>().CurrentStamina = UpgradeFactory.CreateUpgrade(assignedUpgrade, player.GetComponent<Character>().CurrentStamina);
                 break;
         }
         assignedPanel.ClosePanel();

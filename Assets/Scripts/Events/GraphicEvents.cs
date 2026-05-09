@@ -35,6 +35,16 @@ public class GraphicEvents
     }
 
     /// <summary>
+    /// Event that is called from the SwordWeapon when the character takes attacks the enemy
+    /// </summary>
+    public event Action<int> OnEnemyHealthChange;
+
+    public void ChangeEnemyHealthUI(int damageTaken)
+    {
+        OnEnemyHealthChange?.Invoke(damageTaken);
+    }
+
+    /// <summary>
     /// Event that is called when an upgrade on max health happens
     /// </summary>
     public event Action<int> OnMaxHealthChange;

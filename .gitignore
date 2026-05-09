@@ -2796,3 +2796,1382 @@ Assets/Polygon-Mega Survival Forest/Demo_Profiles/LUT.png.meta
 Assets/Polygon-Mega Survival Forest/Demo_Profiles/LUT.png
 Assets/Polygon-Mega Survival Forest/Demo_Profiles.meta
 Assets/Polygon-Mega Survival Forest.meta
+Assets/RPG Monster DUO PBR Polyart.meta
+Assets/RPG Monster DUO PBR Polyart/Animations.meta
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime.meta
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Attack01_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Attack01_Slime_Anim.fbx.meta
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Attack02_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Attack02_Slime_Anim.fbx.meta
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Die_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Die_Slime_Anim.fbx.meta
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Dizzy_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Dizzy_Slime_Anim.fbx.meta
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/GetHit_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/GetHit_Slime_Anim.fbx.meta
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/IdleBattle_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/IdleBattle_Slime_Anim.fbx.meta
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/IdleNormal_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/IdleNormal_Slime_Anim.fbx.meta
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Run_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Run_Slime_Anim.fbx.meta
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/SenseSomethingRoutine_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/SenseSomethingRoutine_Slime_Anim.fbx.meta
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/SenseSomethingStart_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/SenseSomethingStart_Slime_Anim.fbx.meta
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Taunt_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Taunt_Slime_Anim.fbx.meta
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Victory_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Victory_Slime_Anim.fbx.meta
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Walk_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/Walk_Slime_Anim.fbx.meta
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/WalkBack_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/WalkBack_Slime_Anim.fbx.meta
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/WalkLeft_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/WalkLeft_Slime_Anim.fbx.meta
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/WalkRight_Slime_Anim.fbx
+Assets/RPG Monster DUO PBR Polyart/Animations/Slime/WalkRight_Slime_Anim.fbx.meta
+Assets/RPG Monster DUO PBR Polyart/Animators.meta
+Assets/RPG Monster DUO PBR Polyart/Animators/Slime.controller
+Assets/RPG Monster DUO PBR Polyart/Animators/Slime.controller.meta
+Assets/RPG Monster DUO PBR Polyart/Animators/TurtleShell.controller
+Assets/RPG Monster DUO PBR Polyart/Animators/TurtleShell.controller.meta
+Assets/RPG Monster DUO PBR Polyart/Materials.meta
+Assets/RPG Monster DUO PBR Polyart/Materials/PBRDefault.mat
+Assets/RPG Monster DUO PBR Polyart/Materials/PBRDefault.mat.meta
+Assets/RPG Monster DUO PBR Polyart/Materials/PolyartDefault.mat
+Assets/RPG Monster DUO PBR Polyart/Materials/PolyartDefault.mat.meta
+Assets/RPG Monster DUO PBR Polyart/Materials/Skybox_Mat.mat
+Assets/RPG Monster DUO PBR Polyart/Materials/Skybox_Mat.mat.meta
+Assets/RPG Monster DUO PBR Polyart/Materials/Stage.mat
+Assets/RPG Monster DUO PBR Polyart/Materials/Stage.mat.meta
+Assets/RPG Monster DUO PBR Polyart/Meshes.meta
+Assets/RPG Monster DUO PBR Polyart/Meshes/SlimeMesh.fbx
+Assets/RPG Monster DUO PBR Polyart/Meshes/SlimeMesh.fbx.meta
+Assets/RPG Monster DUO PBR Polyart/Meshes/SlimePolyartMesh.fbx
+Assets/RPG Monster DUO PBR Polyart/Meshes/SlimePolyartMesh.fbx.meta
+Assets/RPG Monster DUO PBR Polyart/Meshes/StageMesh.fbx
+Assets/RPG Monster DUO PBR Polyart/Meshes/StageMesh.fbx.meta
+Assets/RPG Monster DUO PBR Polyart/Meshes/TurtleShellMesh.fbx
+Assets/RPG Monster DUO PBR Polyart/Meshes/TurtleShellMesh.fbx.meta
+Assets/RPG Monster DUO PBR Polyart/Meshes/TurtleShellPolyartMesh.fbx
+Assets/RPG Monster DUO PBR Polyart/Meshes/TurtleShellPolyartMesh.fbx.meta
+Assets/RPG Monster DUO PBR Polyart/Prefabs.meta
+Assets/RPG Monster DUO PBR Polyart/Prefabs/PBRDefault.meta
+Assets/RPG Monster DUO PBR Polyart/Prefabs/PBRDefault/SlimePBR.prefab
+Assets/RPG Monster DUO PBR Polyart/Prefabs/PBRDefault/SlimePBR.prefab.meta
+Assets/RPG Monster DUO PBR Polyart/Prefabs/PBRDefault/TurtleShellPBR.prefab
+Assets/RPG Monster DUO PBR Polyart/Prefabs/PBRDefault/TurtleShellPBR.prefab.meta
+Assets/RPG Monster DUO PBR Polyart/Prefabs/PolyartDefault.meta
+Assets/RPG Monster DUO PBR Polyart/Prefabs/PolyartDefault/SlimePolyart.prefab
+Assets/RPG Monster DUO PBR Polyart/Prefabs/PolyartDefault/SlimePolyart.prefab.meta
+Assets/RPG Monster DUO PBR Polyart/Textures.meta
+Assets/RPG Monster DUO PBR Polyart/Textures/Albedo.png
+Assets/RPG Monster DUO PBR Polyart/Textures/Albedo.png.meta
+Assets/RPG Monster DUO PBR Polyart/Textures/Emission.png
+Assets/RPG Monster DUO PBR Polyart/Textures/Emission.png.meta
+Assets/RPG Monster DUO PBR Polyart/Textures/Metallic-Smoothness.png
+Assets/RPG Monster DUO PBR Polyart/Textures/Metallic-Smoothness.png.meta
+Assets/RPG Monster DUO PBR Polyart/Prefabs/PolyartDefault/TurtleShellPolyart.prefab.meta
+Assets/RPG Monster DUO PBR Polyart/Prefabs/PolyartDefault/TurtleShellPolyart.prefab
+plantuml/Upgrade/UpgradeFactory.puml
+plantuml/Abilities/Attack/AttackType.puml
+*.puml
+Assets/Alvios.meta
+Assets/Alvios/101ArtisticNoise.meta
+Assets/Alvios/101ArtisticNoise/Textures.meta
+Assets/Alvios/101ArtisticNoise/Textures/Boxes_1.png
+Assets/Alvios/101ArtisticNoise/Textures/Boxes_1.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Boxes_2.png
+Assets/Alvios/101ArtisticNoise/Textures/Boxes_2.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Cells_1.png
+Assets/Alvios/101ArtisticNoise/Textures/Cells_1.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Cells_10.png
+Assets/Alvios/101ArtisticNoise/Textures/Cells_10.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Cells_11.png
+Assets/Alvios/101ArtisticNoise/Textures/Cells_11.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Cells_12.png
+Assets/Alvios/101ArtisticNoise/Textures/Cells_12.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Cells_13.png
+Assets/Alvios/101ArtisticNoise/Textures/Cells_13.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Cells_14.png
+Assets/Alvios/101ArtisticNoise/Textures/Cells_14.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Cells_2.png
+Assets/Alvios/101ArtisticNoise/Textures/Cells_2.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Cells_3.png
+Assets/Alvios/101ArtisticNoise/Textures/Cells_3.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Cells_4.png
+Assets/Alvios/101ArtisticNoise/Textures/Cells_4.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Cells_5.png
+Assets/Alvios/101ArtisticNoise/Textures/Cells_5.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Cells_6.png
+Assets/Alvios/101ArtisticNoise/Textures/Cells_6.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Cells_7.png
+Assets/Alvios/101ArtisticNoise/Textures/Cells_7.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Cells_8.png
+Assets/Alvios/101ArtisticNoise/Textures/Cells_8.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Cells_9.png
+Assets/Alvios/101ArtisticNoise/Textures/Cells_9.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Fire_1.png
+Assets/Alvios/101ArtisticNoise/Textures/Fire_1.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Fire_2.png
+Assets/Alvios/101ArtisticNoise/Textures/Fire_2.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Fire_3.png
+Assets/Alvios/101ArtisticNoise/Textures/Fire_3.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Fire_4.png
+Assets/Alvios/101ArtisticNoise/Textures/Fire_4.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Fire_5.png
+Assets/Alvios/101ArtisticNoise/Textures/Fire_5.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Fire_6.png
+Assets/Alvios/101ArtisticNoise/Textures/Fire_6.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Fire_7.png
+Assets/Alvios/101ArtisticNoise/Textures/Fire_7.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_1.png
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_1.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_10.png
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_10.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_11.png
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_11.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_12.png
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_12.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_13.png
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_13.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_14.png
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_14.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_15.png
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_15.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_16.png
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_16.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_17.png
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_17.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_18.png
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_18.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_2.png
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_2.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_3.png
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_3.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_4.png
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_4.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_5.png
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_5.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_6.png
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_6.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_7.png
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_7.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_8.png
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_8.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_9.png
+Assets/Alvios/101ArtisticNoise/Textures/Geometric_9.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Mountains_1.png
+Assets/Alvios/101ArtisticNoise/Textures/Mountains_1.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Mountains_2.png
+Assets/Alvios/101ArtisticNoise/Textures/Mountains_2.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Mountains_3.png
+Assets/Alvios/101ArtisticNoise/Textures/Mountains_3.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Mountains_4.png
+Assets/Alvios/101ArtisticNoise/Textures/Mountains_4.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Mountains_5.png
+Assets/Alvios/101ArtisticNoise/Textures/Mountains_5.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Mountains_6.png
+Assets/Alvios/101ArtisticNoise/Textures/Mountains_6.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Mountains_7.png
+Assets/Alvios/101ArtisticNoise/Textures/Mountains_7.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Mountains_8.png
+Assets/Alvios/101ArtisticNoise/Textures/Mountains_8.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Simple_1.png
+Assets/Alvios/101ArtisticNoise/Textures/Simple_1.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Simple_10.png
+Assets/Alvios/101ArtisticNoise/Textures/Simple_10.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Simple_11.png
+Assets/Alvios/101ArtisticNoise/Textures/Simple_11.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Simple_12.png
+Assets/Alvios/101ArtisticNoise/Textures/Simple_12.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Simple_13.png
+Assets/Alvios/101ArtisticNoise/Textures/Simple_13.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Simple_14.png
+Assets/Alvios/101ArtisticNoise/Textures/Simple_14.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Simple_15.png
+Assets/Alvios/101ArtisticNoise/Textures/Simple_15.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Simple_2.png
+Assets/Alvios/101ArtisticNoise/Textures/Simple_2.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Simple_3.png
+Assets/Alvios/101ArtisticNoise/Textures/Simple_3.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Simple_4.png
+Assets/Alvios/101ArtisticNoise/Textures/Simple_4.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Simple_5.png
+Assets/Alvios/101ArtisticNoise/Textures/Simple_5.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Simple_6.png
+Assets/Alvios/101ArtisticNoise/Textures/Simple_6.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Simple_7.png
+Assets/Alvios/101ArtisticNoise/Textures/Simple_7.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Simple_8.png
+Assets/Alvios/101ArtisticNoise/Textures/Simple_8.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Simple_9.png
+Assets/Alvios/101ArtisticNoise/Textures/Simple_9.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/StainedGlass_1.png
+Assets/Alvios/101ArtisticNoise/Textures/StainedGlass_1.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/StainedGlass_2.png
+Assets/Alvios/101ArtisticNoise/Textures/StainedGlass_2.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Swirls_1.png
+Assets/Alvios/101ArtisticNoise/Textures/Swirls_1.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Swirls_10.png
+Assets/Alvios/101ArtisticNoise/Textures/Swirls_10.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Swirls_2.png
+Assets/Alvios/101ArtisticNoise/Textures/Swirls_2.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Swirls_3.png
+Assets/Alvios/101ArtisticNoise/Textures/Swirls_3.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Swirls_4.png
+Assets/Alvios/101ArtisticNoise/Textures/Swirls_4.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Swirls_5.png
+Assets/Alvios/101ArtisticNoise/Textures/Swirls_5.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Swirls_6.png
+Assets/Alvios/101ArtisticNoise/Textures/Swirls_6.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Swirls_7.png
+Assets/Alvios/101ArtisticNoise/Textures/Swirls_7.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Swirls_8.png
+Assets/Alvios/101ArtisticNoise/Textures/Swirls_8.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Swirls_9.png
+Assets/Alvios/101ArtisticNoise/Textures/Swirls_9.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Vines_1.png
+Assets/Alvios/101ArtisticNoise/Textures/Vines_1.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Vines_2.png
+Assets/Alvios/101ArtisticNoise/Textures/Vines_2.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Vines_3.png
+Assets/Alvios/101ArtisticNoise/Textures/Vines_3.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Vines_4.png
+Assets/Alvios/101ArtisticNoise/Textures/Vines_4.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Vines_5.png
+Assets/Alvios/101ArtisticNoise/Textures/Vines_5.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Vines_6.png
+Assets/Alvios/101ArtisticNoise/Textures/Vines_6.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Vines_7.png
+Assets/Alvios/101ArtisticNoise/Textures/Vines_7.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Vines_8.png
+Assets/Alvios/101ArtisticNoise/Textures/Vines_8.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Vines_9.png
+Assets/Alvios/101ArtisticNoise/Textures/Vines_9.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Waves_1.png
+Assets/Alvios/101ArtisticNoise/Textures/Waves_1.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Waves_10.png
+Assets/Alvios/101ArtisticNoise/Textures/Waves_10.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Waves_11.png
+Assets/Alvios/101ArtisticNoise/Textures/Waves_11.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Waves_12.png
+Assets/Alvios/101ArtisticNoise/Textures/Waves_12.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Waves_13.png
+Assets/Alvios/101ArtisticNoise/Textures/Waves_13.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Waves_14.png
+Assets/Alvios/101ArtisticNoise/Textures/Waves_14.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Waves_15.png
+Assets/Alvios/101ArtisticNoise/Textures/Waves_15.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Waves_16.png
+Assets/Alvios/101ArtisticNoise/Textures/Waves_16.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Waves_2.png
+Assets/Alvios/101ArtisticNoise/Textures/Waves_2.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Waves_3.png
+Assets/Alvios/101ArtisticNoise/Textures/Waves_3.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Waves_4.png
+Assets/Alvios/101ArtisticNoise/Textures/Waves_4.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Waves_5.png
+Assets/Alvios/101ArtisticNoise/Textures/Waves_5.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Waves_6.png
+Assets/Alvios/101ArtisticNoise/Textures/Waves_6.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Waves_7.png
+Assets/Alvios/101ArtisticNoise/Textures/Waves_7.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Waves_8.png
+Assets/Alvios/101ArtisticNoise/Textures/Waves_8.png.meta
+Assets/Alvios/101ArtisticNoise/Textures/Waves_9.png
+Assets/Alvios/101ArtisticNoise/Textures/Waves_9.png.meta
+ProjectSettings/VFXManager.asset
+Packages/packages-lock.json
+Packages/manifest.json
+Assets/UnityTechnologies/ParticlePack/URP_Renderer.asset.meta
+Assets/UnityTechnologies/ParticlePack/URP_Renderer.asset
+Assets/UnityTechnologies/ParticlePack/URP.asset.meta
+Assets/UnityTechnologies/ParticlePack/URP.asset
+Assets/UnityTechnologies/ParticlePack/UniversalRenderPipelineGlobalSettings.asset.meta
+Assets/UnityTechnologies/ParticlePack/UniversalRenderPipelineGlobalSettings.asset
+Assets/UnityTechnologies/ParticlePack/Shared/Sprites/UnityLogo.png.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Sprites/UnityLogo.png
+Assets/UnityTechnologies/ParticlePack/Shared/Sprites/TitleBorder.png.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Sprites/TitleBorder.png
+Assets/UnityTechnologies/ParticlePack/Shared/Sprites/Info.png.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Sprites/Info.png
+Assets/UnityTechnologies/ParticlePack/Shared/Sprites.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Scripts/SimpleCharacterMotor.cs.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Scripts/SimpleCharacterMotor.cs
+Assets/UnityTechnologies/ParticlePack/Shared/Scripts/SimpleCameraController.cs.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Scripts/SimpleCameraController.cs
+Assets/UnityTechnologies/ParticlePack/Shared/Scripts/ProximityActivate.cs.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Scripts/ProximityActivate.cs
+Assets/UnityTechnologies/ParticlePack/Shared/Scripts/AdjustTimeScale.cs.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Scripts/AdjustTimeScale.cs
+Assets/UnityTechnologies/ParticlePack/Shared/Scripts.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Ramps/Runtime/RampAsset.cs.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Ramps/Runtime/RampAsset.cs
+Assets/UnityTechnologies/ParticlePack/Shared/Ramps/Runtime.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Ramps/RampBaker.asset.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Ramps/RampBaker.asset
+Assets/UnityTechnologies/ParticlePack/Shared/Ramps/Editor/RampAssetEditor.cs.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Ramps/Editor/RampAssetEditor.cs
+Assets/UnityTechnologies/ParticlePack/Shared/Ramps/Editor.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Ramps.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Prefabs/WorldSpaceLabel.prefab.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Prefabs/WorldSpaceLabel.prefab
+Assets/UnityTechnologies/ParticlePack/Shared/Prefabs/Player.prefab.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Prefabs/Player.prefab
+Assets/UnityTechnologies/ParticlePack/Shared/Prefabs.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Textures/PaintLines_normal.tif.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Textures/PaintLines_normal.tif
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Textures/PaintLines_Albedo.tif.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Textures/PaintLines_Albedo.tif
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Textures/MetalTrim_Normal.tif.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Textures/MetalTrim_Normal.tif
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Textures/MetalTrim_MetallicSmooth.tif.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Textures/MetalTrim_MetallicSmooth.tif
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Textures/MetalTrim_Albedo.tif.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Textures/MetalTrim_Albedo.tif
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Textures/ConcreteWall_normal.tif.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Textures/ConcreteWall_normal.tif
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Textures/ConcreteWall_MetallicSmooth.tif.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Textures/ConcreteWall_MetallicSmooth.tif
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Textures/ConcreteWall_AmbientOcclusion.tif.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Textures/ConcreteWall_AmbientOcclusion.tif
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Textures/ConcreteWall_Albedo.tif.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Textures/ConcreteWall_Albedo.tif
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Textures/ConcreteFloor_Normal.tif.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Textures/ConcreteFloor_Normal.tif
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Textures/ConcreteFloor_MetallicSmooth.tif.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Textures/ConcreteFloor_MetallicSmooth.tif
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Textures/ConcreteFloor_AmbientOcclusion.tif.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Textures/ConcreteFloor_AmbientOcclusion.tif
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Textures/ConcreteFloor_Albedo.tif.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Textures/ConcreteFloor_Albedo.tif
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Textures.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Prefabs/Step.prefab.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Prefabs/Step.prefab
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Prefabs/Stairs.prefab.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Prefabs/Stairs.prefab
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Prefabs/SmallLight.prefab.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Prefabs/SmallLight.prefab
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Prefabs/SideWall.prefab.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Prefabs/SideWall.prefab
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Prefabs/Railing.prefab.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Prefabs/Railing.prefab
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Prefabs/LongOverhangWall.prefab.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Prefabs/LongOverhangWall.prefab
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Prefabs/FloorTiny.prefab.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Prefabs/FloorTiny.prefab
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Prefabs/FloorShort.prefab.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Prefabs/FloorShort.prefab
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Prefabs/FloorMiddle.prefab.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Prefabs/FloorMiddle.prefab
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Prefabs/FloorLong.prefab.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Prefabs/FloorLong.prefab
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Prefabs/EndWall.prefab.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Prefabs/EndWall.prefab
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Prefabs/CornerWall.prefab.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Prefabs/CornerWall.prefab
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Prefabs.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Models/Step.fbx.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Models/Step.fbx
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Models/Stairs.fbx.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Models/Stairs.fbx
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Models/SmallLight.fbx.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Models/SmallLight.fbx
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Models/SideWall.fbx.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Models/SideWall.fbx
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Models/Railing.fbx.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Models/Railing.fbx
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Models/LongOverhangWall.fbx.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Models/LongOverhangWall.fbx
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Models/FloorTiny.fbx.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Models/FloorTiny.fbx
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Models/FloorShort.fbx.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Models/FloorShort.fbx
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Models/FloorMiddle.fbx.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Models/FloorMiddle.fbx
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Models/FloorLong.fbx.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Models/FloorLong.fbx
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Models/EndWall.fbx.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Models/EndWall.fbx
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Models/CornerWall.fbx.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Models/CornerWall.fbx
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Models/AreaLine.fbx.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Models/AreaLine.fbx
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Models.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Materials/UnityLogo.mat.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Materials/UnityLogo.mat
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Materials/Skybox.mat.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Materials/Skybox.mat
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Materials/ShadowCaster.mat.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Materials/ShadowCaster.mat
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Materials/MetalTrim.mat.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Materials/MetalTrim.mat
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Materials/MetalRailing.mat.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Materials/MetalRailing.mat
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Materials/LinesWhite.mat.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Materials/LinesWhite.mat
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Materials/Light.mat.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Materials/Light.mat
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Materials/ConcreteWall.mat.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Materials/ConcreteWall.mat
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Materials/ConcreteFloor.mat.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Materials/ConcreteFloor.mat
+Assets/UnityTechnologies/ParticlePack/Shared/Environment/Materials.meta
+Assets/UnityTechnologies/ParticlePack/Shared/Environment.meta
+Assets/UnityTechnologies/ParticlePack/Shared.meta
+Assets/UnityTechnologies/ParticlePack/Settings/Simple_PipelineAsset_DeferredRenderer.asset.meta
+Assets/UnityTechnologies/ParticlePack/Settings/Simple_PipelineAsset_DeferredRenderer.asset
+Assets/UnityTechnologies/ParticlePack/Settings/Simple_PipelineAsset.asset.meta
+Assets/UnityTechnologies/ParticlePack/Settings/Simple_PipelineAsset.asset
+Assets/UnityTechnologies/ParticlePack/Settings/Good_PipelineAsset_DeferredRenderer.asset.meta
+Assets/UnityTechnologies/ParticlePack/Settings/Good_PipelineAsset_DeferredRenderer.asset
+Assets/UnityTechnologies/ParticlePack/Settings/Good_PipelineAsset.asset.meta
+Assets/UnityTechnologies/ParticlePack/Settings/Good_PipelineAsset.asset
+Assets/UnityTechnologies/ParticlePack/Settings/Fastest_PipelineAsset_DeferredRenderer.asset.meta
+Assets/UnityTechnologies/ParticlePack/Settings/Fastest_PipelineAsset_DeferredRenderer.asset
+Assets/UnityTechnologies/ParticlePack/Settings/Fastest_PipelineAsset.asset.meta
+Assets/UnityTechnologies/ParticlePack/Settings/Fastest_PipelineAsset.asset
+Assets/UnityTechnologies/ParticlePack/Settings/Fast_PipelineAsset_DeferredRenderer.asset.meta
+Assets/UnityTechnologies/ParticlePack/Settings/Fast_PipelineAsset_DeferredRenderer.asset
+Assets/UnityTechnologies/ParticlePack/Settings/Fast_PipelineAsset.asset.meta
+Assets/UnityTechnologies/ParticlePack/Settings/Fast_PipelineAsset.asset
+Assets/UnityTechnologies/ParticlePack/Settings/Beautiful_PipelineAsset_DeferredRenderer.asset.meta
+Assets/UnityTechnologies/ParticlePack/Settings/Beautiful_PipelineAsset_DeferredRenderer.asset
+Assets/UnityTechnologies/ParticlePack/Settings/Beautiful_PipelineAsset.asset.meta
+Assets/UnityTechnologies/ParticlePack/Settings/Beautiful_PipelineAsset.asset
+Assets/UnityTechnologies/ParticlePack/Settings.meta
+Assets/UnityTechnologies/ParticlePack/Scenes/Profiles/DefaultProfile.asset.meta
+Assets/UnityTechnologies/ParticlePack/Scenes/Profiles/DefaultProfile.asset
+Assets/UnityTechnologies/ParticlePack/Scenes/Profiles/DefaultProfile(URP).asset.meta
+Assets/UnityTechnologies/ParticlePack/Scenes/Profiles/DefaultProfile(URP).asset
+Assets/UnityTechnologies/ParticlePack/Scenes/Profiles.meta
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/ReflectionProbe-9.exr.meta
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/ReflectionProbe-9.exr
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/ReflectionProbe-8.exr.meta
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/ReflectionProbe-8.exr
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/ReflectionProbe-7.exr.meta
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/ReflectionProbe-7.exr
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/ReflectionProbe-6.exr.meta
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/ReflectionProbe-6.exr
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/ReflectionProbe-5.exr.meta
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/ReflectionProbe-5.exr
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/ReflectionProbe-4.exr.meta
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/ReflectionProbe-4.exr
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/ReflectionProbe-3.exr.meta
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/ReflectionProbe-3.exr
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/ReflectionProbe-2.exr.meta
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/ReflectionProbe-2.exr
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/ReflectionProbe-10.exr.meta
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/ReflectionProbe-10.exr
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/ReflectionProbe-1.exr.meta
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/ReflectionProbe-1.exr
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/ReflectionProbe-0.exr.meta
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/ReflectionProbe-0.exr
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/Lightmap-2_comp_light.exr.meta
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/Lightmap-2_comp_light.exr
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/Lightmap-2_comp_dir.png.meta
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/Lightmap-2_comp_dir.png
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/Lightmap-1_comp_light.exr.meta
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/Lightmap-1_comp_light.exr
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/Lightmap-1_comp_dir.png.meta
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/Lightmap-1_comp_dir.png
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/Lightmap-0_comp_light.exr.meta
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/Lightmap-0_comp_light.exr
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/Lightmap-0_comp_dir.png.meta
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/Lightmap-0_comp_dir.png
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/LightingData.asset.meta
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles/LightingData.asset
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles.unity.meta
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles.unity
+Assets/UnityTechnologies/ParticlePack/Scenes/Main Scene with Legacy Particles.meta
+Assets/UnityTechnologies/ParticlePack/Scenes.meta
+Assets/UnityTechnologies/ParticlePack/Readme.asset.meta
+Assets/UnityTechnologies/ParticlePack/Readme.asset
+Assets/UnityTechnologies/ParticlePack/Main Camera Profile.asset.meta
+Assets/UnityTechnologies/ParticlePack/Main Camera Profile.asset
+Assets/UnityTechnologies/ParticlePack/Main Camera Profile(URP).asset.meta
+Assets/UnityTechnologies/ParticlePack/Main Camera Profile(URP).asset
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/woodSplintersNormal.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/woodSplintersNormal.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/woodSplintersAlbedo.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/woodSplintersAlbedo.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/WoodOcclusion.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/WoodOcclusion.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/WoodNormals.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/WoodNormals.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/WoodBulletHoleNormal.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/WoodBulletHoleNormal.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/WoodBulletHoleDepth.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/WoodBulletHoleDepth.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/WoodBulletHoleAlbedo.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/WoodBulletHoleAlbedo.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/WoodAlbedo.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/WoodAlbedo.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/TinyStonesNormals.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/TinyStonesNormals.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/TinyStones.png.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/TinyStones.png
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/StreamNormal.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/StreamNormal.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/StoneNormal.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/StoneNormal.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/StoneAlbedo.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/StoneAlbedo.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/SparkParticle.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/SparkParticle.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/SandDecalNormal.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/SandDecalNormal.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/SandDecalAlbedo.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/SandDecalAlbedo.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/MuzzleFlashFront.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/MuzzleFlashFront.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/GoopStreakNormal.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/GoopStreakNormal.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/GoopStreakAlbedo.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/GoopStreakAlbedo.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/GoopSprayNormal.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/GoopSprayNormal.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/GoopSprayAlbedo.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/GoopSprayAlbedo.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/FleshNormals.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/FleshNormals.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/FleshBulletHoleNormal.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/FleshBulletHoleNormal.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/FleshBulletHoleHeight.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/FleshBulletHoleHeight.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/FleshBulletHoleAlbedo.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/FleshBulletHoleAlbedo.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/DustPuffSmallParticleSheet.png.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/DustPuffSmallParticleSheet.png
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/BulletHoleRockNormal.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/BulletHoleRockNormal.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/BulletHoleRockHeight.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/BulletHoleRockHeight.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/BulletHoleRockAlbedo.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/BulletHoleRockAlbedo.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/BulletHoleMetalThroughNormal.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/BulletHoleMetalThroughNormal.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/BulletHoleMetalThroughAlbedo.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures/BulletHoleMetalThroughAlbedo.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Textures.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Prefabs/WoodImpacts.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Prefabs/WoodImpacts.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Prefabs/StoneImpacts.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Prefabs/StoneImpacts.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Prefabs/SandImpacts.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Prefabs/SandImpacts.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Prefabs/MuzzleFlash.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Prefabs/MuzzleFlash.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Prefabs/MetalImpacts.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Prefabs/MetalImpacts.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Prefabs/FleshImpacts.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Prefabs/FleshImpacts.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Prefabs.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/WoodSurface.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/WoodSurface.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/WoodSplintersParticle.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/WoodSplintersParticle.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/WaterStreamParticle.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/WaterStreamParticle.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/TinyStonesParticle.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/TinyStonesParticle.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/StoneSurface.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/StoneSurface.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/SandSurface.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/SandSurface.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/RockDebris.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/RockDebris.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/MuzzleFlash.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/MuzzleFlash.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/MetalSurface.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/MetalSurface.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/MetalSparks.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/MetalSparks.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/GoopStreak.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/GoopStreak.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/GoopSplat2.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/GoopSplat2.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/GoopMist.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/GoopMist.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/FleshSurface.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/FleshSurface.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/DustPuffParticle.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/DustPuffParticle.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/BulletFleshDecal.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/BulletFleshDecal.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/BulletDecalWood.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/BulletDecalWood.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/BulletDecalStone.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/BulletDecalStone.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/BulletDecalSand.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/BulletDecalSand.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/BulletDecalMetal.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials/BulletDecalMetal.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects/Materials.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Weapon Effects.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Textures/WaterNormal.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Textures/WaterNormal.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Textures/SplatNormal.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Textures/SplatNormal.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Textures/SplatAlbedo.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Textures/SplatAlbedo.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Textures/SplashNormal.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Textures/SplashNormal.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Textures/SplashDropNormal.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Textures/SplashDropNormal.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Textures/SplashDropAlbedo.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Textures/SplashDropAlbedo.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Textures/SplashAlbedo.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Textures/SplashAlbedo.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Textures/SphereAlbedo.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Textures/SphereAlbedo.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Textures/RippleNormal.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Textures/RippleNormal.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Textures/RippleAlbedo.png.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Textures/RippleAlbedo.png
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Textures.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Prefabs/WaterLeak.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Prefabs/WaterLeak.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Prefabs/Shower.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Prefabs/Shower.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Prefabs/BigSplash.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Prefabs/BigSplash.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Prefabs.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Models/DropSplash.fbx.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Models/DropSplash.fbx
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Models.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Materials/WaterRipple.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Materials/WaterRipple.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Materials/WaterFog.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Materials/WaterFog.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Materials/WaterDropSmall.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Materials/WaterDropSmall.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Materials/WaterDropBig.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Materials/WaterDropBig.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Materials/Water.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Materials/Water.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Materials/SplashDrop.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Materials/SplashDrop.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Materials/Splash.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Materials/Splash.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects/Materials.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Water Effects.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Textures/WispySmokeNormal.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Textures/WispySmokeNormal.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Textures/wispySmoke.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Textures/wispySmoke.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Textures/Twinkle.png.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Textures/Twinkle.png
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Textures/TinyStones.png.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Textures/TinyStones.png
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Textures/smokeysteam.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Textures/smokeysteam.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Textures/SmokePuffNormal.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Textures/SmokePuffNormal.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Textures/SmokePuff.png.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Textures/SmokePuff.png
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Textures/SmokeLoop02.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Textures/SmokeLoop02.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Textures/SmokeLoop01.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Textures/SmokeLoop01.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Textures/Flame01.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Textures/Flame01.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Textures.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Prefabs/Steam.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Prefabs/Steam.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Prefabs/SmokeEffect.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Prefabs/SmokeEffect.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Prefabs/RocketTrail.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Prefabs/RocketTrail.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Prefabs/RisingSteam.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Prefabs/RisingSteam.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Prefabs/PressurisedSteam.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Prefabs/PressurisedSteam.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Prefabs/PoisonGas.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Prefabs/PoisonGas.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Prefabs/HeatDistortion.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Prefabs/HeatDistortion.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Prefabs/GroundFog.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Prefabs/GroundFog.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Prefabs/DustStorm.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Prefabs/DustStorm.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Prefabs.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Models/RockDebris.FBX.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Models/RockDebris.FBX
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Models.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Materials/wispySmoke.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Materials/wispySmoke.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Materials/Twinkle.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Materials/Twinkle.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Materials/SmokeySteam03.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Materials/SmokeySteam03.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Materials/SmokeySteam02.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Materials/SmokeySteam02.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Materials/SmokeySteam01.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Materials/SmokeySteam01.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Materials/SmokeLight.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Materials/SmokeLight.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Materials/Smoke02.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Materials/Smoke02.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Materials/SandParticle.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Materials/SandParticle.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Materials/RockDebris.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Materials/RockDebris.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Materials/GroundFog.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Materials/GroundFog.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Materials/Flame01.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Materials/Flame01.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Materials/Embers.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Materials/Embers.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Materials/Dust.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Materials/Dust.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects/Materials.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Smoke & Steam Effects.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/Stripes.png.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/Stripes.png
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/SparkParticle.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/SparkParticle.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/SmokeySteam.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/SmokeySteam.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/SmokePuff.png.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/SmokePuff.png
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/Ramp01.png.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/Ramp01.png
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/noise.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/noise.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/HexagonPattern_Opt.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/HexagonPattern_Opt.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/HexagonPattern_Normal.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/HexagonPattern_Normal.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/HexagonPattern_Albedo.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/HexagonPattern_Albedo.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/FireFlyWings.png.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/FireFlyWings.png
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/FireFlyEmission.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/FireFlyEmission.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/FireFlyAlbedo.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/FireFlyAlbedo.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/DustPuffSmall.png.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/DustPuffSmall.png
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/DustMote.png.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/DustMote.png
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/DissolveChunks.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/DissolveChunks.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/Clouds02.png.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/Clouds02.png
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/Clouds01.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/Clouds01.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/CandleFlame.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures/CandleFlame.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Textures.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Shaders/Respawn.shadergraph.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Shaders/Respawn.shadergraph
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Shaders/Respawn.shader.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Shaders/Respawn.shader
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Shaders/HeatDisstortionWobble.shadergraph.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Shaders/HeatDisstortionWobble.shadergraph
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Shaders/FireFly.shader.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Shaders/FireFly.shader
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Shaders/DissolveLine.shadergraph.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Shaders/DissolveLine.shadergraph
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Shaders/Dissolve.shadergraph.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Shaders/Dissolve.shadergraph
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Shaders.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Scripts/SpawnEffect.cs.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Scripts/SpawnEffect.cs
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Scripts.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Prefabs/SparksEffect.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Prefabs/SparksEffect.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Prefabs/SandSwirlsEffect.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Prefabs/SandSwirlsEffect.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Prefabs/Respawn.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Prefabs/Respawn.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Prefabs/Readme_Dissolve_Respawn_.txt.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Prefabs/Readme_Dissolve_Respawn_.txt
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Prefabs/ParticlesLight.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Prefabs/ParticlesLight.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Prefabs/HeatDistortion.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Prefabs/HeatDistortion.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Prefabs/FireFlies.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Prefabs/FireFlies.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Prefabs/EllenRespawn.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Prefabs/EllenRespawn.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Prefabs/EllenDissolve.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Prefabs/EllenDissolve.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Prefabs/ElectricalSparks.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Prefabs/ElectricalSparks.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Prefabs/DustMotesEffect.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Prefabs/DustMotesEffect.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Prefabs/DissolveSolidHorizontal.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Prefabs/DissolveSolidHorizontal.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Prefabs/Dissolve.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Prefabs/Dissolve.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Prefabs/Candles.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Prefabs/Candles.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Prefabs.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Models/Flakes.fbx.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Models/Flakes.fbx
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Models/FireFly.fbx.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Models/FireFly.fbx
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Models/Ellen.fbx.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Models/Ellen.fbx
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Models/Candle.fbx.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Models/Candle.fbx
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Models.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/SpawnTrail.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/SpawnTrail.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/Sparks.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/Sparks.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/SmokePuff.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/SmokePuff.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/SandSwirls.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/SandSwirls.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/Respawn.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/Respawn.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/HeatWobble.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/HeatWobble.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/FireFlyTrail.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/FireFlyTrail.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/FireFly.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/FireFly.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/Embers.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/Embers.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/ElectricalSparks.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/ElectricalSparks.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/DustMote.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/DustMote.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/DissolveLineHorizontal.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/DissolveLineHorizontal.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/DissolveChunks.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/DissolveChunks.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/Dissolve.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/Dissolve.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/CandleFlame.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/CandleFlame.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/candle.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials/candle.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Materials.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Animations/Ellen.controller.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Animations/Ellen.controller
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Animations/@EllenIdle.fbx.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Animations/@EllenIdle.fbx
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects/Animations.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Misc Effects.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/SmokePuff.png.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/SmokePuff.png
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/RocksSpecGloss.tga.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/RocksSpecGloss.tga
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/RocksAlbedoEmissive.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/RocksAlbedoEmissive.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/RocksAlbedo.tga.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/RocksAlbedo.tga
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/RockNormal.tga.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/RockNormal.tga
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/Ramp03.png.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/Ramp03.png
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/Ramp02.png.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/Ramp02.png
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/Ramp01.png.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/Ramp01.png
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/IceNormals.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/IceNormals.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/IceGrey.png.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/IceGrey.png
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/IceCurvature.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/IceCurvature.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/FireBallEmission.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/FireBallEmission.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/Fireball.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/Fireball.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/EarthCrackNormal.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/EarthCrackNormal.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/EarthCrackEmissive.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/EarthCrackEmissive.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/EarthCrackAlbedo.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/EarthCrackAlbedo.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/DustPuffSmall.png.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures/DustPuffSmall.png
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Textures.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Shaders/Ice.shader.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Shaders/Ice.shader
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Shaders/Ice Shapes.shadergraph.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Shaders/Ice Shapes.shadergraph
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Shaders/Ice Ball.shadergraph.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Shaders/Ice Ball.shadergraph
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Shaders.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Prefabs/IceLance.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Prefabs/IceLance.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Prefabs/EarthShatter.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Prefabs/EarthShatter.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Prefabs.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Models/RockSpike.FBX.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Models/RockSpike.FBX
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Models/RockDebris.FBX.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Models/RockDebris.FBX
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Models/IceShard.FBX.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Models/IceShard.FBX
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Models/IceLance.FBX.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Models/IceLance.FBX
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Models.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Materials/RockSpike.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Materials/RockSpike.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Materials/RockDust.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Materials/RockDust.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Materials/IceTrail.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Materials/IceTrail.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Materials/IceMist.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Materials/IceMist.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Materials/IceBall.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Materials/IceBall.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Materials/Ice.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Materials/Ice.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Materials/Fireball.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Materials/Fireball.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Materials/Embers.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Materials/Embers.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Materials/EarthCrack.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Materials/EarthCrack.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects/Materials.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Magic Effects.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Textures/WaterRipplesParticle.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Textures/WaterRipplesParticle.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Textures/WaterRippleEdgeParticle.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Textures/WaterRippleEdgeParticle.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Textures/WaterMistSoftParticle.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Textures/WaterMistSoftParticle.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Textures/WaterfallDropTexture.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Textures/WaterfallDropTexture.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Textures/WaterDropParticle.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Textures/WaterDropParticle.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Textures/ImpactSplashParticle.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Textures/ImpactSplashParticle.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Textures/FlameRoundGreyParticleSheet.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Textures/FlameRoundGreyParticleSheet.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Textures.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Prefabs/WaterFall.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Prefabs/WaterFall.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Prefabs/SparksEffect.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Prefabs/SparksEffect.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Prefabs/RainEffect.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Prefabs/RainEffect.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Prefabs/PlasmaExplosionEffect.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Prefabs/PlasmaExplosionEffect.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Prefabs/LightnigStormCloud.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Prefabs/LightnigStormCloud.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Prefabs/ElectricalSparksEffect.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Prefabs/ElectricalSparksEffect.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Prefabs.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Materials/WaterRipplesParticle.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Materials/WaterRipplesParticle.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Materials/WaterFallTop.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Materials/WaterFallTop.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Materials/WaterfallSplash.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Materials/WaterfallSplash.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Materials/WaterFallRipple.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Materials/WaterFallRipple.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Materials/WaterfallMain.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Materials/WaterfallMain.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Materials/WaterfallMain Spray.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Materials/WaterfallMain Spray.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Materials/WaterDropParticle.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Materials/WaterDropParticle.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Materials/StormCloudParticle.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Materials/StormCloudParticle.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Materials/SparkParticle.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Materials/SparkParticle.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Materials/ImpactSplashParticle.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Materials/ImpactSplashParticle.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles/Materials.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Legacy Particles.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Textures/SplatAlbedo.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Textures/SplatAlbedo.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Textures/GoopStreamAlbedo.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Textures/GoopStreamAlbedo.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Textures/GoopSprayNormals.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Textures/GoopSprayNormals.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Textures/GoopSprayAlbedo.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Textures/GoopSprayAlbedo.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Textures/GoopPoolNormals.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Textures/GoopPoolNormals.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Textures/GoopPoolAlbedo.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Textures/GoopPoolAlbedo.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Textures/GoopDropNormals.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Textures/GoopDropNormals.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Textures/GoopDropAlbedo.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Textures/GoopDropAlbedo.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Textures.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Prefabs/GoopStreamEffect.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Prefabs/GoopStreamEffect.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Prefabs/GoopSprayEffect.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Prefabs/GoopSprayEffect.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Prefabs/GoopSpray.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Prefabs/GoopSpray.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Prefabs.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Materials/GoopStreamParticle.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Materials/GoopStreamParticle.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Materials/GoopSplatParticle.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Materials/GoopSplatParticle.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Materials/GoopSplashParticle.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Materials/GoopSplashParticle.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Materials/GoopPoolParticle.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Materials/GoopPoolParticle.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects/Materials.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Goop Effects.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/TinyStones.png.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/TinyStones.png
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/TinyFlame.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/TinyFlame.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/SphereNormal.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/SphereNormal.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/SmokePuffNormal.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/SmokePuffNormal.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/SmokePuff02.png.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/SmokePuff02.png
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/SmokePuff01.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/SmokePuff01.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/shockwave.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/shockwave.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/RoundSoftParticle.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/RoundSoftParticle.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/Ramp03.png.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/Ramp03.png
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/Ramp02.png.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/Ramp02.png
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/ramp01.png.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/ramp01.png
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/MedumFlame02.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/MedumFlame02.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/MediumFlame03.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/MediumFlame03.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/MediumFlame01Emission.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/MediumFlame01Emission.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/MediumFlame01.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/MediumFlame01.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/LightningTrail.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/LightningTrail.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/Lightning.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/Lightning.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/LargeFlame02.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/LargeFlame02.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/LargeFlame01.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/LargeFlame01.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/Flame04.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/Flame04.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/Flame03.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/Flame03.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/Flame02.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/Flame02.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/FireExplosion.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/FireExplosion.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/FireBallEmission.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/FireBallEmission.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/Fireball.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/Fireball.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/ExplosionEmission.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/ExplosionEmission.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/Explosion.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/Explosion.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/EnergyEffect.tif.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/EnergyEffect.tif
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/Debris.png.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures/Debris.png
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Textures.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/WildFire.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/WildFire.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/TinyFlames.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/TinyFlames.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/TinyExplosion.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/TinyExplosion.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/SmallExplosion.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/SmallExplosion.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/ParticlesLight.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/ParticlesLight.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/MediumFlames.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/MediumFlames.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/LargeFlames.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/LargeFlames.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/FlameThrower.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/FlameThrower.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/FlameStream.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/FlameStream.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/FireBall.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/FireBall.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/EnergyExplosion.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/EnergyExplosion.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/DustExplosion.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/DustExplosion.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/BigExplosion.prefab.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs/BigExplosion.prefab
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Prefabs.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/TinyFlame.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/TinyFlame.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/SmokeDark.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/SmokeDark.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/SandParticle.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/SandParticle.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/PlasmaFire.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/PlasmaFire.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/PlasmaExplosion.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/PlasmaExplosion.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/MediumFlame03.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/MediumFlame03.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/MediumFlame02.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/MediumFlame02.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/MediumFlame01.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/MediumFlame01.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/LightningTrail.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/LightningTrail.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/Lightning.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/Lightning.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/LargeFlame02.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/LargeFlame02.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/LargeFlame01.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/LargeFlame01.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/Flame04.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/Flame04.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/Flame03.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/Flame03.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/Flame02.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/Flame02.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/FireExplosion.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/FireExplosion.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/fireball.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/fireball.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/ExplosionDistortion.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/ExplosionDistortion.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/Explosion.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/Explosion.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/EnergyShockwave.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/EnergyShockwave.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/EnergyExplosion.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/EnergyExplosion.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/Embers.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/Embers.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/Dust.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/Dust.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/DebrisParticle.mat.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials/DebrisParticle.mat
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects/Materials.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples/Fire & Explosion Effects.meta
+Assets/UnityTechnologies/ParticlePack/EffectExamples.meta
+Assets/UnityTechnologies/ParticlePack/DefaultVolumeProfile.asset.meta
+Assets/UnityTechnologies/ParticlePack/DefaultVolumeProfile.asset
+Assets/UnityTechnologies/ParticlePack.meta
+Assets/UnityTechnologies.meta
+Assets/TutorialInfo/Scripts/Readme.cs.meta
+Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta
+Assets/TextMesh Pro/Sprites/EmojiOne.png.meta
+Assets/TextMesh Pro/Sprites/EmojiOne.json.meta
+Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta
+Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc.meta
+Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc.meta
+Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc.meta
+Assets/TextMesh Pro/Shaders/TMPro.cginc.meta
+Assets/TextMesh Pro/Shaders/TMP_Sprite.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta
+Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl.meta
+Assets/TextMesh Pro/Resources/TMP Settings.asset.meta
+Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset.meta
+Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset.meta
+Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt.meta
+Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset.meta
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat.meta
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset.meta
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat.meta
+Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta
+Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt.meta
+ProjectSettings/VFXManager.asset
+Packages/packages-lock.json
+Packages/manifest.json
+Assets/TutorialInfo/Scripts/Readme.cs.meta
+Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta
+Assets/TextMesh Pro/Sprites/EmojiOne.png.meta
+Assets/TextMesh Pro/Sprites/EmojiOne.json.meta
+Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta
+Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc.meta
+Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc.meta
+Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc.meta
+Assets/TextMesh Pro/Shaders/TMPro.cginc.meta
+Assets/TextMesh Pro/Shaders/TMP_Sprite.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta
+Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl.meta
+Assets/TextMesh Pro/Resources/TMP Settings.asset.meta
+Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset.meta
+Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset.meta
+Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt.meta
+Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset.meta
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat.meta
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset.meta
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat.meta
+Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta
+Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt.meta
+ProjectSettings/VFXManager.asset
+Packages/packages-lock.json
+Packages/manifest.json
+Assets/TutorialInfo/Scripts/Readme.cs.meta
+Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta
+Assets/TextMesh Pro/Sprites/EmojiOne.png.meta
+Assets/TextMesh Pro/Sprites/EmojiOne.json.meta
+Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta
+Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc.meta
+Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc.meta
+Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc.meta
+Assets/TextMesh Pro/Shaders/TMPro.cginc.meta
+Assets/TextMesh Pro/Shaders/TMP_Sprite.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta
+Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl.meta
+Assets/TextMesh Pro/Resources/TMP Settings.asset.meta
+Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset.meta
+Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset.meta
+Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt.meta
+Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset.meta
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat.meta
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset.meta
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat.meta
+Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta
+Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt.meta
+ProjectSettings/VFXManager.asset
+Packages/packages-lock.json
+Packages/manifest.json
+Assets/TutorialInfo/Scripts/Readme.cs.meta
+Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta
+Assets/TextMesh Pro/Sprites/EmojiOne.png.meta
+Assets/TextMesh Pro/Sprites/EmojiOne.json.meta
+Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta
+Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc.meta
+Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc.meta
+Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc.meta
+Assets/TextMesh Pro/Shaders/TMPro.cginc.meta
+Assets/TextMesh Pro/Shaders/TMP_Sprite.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta
+Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl.meta
+Assets/TextMesh Pro/Resources/TMP Settings.asset.meta
+Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset.meta
+Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset.meta
+Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt.meta
+Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset.meta
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat.meta
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset.meta
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat.meta
+Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta
+Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt.meta
+.vscode/settings.json
+Assets/_Recovery/0 (9).unity
+Assets/_Recovery/0 (9).unity.meta
+Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt.meta
+Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat.meta
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset.meta
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat.meta
+Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset.meta
+Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta
+Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt.meta
+Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset.meta
+Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset.meta
+Assets/TextMesh Pro/Resources/TMP Settings.asset.meta
+Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl.meta
+Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph.meta
+Assets/TextMesh Pro/Shaders/TMP_SDF.shader.meta
+Assets/TextMesh Pro/Shaders/TMP_Sprite.shader.meta
+Assets/TextMesh Pro/Shaders/TMPro.cginc.meta
+Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc.meta
+Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc.meta
+Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc.meta
+Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta
+Assets/TextMesh Pro/Sprites/EmojiOne.json.meta
+Assets/TextMesh Pro/Sprites/EmojiOne.png.meta
+Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta
+Assets/TutorialInfo/Scripts/Readme.cs.meta
+Assets/UnityTechnologies/ParticlePack/TutorialInfo.meta
+Assets/UnityTechnologies/ParticlePack/TutorialInfo/Icons.meta
+Assets/UnityTechnologies/ParticlePack/TutorialInfo/Icons/Help_Icon.png
+Assets/UnityTechnologies/ParticlePack/TutorialInfo/Icons/ReadmeLogo.png
+Assets/UnityTechnologies/ParticlePack/TutorialInfo/Icons/ReadmeLogo.png.meta
+Packages/manifest.json
+Packages/packages-lock.json
+Assets/UnityTechnologies/ParticlePack/TutorialInfo/Icons/Help_Icon.png.meta

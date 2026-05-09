@@ -15,5 +15,8 @@ MonoBehaviour:
   upgradeType: 2
   upgradeName: HealthRegen
   upgradeTitle: Health Regeneration
-  upgradeDescription: Regenarate your health by +1
+  upgradeDescription: Regenarate your health by +{0}
+  minAmount: 1
+  maxAmount: 5
   amount: 1
+  upgradePrefab: {fileID: 0}
