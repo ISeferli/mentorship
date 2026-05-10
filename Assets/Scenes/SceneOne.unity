@@ -738,7 +738,7 @@ MonoBehaviour:
   enemyNumber: 1
   upgradesNo: 3
   levelDifficulty: {fileID: 11400000, guid: c3eeacdded80648a4a5d11f29388d512, type: 2}
-  maxLevelRun: 2
+  maxLevelRun: 1
   playerElement: 0
 --- !u!114 &578840508
 MonoBehaviour:
