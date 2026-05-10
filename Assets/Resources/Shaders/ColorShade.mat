@@ -44,6 +44,6 @@ Material:
     - _Softness: 2
     m_Colors:
     - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
-    - _SourcePos: {r: 36.09, g: 4.0699997, b: 18.2, a: 0}
+    - _SourcePos: {r: 14.86, g: 0.52, b: 15.329, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

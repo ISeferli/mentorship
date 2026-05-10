@@ -1,6 +1,7 @@
 using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(Rigidbody), typeof(Animator))]
 public class CharacterMovement : LevelSingleton<CharacterMovement>
@@ -17,6 +18,7 @@ public class CharacterMovement : LevelSingleton<CharacterMovement>
 
     // Movement Speed Settings
     public IStamina baseStamina;
+    private bool canMove;
     private float charMovementSpeed;
     private bool isDashing = false;
 
@@ -25,6 +27,7 @@ public class CharacterMovement : LevelSingleton<CharacterMovement>
     protected override void Awake()
     {
         base.Awake();
+        SceneManager.sceneLoaded += OnSceneLoaded;
         userInput = Vector3.zero;
         if (FindAnyObjectByType<LevelEntrance>())
         {
@@ -33,6 +36,17 @@ public class CharacterMovement : LevelSingleton<CharacterMovement>
         }
         charMovementSpeed = stats.GetStatValue("Speed");
         baseStamina = new BaseStamina(stats.GetStatValue("Stamina"));
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        canMove = scene.name != "MainMenu";
+    }
+
+    private void OnDestroy()
+    {
+        // Always unsubscribe to avoid memory leaks
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     void Update()
@@ -45,7 +59,8 @@ public class CharacterMovement : LevelSingleton<CharacterMovement>
 
     void FixedUpdate()
     {
-        Move();
+        if(canMove)
+            Move();
     }
 
     /// <summary>
